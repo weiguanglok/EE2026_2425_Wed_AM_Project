@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/abc_modifier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module abc_modifier
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/binomial_fn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binomial_fn
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/clk_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/comp_sel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comp_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/flexi_clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flexi_clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/modifier_effects.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modifier_effects
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/modifier_start.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modifier_start
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/seven_seg_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/timer_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/timer_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sim_1/new/sim_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_main
