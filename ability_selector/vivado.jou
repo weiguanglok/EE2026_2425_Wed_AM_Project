@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Oct 26 10:38:02 2024
+# Process ID: 10460
+# Current directory: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9132 C:\Users\stamp\Documents\NUS\Y2S1\EE2026\Project\ability_selector\ability_selector.xpr
+# Log file: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/vivado.log
+# Journal file: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.xpr
+update_compile_order -fileset sources_1
+archive_project C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector.xpr.zip -temp_dir C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/.Xil/Vivado-10460-ASUS_Zenbook_WG -force -include_local_ip_cache -include_config_settings

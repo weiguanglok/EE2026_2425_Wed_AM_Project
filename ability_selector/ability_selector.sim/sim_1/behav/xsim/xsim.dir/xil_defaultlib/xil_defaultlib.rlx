@@ -1,0 +1,15 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sim_1/new/test.v,1729909843,verilog,,,,test,,,,,,,,
+C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/abil_sel_ai.v,1729302695,verilog,,C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/ability_select_main.v,,abil_sel_ai,,,,,,,,
+C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/ability_select_main.v,1729303015,verilog,,C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/binomial_fn.v,,ability_select_main,,,,,,,,
+C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/binomial_fn.v,1729907098,verilog,,C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/comp_sel.v,,binomial_fn,,,,,,,,
+C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/comp_sel.v,1729088024,verilog,,C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/countdown_timer.v,,comp_sel,,,,,,,,
+C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/countdown_timer.v,1729301713,verilog,,C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/debounce.v,,countdown_timer_flexi,,,,,,,,
+C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/debounce.v,1728615210,verilog,,C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/flexi_clock.v,,debounce,,,,,,,,
+C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/flexi_clock.v,1728566156,verilog,,C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/new/main.v,,flexi_clock,,,,,,,,
+C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/rps_select_screen.v,1729301485,verilog,,C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sim_1/new/test.v,,ability_select_screen,,,,,,,,
+C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/new/main.v,1729909694,verilog,,C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/rps_select_screen.v,,main,,,,,,,,

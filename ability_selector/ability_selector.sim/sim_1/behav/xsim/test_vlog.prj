@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ability_selector.srcs/sources_1/imports/new/abil_sel_ai.v" \
+"../../../../ability_selector.srcs/sources_1/imports/new/ability_select_main.v" \
+"../../../../ability_selector.srcs/sources_1/imports/new/binomial_fn.v" \
+"../../../../ability_selector.srcs/sources_1/imports/new/comp_sel.v" \
+"../../../../ability_selector.srcs/sources_1/imports/new/countdown_timer.v" \
+"../../../../ability_selector.srcs/sources_1/imports/new/debounce.v" \
+"../../../../ability_selector.srcs/sources_1/imports/new/flexi_clock.v" \
+"../../../../ability_selector.srcs/sources_1/new/main.v" \
+"../../../../ability_selector.srcs/sources_1/imports/new/rps_select_screen.v" \
+"../../../../ability_selector.srcs/sim_1/new/test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

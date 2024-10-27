@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ability_selector.srcs/sources_1/imports/new/binomial_fn.v" \
+"../../../../ability_selector.srcs/sources_1/imports/new/flexi_clock.v" \
+"../../../../ability_selector.srcs/sources_1/imports/new/comp_sel.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

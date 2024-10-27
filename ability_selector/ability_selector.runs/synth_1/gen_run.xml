@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1729910010">
+  <File Type="PA-TCL" Name="main.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="main_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="main_reports.tcl"/>
+  <File Type="RDS-RDS" Name="main.vds"/>
+  <File Type="RDS-UTIL" Name="main_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="main_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="main.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="main_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="main_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/abil_sel_ai.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Wei Guang Project Wk 8/Wei Guang Project Wk 8.srcs/sources_1/new/abil_sel_ai.v"/>
+        <Attr Name="ImportTime" Val="1729302695"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ability_select_main.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Wei Guang Project Wk 8/Wei Guang Project Wk 8.srcs/sources_1/new/ability_select_main.v"/>
+        <Attr Name="ImportTime" Val="1729303015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/binomial_fn.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Wei Guang Project Wk 8/Wei Guang Project Wk 8.srcs/sources_1/new/binomial_fn.v"/>
+        <Attr Name="ImportTime" Val="1729907098"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/comp_sel.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Wei Guang Project Wk 8/Wei Guang Project Wk 8.srcs/sources_1/new/comp_sel.v"/>
+        <Attr Name="ImportTime" Val="1729088024"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/countdown_timer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Wei Guang Project Wk 8/Wei Guang Project Wk 8.srcs/sources_1/new/countdown_timer.v"/>
+        <Attr Name="ImportTime" Val="1729301713"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/debounce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Wei Guang Project Wk 8/Wei Guang Project Wk 8.srcs/sources_1/new/debounce.v"/>
+        <Attr Name="ImportTime" Val="1728615210"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/flexi_clock.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Wei Guang Project Wk 8/Wei Guang Project Wk 8.srcs/sources_1/new/flexi_clock.v"/>
+        <Attr Name="ImportTime" Val="1728566156"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/rps_select_screen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Wei Guang Project Wk 8/Wei Guang Project Wk 8.srcs/sources_1/new/rps_select_screen.v"/>
+        <Attr Name="ImportTime" Val="1729301485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/main.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="main"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/ability_sel.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

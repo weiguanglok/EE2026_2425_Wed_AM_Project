@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/abil_sel_ai.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module abil_sel_ai
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/ability_select_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ability_select_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/countdown_timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module countdown_timer_flexi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sources_1/imports/new/rps_select_screen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ability_select_screen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/ability_selector/ability_selector.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test

@@ -1,0 +1,86 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Oct 26 10:34:17 2024
+| Host         : ASUS_Zenbook_WG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    17 |
+| Unused register locations in slices containing registers |    64 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            3 |
+|      4 |            1 |
+|      6 |            1 |
+|      8 |            3 |
+|     10 |            1 |
+|    16+ |            8 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              30 |           11 |
+| No           | No                    | Yes                    |               4 |            2 |
+| No           | Yes                   | No                     |             158 |           21 |
+| Yes          | No                    | No                     |              10 |            1 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             222 |           31 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+----------------------------------+---------------------------------------------+------------------+----------------+
+|            Clock Signal            |           Enable Signal          |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++------------------------------------+----------------------------------+---------------------------------------------+------------------+----------------+
+|  dut/countdown/clk_200hz/an_reg[0] |                                  | dut/countdown/count[0]_i_1__1_n_0           |                1 |              2 |
+|  dut/countdown/clk_200hz/an_reg[0] |                                  | dut/countdown/count[0]                      |                1 |              2 |
+|  dut/countdown/clk_1hz/done_reg    |                                  |                                             |                1 |              2 |
+|  dut/countdown/clk_200hz/an_reg[0] |                                  | dut/person_sel/led_reg[0]_0                 |                2 |              4 |
+|  clk_IBUF_BUFG                     | dut/person_sel/state             | dut/person_sel/led_reg[0]_0                 |                1 |              6 |
+|  dut/countdown/clk_1hz/done_reg    | dut/countdown/state[3]_i_1_n_0   | dut/person_sel/led_reg[0]_0                 |                1 |              8 |
+|  clk_IBUF_BUFG                     |                                  | dut/person_sel/led_reg[0]_0                 |                1 |              8 |
+|  clk_IBUF_BUFG                     | dut/countdown/FIRST_n_0          | dut/countdown/SECOND[6]_i_1_n_0             |                1 |              8 |
+|  clk_IBUF_BUFG                     | dut/countdown/FIRST_n_0          |                                             |                1 |             10 |
+|  dut/countdown/clk_200hz/an_reg[0] |                                  | dut/countdown/count[1]                      |                2 |             18 |
+|  clk_IBUF_BUFG                     |                                  |                                             |               10 |             28 |
+|  clk_IBUF_BUFG                     | dut/btnc/button_press            | dut/btnc/counter                            |                7 |             50 |
+|  clk_IBUF_BUFG                     | dut/person_sel/btnc/button_press | dut/person_sel/btnc/counter                 |                7 |             50 |
+|  clk_IBUF_BUFG                     | dut/person_sel/btnd/button_press | dut/person_sel/btnd/counter[0]_i_1__2_n_0   |                7 |             50 |
+|  clk_IBUF_BUFG                     | dut/person_sel/btnu/button_press | dut/person_sel/btnu/counter[0]_i_1__1_n_0   |                7 |             50 |
+|  clk_IBUF_BUFG                     |                                  | dut/countdown/clk_200hz/count[0]_i_1__0_n_0 |                8 |             64 |
+|  clk_IBUF_BUFG                     |                                  | dut/countdown/clk_1hz/count[0]_i_1_n_0      |                8 |             64 |
++------------------------------------+----------------------------------+---------------------------------------------+------------------+----------------+
+
+
