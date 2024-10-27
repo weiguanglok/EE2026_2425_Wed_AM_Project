@@ -1,2 +1,2 @@
 # EE2026_2425_Wed_Team_13_AM_Project
-It contains some parts of the code for the actual project.
+This is the repository containing the codes to be used for the actual project.
