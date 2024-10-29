@@ -1,0 +1,83 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Oct 29 20:57:42 2024
+| Host         : ASUS_Zenbook_WG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file victory_screen_main_control_sets_placed.rpt
+| Design       : victory_screen_main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            2 |
+|      8 |            4 |
+|     10 |            1 |
+|    16+ |            9 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              60 |           12 |
+| No           | No                    | Yes                    |              24 |            4 |
+| No           | Yes                   | No                     |             278 |           36 |
+| Yes          | No                    | No                     |              86 |            8 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               8 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+------------------+---------------------------------------+------------------+----------------+
+|         Clock Signal         |   Enable Signal  |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++------------------------------+------------------+---------------------------------------+------------------+----------------+
+|  bot/clk_200hz/seg_reg[0]    |                  | nolabel_line38/SS[0]                  |                1 |              4 |
+|  player/clk_200hz/an_reg[3]  |                  | nolabel_line38/SS[0]                  |                1 |              4 |
+|  bot/clk_3p75hz/FIRST_reg[6] |                  | nolabel_line38/SS[0]                  |                1 |              8 |
+|  bot/clk_3p75hz/FIRST_reg[6] | bot/FOURTH       | bot/SECOND[5]_i_1_n_0                 |                1 |              8 |
+|  scroll_reg[3]_i_2_n_0       |                  | nolabel_line38/SS[0]                  |                1 |              8 |
+|  clk_IBUF_BUFG               |                  |                                       |                4 |              8 |
+|  bot/clk_3p75hz/FIRST_reg[6] |                  |                                       |                2 |             10 |
+|  bot/clk_200hz/seg_reg[0]    |                  |                                       |                2 |             20 |
+|  player/clk_200hz/an_reg[3]  |                  |                                       |                4 |             22 |
+|  clk_IBUF_BUFG               |                  | nolabel_line38/SS[0]                  |                4 |             22 |
+|  bot/clk_3p75hz/FIRST_reg[6] | bot/FOURTH       |                                       |                4 |             30 |
+|  scroll_reg[3]_i_2_n_0       | player/FIRST_n_0 |                                       |                4 |             56 |
+|  clk_IBUF_BUFG               |                  | bot/clk_200hz/count[0]_i_1__3_n_0     |                8 |             64 |
+|  clk_IBUF_BUFG               |                  | bot/clk_3p75hz/count[0]_i_1__4_n_0    |                8 |             64 |
+|  clk_IBUF_BUFG               |                  | player/clk_200hz/clear                |                8 |             64 |
+|  clk_IBUF_BUFG               |                  | player/clk_3p75hz/count[0]_i_1__2_n_0 |                8 |             64 |
++------------------------------+------------------+---------------------------------------+------------------+----------------+
+
+

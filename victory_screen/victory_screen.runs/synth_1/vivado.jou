@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Oct 29 20:55:42 2024
+# Process ID: 22268
+# Current directory: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/victory_screen/victory_screen.runs/synth_1
+# Command line: vivado.exe -log victory_screen_main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source victory_screen_main.tcl
+# Log file: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/victory_screen/victory_screen.runs/synth_1/victory_screen_main.vds
+# Journal file: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/victory_screen/victory_screen.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source victory_screen_main.tcl -notrace
