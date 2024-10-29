@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Sat Oct 26 23:48:36 2024
+| Date             : Tue Oct 29 20:15:12 2024
 | Host             : ASUS_Zenbook_WG running 64-bit major release  (build 9200)
 | Command          : report_power -file main_power_routed.rpt -pb main_power_summary_routed.pb -rpx main_power_routed.rpx
 | Design           : main
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.072        |
+| Total On-Chip Power (W)  | 0.080        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.003        |
-| Device Static (W)        | 0.068        |
+| Dynamic (W)              | 0.008        |
+| Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
 | Junction Temperature (C) | 25.4         |
@@ -52,18 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.002 |        3 |       --- |             --- |
-| Slice Logic             |    <0.001 |      492 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |      126 |     20800 |            0.61 |
-|   CARRY4                |    <0.001 |       40 |      8150 |            0.49 |
-|   Register              |    <0.001 |      266 |     41600 |            0.64 |
-|   Others                |     0.000 |       26 |       --- |             --- |
+| Clocks                  |     0.003 |        3 |       --- |             --- |
+| Slice Logic             |     0.003 |     1143 |       --- |             --- |
+|   LUT as Logic          |     0.003 |      319 |     20800 |            1.53 |
+|   CARRY4                |    <0.001 |       88 |      8150 |            1.08 |
+|   Register              |    <0.001 |      599 |     41600 |            1.44 |
+|   BUFG                  |     0.000 |        4 |        32 |           12.50 |
+|   Others                |     0.000 |       44 |       --- |             --- |
 |   LUT as Shift Register |     0.000 |        1 |      9600 |            0.01 |
-|   BUFG                  |     0.000 |        1 |        32 |            3.13 |
-| Signals                 |    <0.001 |      383 |       --- |             --- |
+| Signals                 |     0.002 |      872 |       --- |             --- |
 | I/O                     |    <0.001 |       15 |       106 |           14.15 |
-| Static Power            |     0.068 |          |           |                 |
-| Total                   |     0.072 |          |           |                 |
+| Static Power            |     0.072 |          |           |                 |
+| Total                   |     0.080 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.013 |       0.003 |      0.010 |
+| Vccint    |       1.000 |     0.018 |       0.008 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -142,7 +142,7 @@ Table of Contents
 +-----------------------+-----------+
 | Name                  | Power (W) |
 +-----------------------+-----------+
-| main                  |     0.003 |
+| main                  |     0.008 |
 |   abc_modif           |    <0.001 |
 |     mux               |    <0.001 |
 |       clk_10hz        |    <0.001 |
@@ -152,10 +152,19 @@ Table of Contents
 |   ai_sel              |    <0.001 |
 |     ai_sel            |     0.000 |
 |     clk_10hz          |    <0.001 |
+|   double              |     0.002 |
+|     clk_200hz         |    <0.001 |
+|     clk_5hz           |    <0.001 |
+|   half                |     0.002 |
+|     clk_200hz         |    <0.001 |
+|     clk_2p5hz         |    <0.001 |
 |   modif_start         |     0.002 |
 |     clk_200hz         |    <0.001 |
 |     clk_4hz           |    <0.001 |
 |   mux                 |    <0.001 |
+|   no_change           |     0.002 |
+|     clk_200hz         |    <0.001 |
+|     clk_3p75hz        |    <0.001 |
 +-----------------------+-----------+
 
 

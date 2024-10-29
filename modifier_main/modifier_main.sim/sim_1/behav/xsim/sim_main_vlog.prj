@@ -6,10 +6,13 @@ verilog xil_defaultlib  \
 "../../../../modifier_main.srcs/sources_1/new/comp_sel.v" \
 "../../../../modifier_main.srcs/sources_1/new/counter.v" \
 "../../../../modifier_main.srcs/sources_1/new/debounce.v" \
+"../../../../modifier_main.srcs/sources_1/new/double_speed_disp.v" \
 "../../../../modifier_main.srcs/sources_1/new/flexi_clock.v" \
+"../../../../modifier_main.srcs/sources_1/new/half_speed_disp.v" \
 "../../../../modifier_main.srcs/sources_1/new/main.v" \
 "../../../../modifier_main.srcs/sources_1/new/modifier_effects.v" \
 "../../../../modifier_main.srcs/sources_1/new/modifier_start.v" \
+"../../../../modifier_main.srcs/sources_1/new/no_change_disp.v" \
 "../../../../modifier_main.srcs/sources_1/new/seven_seg_mux.v" \
 "../../../../modifier_main.srcs/sources_1/new/timer_master.v" \
 "../../../../modifier_main.srcs/sources_1/new/timer_mux.v" \

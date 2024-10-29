@@ -18,7 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -37,9 +36,12 @@ read_verilog -library xil_defaultlib {
   C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/comp_sel.v
   C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/counter.v
   C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/debounce.v
+  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/double_speed_disp.v
   C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/flexi_clock.v
+  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/half_speed_disp.v
   C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/modifier_effects.v
   C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/modifier_start.v
+  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/no_change_disp.v
   C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/seven_seg_mux.v
   C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/timer_master.v
   C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/timer_mux.v

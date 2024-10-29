@@ -19,6 +19,9 @@ Compiling module xil_defaultlib.binomial_fn
 Compiling module xil_defaultlib.comp_sel
 Compiling module xil_defaultlib.debounce
 Compiling module xil_defaultlib.modifier_effects
+Compiling module xil_defaultlib.double_speed_disp
+Compiling module xil_defaultlib.half_speed_disp
+Compiling module xil_defaultlib.no_change_disp
 Compiling module xil_defaultlib.main
 Compiling module xil_defaultlib.sim_main
 Compiling module xil_defaultlib.glbl

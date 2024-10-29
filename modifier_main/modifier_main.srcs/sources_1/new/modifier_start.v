@@ -30,7 +30,7 @@ module modifier_start(
     );
     
     wire time_200hz, time_4hz;
-    reg [3:0] scroll = 4'b0000;
+    reg [3:0] scroll = 5'b00000;
     reg [1:0] count = 2'b00;
     reg [6:0] FIRST = 7'b1111111, SECOND = 7'b1111111, THIRD = 7'b1111111, FOURTH = 7'b1111111;
     
@@ -46,13 +46,13 @@ module modifier_start(
     
     always @(posedge time_4hz or posedge turned_on) begin
         if (~turned_on) begin
-            scroll <= 4'b0000;
+            scroll <= 5'b00000;
         end
-        else if (scroll == 4'b1111) begin
-            scroll <= 4'b0000;
+        else if (scroll == 5'b10000) begin
+            scroll <= 5'b00000;
         end
         else begin
-            scroll <= scroll + 4'b0001;
+            scroll <= scroll + 5'b00001;
         end
     end
     
@@ -154,13 +154,13 @@ module modifier_start(
                 THIRD <= BLANK;
                 FOURTH <= LETTERc;
             end
-            14: begin
+            15: begin
                 FIRST <= BLANK;
                 SECOND <= BLANK;
                 THIRD <= LETTERc;
                 FOURTH <= LETTERh;
             end
-            15: begin
+            16: begin
                 FIRST <= BLANK;
                 SECOND <= LETTERc;
                 THIRD <= LETTERh;
