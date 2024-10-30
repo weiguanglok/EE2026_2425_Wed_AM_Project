@@ -30,16 +30,21 @@ module seven_seg_mux(
     output reg [3:0] an = 4'b1111
     );
     
+    parameter ONE_SEC = 200_000_000;
+    wire modifier_sel_trig,one_sec_done;
+    assign modifier_sel_trig = (modifier_sel) ? 1:0;
+    timer_master ONES(.clk(clk),.TIMER(ONE_SEC),.TRIGGER(modifier_sel_trig),.DONE(one_sec_done));
+    
     always @(posedge clk) begin
-        if (modifier_sel == 2'b01) begin
+        if (modifier_sel == 2'b01 && one_sec_done) begin
             seg <= seg_double_speed;
             an <= an_double_speed;
         end
-        else if (modifier_sel == 2'b11) begin
+        else if (modifier_sel == 2'b11 && one_sec_done) begin
             seg <= seg_no_change;
             an <= an_no_change;
         end 
-        else if (modifier_sel == 2'b10) begin
+        else if (modifier_sel == 2'b10 && one_sec_done) begin
             seg <= seg_half_speed;
             an <= an_half_speed;
         end 

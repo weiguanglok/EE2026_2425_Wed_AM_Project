@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Oct 29 20:14:07 2024
-# Process ID: 30680
+# Start of session at: Wed Oct 30 09:36:53 2024
+# Process ID: 34028
 # Current directory: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.runs/synth_1
 # Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
 # Log file: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.runs/synth_1/main.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5912 
+INFO: Helper process launched with PID 34332 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 357.039 ; gain = 99.711
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 356.344 ; gain = 99.211
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/main.v:23]
 INFO: [Synth 8-6157] synthesizing module 'modifier_start' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/modifier_start.v:23]
@@ -67,6 +67,7 @@ INFO: [Synth 8-6155] done synthesizing module 'timer_mux' (6#1) [C:/Users/stamp/
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/abc_modifier.v:49]
 INFO: [Synth 8-6155] done synthesizing module 'abc_modifier' (7#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/abc_modifier.v:23]
 INFO: [Synth 8-6157] synthesizing module 'seven_seg_mux' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/seven_seg_mux.v:23]
+	Parameter ONE_SEC bound to: 200000000 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'seven_seg_mux' (8#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/seven_seg_mux.v:23]
 INFO: [Synth 8-6157] synthesizing module 'comp_sel' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/comp_sel.v:23]
 INFO: [Synth 8-6157] synthesizing module 'binomial_fn' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/binomial_fn.v:23]
@@ -154,7 +155,7 @@ WARNING: [Synth 8-3331] design clk_mux has unconnected port led[8]
 WARNING: [Synth 8-3331] design clk_mux has unconnected port led[7]
 WARNING: [Synth 8-3331] design clk_mux has unconnected port led[2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 411.613 ; gain = 154.285
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 411.320 ; gain = 154.188
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -167,10 +168,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 411.613 ; gain = 154.285
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 411.320 ; gain = 154.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 411.613 ; gain = 154.285
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 411.320 ; gain = 154.188
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -186,28 +187,29 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 749.801 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 748.695 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 749.801 ; gain = 492.473
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 748.695 ; gain = 491.562
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 749.801 ; gain = 492.473
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 748.695 ; gain = 491.562
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 749.801 ; gain = 492.473
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 748.695 ; gain = 491.562
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'abc_modifier'
 INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "modifier_sel_trig" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-4471] merging register 'double_speed_reg' into 'double_damage_reg' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/modifier_effects.v:38]
 INFO: [Synth 8-4471] merging register 'half_speed_reg' into 'half_damage_reg' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/modifier_effects.v:39]
 WARNING: [Synth 8-6014] Unused sequential element double_speed_reg was removed.  [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.srcs/sources_1/new/modifier_effects.v:38]
@@ -221,7 +223,7 @@ WARNING: [Synth 8-6014] Unused sequential element half_speed_reg was removed.  [
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'abc_modifier'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 749.801 ; gain = 492.473
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 748.695 ; gain = 491.562
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -243,19 +245,19 @@ Detailed RTL Component Info :
 	                7 Bit    Registers := 22    
 	                4 Bit    Registers := 10    
 	                2 Bit    Registers := 5     
-	                1 Bit    Registers := 27    
+	                1 Bit    Registers := 28    
 +---Muxes : 
-	   2 Input      7 Bit        Muxes := 5     
-	   4 Input      7 Bit        Muxes := 5     
+	   2 Input      7 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 4     
 	   3 Input      7 Bit        Muxes := 1     
 	  12 Input      7 Bit        Muxes := 4     
-	   4 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 4     
 	   3 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 3     
 	   3 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 3     
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 26    
+	   2 Input      1 Bit        Muxes := 27    
 	   3 Input      1 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 3     
 	  15 Input      1 Bit        Muxes := 1     
@@ -324,11 +326,6 @@ Detailed RTL Component Info :
 +---Registers : 
 	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      7 Bit        Muxes := 1     
-	   4 Input      7 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 1     
 Module binomial_fn 
 Detailed RTL Component Info : 
 +---XORs : 
@@ -450,7 +447,7 @@ INFO: [Synth 8-3886] merging instance 'abc_modif/an_reg[0]' (FDE) to 'abc_modif/
 INFO: [Synth 8-3886] merging instance 'abc_modif/an_reg[2]' (FDE) to 'abc_modif/seg_reg[4]'
 WARNING: [Synth 8-3332] Sequential element (ai_sel/ai_sel/success_reg_C) is unused and will be removed from module main.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 749.801 ; gain = 492.473
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 748.695 ; gain = 491.562
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -462,13 +459,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 749.801 ; gain = 492.473
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:57 . Memory (MB): peak = 748.695 ; gain = 491.562
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 767.047 ; gain = 509.719
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:58 . Memory (MB): peak = 756.734 ; gain = 499.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -480,7 +477,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 769.539 ; gain = 512.211
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:59 . Memory (MB): peak = 773.445 ; gain = 516.312
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -505,7 +502,7 @@ INFO: [Synth 8-5365] Flop abc_modif/time_mux/trigger_10s_reg is being inverted a
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 769.539 ; gain = 512.211
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 773.445 ; gain = 516.312
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -518,7 +515,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 769.539 ; gain = 512.211
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 773.445 ; gain = 516.312
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -530,25 +527,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 769.539 ; gain = 512.211
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 773.445 ; gain = 516.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 769.539 ; gain = 512.211
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 773.445 ; gain = 516.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 769.539 ; gain = 512.211
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 773.445 ; gain = 516.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 769.539 ; gain = 512.211
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 773.445 ; gain = 516.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -579,17 +576,17 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     5|
-|2     |CARRY4 |    88|
-|3     |LUT1   |    19|
-|4     |LUT2   |    42|
-|5     |LUT3   |    29|
-|6     |LUT4   |   109|
-|7     |LUT5   |    88|
-|8     |LUT6   |   120|
+|2     |CARRY4 |    96|
+|3     |LUT1   |    20|
+|4     |LUT2   |    34|
+|5     |LUT3   |    23|
+|6     |LUT4   |   207|
+|7     |LUT5   |   179|
+|8     |LUT6   |    26|
 |9     |SRL16E |     1|
-|10    |FDCE   |    56|
+|10    |FDCE   |    88|
 |11    |FDPE   |     1|
-|12    |FDRE   |   539|
+|12    |FDRE   |   540|
 |13    |FDSE   |     2|
 |14    |LDC    |     1|
 |15    |IBUF   |     3|
@@ -600,38 +597,40 @@ Report Instance Areas:
 +------+----------------------+------------------+------+
 |      |Instance              |Module            |Cells |
 +------+----------------------+------------------+------+
-|1     |top                   |                  |  1115|
-|2     |  abc_modif           |abc_modifier      |   162|
-|3     |    mux               |clk_mux           |    56|
-|4     |      clk_10hz        |flexi_clock_8     |    55|
-|5     |    time_mux          |timer_mux         |    66|
-|6     |      TENS            |timer_master      |    57|
-|7     |        counter_timer |counter           |    55|
-|8     |  ai_sel              |comp_sel          |    96|
-|9     |    ai_sel            |binomial_fn       |    41|
-|10    |    clk_10hz          |flexi_clock_7     |    55|
-|11    |  double              |double_speed_disp |   206|
-|12    |    clk_200hz         |flexi_clock_5     |    53|
-|13    |    clk_5hz           |flexi_clock_6     |    55|
-|14    |  half                |half_speed_disp   |   206|
-|15    |    clk_200hz         |flexi_clock_3     |    53|
-|16    |    clk_2p5hz         |flexi_clock_4     |    55|
-|17    |  modif_start         |modifier_start    |   207|
-|18    |    clk_200hz         |flexi_clock_1     |    53|
-|19    |    clk_4hz           |flexi_clock_2     |    55|
-|20    |  mux                 |seven_seg_mux     |    11|
-|21    |  no_change           |no_change_disp    |   207|
-|22    |    clk_200hz         |flexi_clock       |    53|
-|23    |    clk_3p75hz        |flexi_clock_0     |    55|
+|1     |top                   |                  |  1238|
+|2     |  abc_modif           |abc_modifier      |   161|
+|3     |    mux               |clk_mux           |    61|
+|4     |      clk_10hz        |flexi_clock_10    |    60|
+|5     |    time_mux          |timer_mux         |    69|
+|6     |      TENS            |timer_master_8    |    59|
+|7     |        counter_timer |counter_9         |    57|
+|8     |  ai_sel              |comp_sel          |   102|
+|9     |    ai_sel            |binomial_fn       |    42|
+|10    |    clk_10hz          |flexi_clock_7     |    60|
+|11    |  double              |double_speed_disp |   218|
+|12    |    clk_200hz         |flexi_clock_5     |    60|
+|13    |    clk_5hz           |flexi_clock_6     |    60|
+|14    |  half                |half_speed_disp   |   218|
+|15    |    clk_200hz         |flexi_clock_3     |    60|
+|16    |    clk_2p5hz         |flexi_clock_4     |    60|
+|17    |  modif_start         |modifier_start    |   230|
+|18    |    clk_200hz         |flexi_clock_1     |    60|
+|19    |    clk_4hz           |flexi_clock_2     |    60|
+|20    |  mux                 |seven_seg_mux     |    70|
+|21    |    ONES              |timer_master      |    59|
+|22    |      counter_timer   |counter           |    58|
+|23    |  no_change           |no_change_disp    |   219|
+|24    |    clk_200hz         |flexi_clock       |    60|
+|25    |    clk_3p75hz        |flexi_clock_0     |    60|
 +------+----------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 769.539 ; gain = 512.211
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 773.445 ; gain = 516.312
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 769.539 ; gain = 174.023
-Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 769.539 ; gain = 512.211
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:41 . Memory (MB): peak = 773.445 ; gain = 178.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 773.445 ; gain = 516.312
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 92 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 100 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -640,11 +639,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-77 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+78 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 769.539 ; gain = 525.094
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:01:05 . Memory (MB): peak = 773.445 ; gain = 529.172
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.runs/synth_1/main.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 769.539 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 20:14:27 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 773.445 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 09:38:06 2024...
