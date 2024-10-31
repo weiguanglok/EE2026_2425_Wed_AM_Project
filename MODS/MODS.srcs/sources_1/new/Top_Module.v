@@ -70,7 +70,7 @@ module Top_Module(
    top_module_battle run_top_module_battle(
         .clk(clk),
         .reset(),
-        .btnR(btnR_stable), .btnL(btnL_stable), .btnC(btnC_stable),
+        .btnR(btnR_stable), .btnL(btnL_stable), .btnC(btnC_stable), .btnU(btnU_stable),.btnD(btnD_stable),
         .seg(seg),
         .an(an),
         .dp(dp),

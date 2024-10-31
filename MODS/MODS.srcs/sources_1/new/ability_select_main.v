@@ -72,7 +72,7 @@ module ability_select_main(
     
     countdown_timer_flexi countdown(.clk(clk),.trigger(turned_on),.btnC(btnC),.done(timer_up),.seg(seg),.an(an),.dp(dp));
     
-    ability_resolution(.clk(clk),.P1_SEL(P1_SEL),.P2_SEL(P2_SEL),.selected(selected),.winner(winner));
+    ability_resolution ability_resolution(.clk(clk),.P1_SEL(P1_SEL),.P2_SEL(P2_SEL),.selected(selected),.winner(winner));
     
     always @ (*)begin
         case(state)
@@ -295,3 +295,40 @@ module ability_resolution(
     end
     
 endmodule
+
+module timer_master(
+    input CLOCK,
+    input [31:0] TIMER, //(TIMING IN SECONDS) DIVIDED BY 10 ns - 1
+    input TRIGGER, 
+    output reg DONE
+    );
+    
+    
+//    counter counter_timer(.CLOCK(CLOCK),.TRIGGER(TRIGGER),.TIMER(TIMER),.COUNTER(COUNTER));
+    
+    reg [31:0] COUNTER = 32'd0;
+    
+    always @(posedge CLOCK) begin
+        case (COUNTER)
+            TIMER: begin
+                DONE <= 1'b1;
+            end
+            default: begin
+                DONE <= 1'b0;
+            end
+        endcase
+    end
+    
+    always @(posedge CLOCK or posedge TRIGGER) begin
+            if (~TRIGGER) begin
+                COUNTER <= 32'd0;
+            end
+            else begin
+                if (COUNTER < TIMER) begin
+                    COUNTER <= COUNTER + 1;
+                end
+            end
+        end
+    
+endmodule
+

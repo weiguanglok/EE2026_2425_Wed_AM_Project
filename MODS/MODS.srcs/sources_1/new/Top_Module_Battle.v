@@ -22,7 +22,7 @@
 module top_module_battle(
     input clk,
     input reset,
-    input  btnC,btnL,btnR,
+    input  btnC,btnL,btnR,btnU,btnD,
     output [0:6]seg,
     output [3:0]an,
     output dp,
@@ -73,24 +73,24 @@ module top_module_battle(
     always @(posedge clk) begin
         casez (state)
             STATE_IDLE: begin 
-                state <= (btnR)? STATE_SELECT:STATE_IDLE;
+                state <= (btnU)? STATE_SELECT:STATE_IDLE;
                 oled_colour_L <= oled_colour_ai;
                 oled_colour_R <= oled_colour_player;
             end
             STATE_SELECT: begin 
                 oled_colour_L <= oled_colour_ai;
                 oled_colour_R <=oled_colour_ability_select;
-                if ((winner==1) && bot_selected)state  <= STATE_RESOLVE_W;
+                if ((winner==1) && bot_selected)state  <= STATE_RESOLVE_W; //create a timer with bol_selected as a trigger
                 else if((winner==0) && bot_selected)   state  <=  STATE_RESOLVE_L;
                 else state <=STATE_SELECT;
             end 
             STATE_RESOLVE_W: begin
-                state <= (finish==0)? STATE_DMG_RESOLVED:STATE_RESOLVE_W; 
+                state <= (finish==0)? STATE_DMG_RESOLVED:STATE_RESOLVE_W;  //create a timer with finish==0 as a trigger
                 oled_colour_L <= oled_colour_ai;
                 oled_colour_R <= oled_colour_player;
             end
             STATE_RESOLVE_L: begin 
-                state <= (finish==0)?STATE_DMG_RESOLVED:STATE_RESOLVE_L;
+                state <= (finish==0)?STATE_DMG_RESOLVED:STATE_RESOLVE_L; //create a timer with finish==0 as a trigger
                 oled_colour_L <= oled_colour_ai;
                 oled_colour_R <= oled_colour_player;
             end // if else statement needed

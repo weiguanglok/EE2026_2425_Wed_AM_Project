@@ -36,24 +36,41 @@ module ind_to_coor(input [12:0]pixel_index, output [6:0]x, [5:0]y);
     assign y = pixel_index / 96;
 endmodule
 
-module debounce (
-    input clk,            // Main system clock
-    input button_in,      // Raw button signal
-    output reg button_out // Cleaned button signal
+module debounce(
+    input wire clk,            // 100 MHz clock input
+    input wire button_in,         // Raw button input
+    output reg button_out         // Debounced button output
 );
 
-    reg [15:0] shift_reg; // Shift register to store consecutive button samples
+    // Parameters
+    parameter DEBOUNCE_TIME = 20_000_000; // 200 ms debounce period for 100 MHz clock
+
+    // Internal signals
+    reg [31:0] counter = 0;
+    reg btn_sync_0, btn_sync_1; // Synchronizers
+    reg btn_stable = 0;
 
     always @(posedge clk) begin
-        shift_reg <= {shift_reg[14:0], button_in}; // Shift in the new button state
+        // Synchronize the button signal
+        btn_sync_0 <= button_in;
+        btn_sync_1 <= btn_sync_0;
+        
+        // Debouncing logic
+        if (btn_sync_1 == btn_stable) begin
+            counter <= 0;
+        end else begin
+            counter <= counter + 1;
+            if (counter >= DEBOUNCE_TIME) begin
+                btn_stable <= btn_sync_1;
+                counter <= 0;
+            end
+        end
 
-        // If all bits in the shift register are 1s or all are 0s, set the button_out accordingly
-        if (shift_reg == 16'hFFFF)
-            button_out <= 1;
-        else if (shift_reg == 16'h0000)
-            button_out <= 0;
+        // Output the stable, debounced button signal
+        button_out <= btn_stable;
     end
 endmodule
+
 module button_sync(
     input clk,             // Main system clock
     input button_in,       // Debounced button input
