@@ -3,11 +3,32 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4c3086506e88427ca6f65a71a9035e44 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port turned_on [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sim_1/new/top_sim.v:41]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1984]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1985]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1986]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 6 for port sprite_y [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1987]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:2251]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:2252]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:2253]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.debounce
+Compiling module xil_defaultlib.blue_screen
+Compiling module xil_defaultlib.flexi_clk
+Compiling module xil_defaultlib.skillscreen_selection_background
+Compiling module xil_defaultlib.skillscreen_icon_rock
+Compiling module xil_defaultlib.skillscreen_icon_paper
+Compiling module xil_defaultlib.skillscreen_icon_scissors
+Compiling module xil_defaultlib.skillscreen_selector
+Compiling module xil_defaultlib.skillscreen_confirmation_backgro...
+Compiling module xil_defaultlib.rps_confirmation_screen
+Compiling module xil_defaultlib.ability_select_screen
+Compiling module xil_defaultlib.abil_sel_ai
+Compiling module xil_defaultlib.countdown_timer_flexi
+Compiling module xil_defaultlib.ability_resolution
+Compiling module xil_defaultlib.ability_select_main
 Compiling module xil_defaultlib.top_sim
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot top_sim_behav

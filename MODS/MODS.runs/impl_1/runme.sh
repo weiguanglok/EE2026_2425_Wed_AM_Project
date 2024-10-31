@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='G:/My Drive/NUS/Y2S1/EE2026/Project/Final_project.xpr/MODS/MODS.runs/impl_1'
+HD_PWD='C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

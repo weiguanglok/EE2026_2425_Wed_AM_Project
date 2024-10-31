@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Oct 30 21:58:40 2024
-| Host         : DESKTOP-VGVE9I8 running 64-bit major release  (build 9200)
+| Date         : Thu Oct 31 17:34:24 2024
+| Host         : ASUS_Zenbook_WG running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Module_control_sets_placed.rpt
 | Design       : Top_Module
 | Device       : xc7a35t
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    47 |
-| Unused register locations in slices containing registers |   124 |
+| Number of unique control sets                            |    61 |
+| Unused register locations in slices containing registers |   116 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,13 +34,12 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      2 |            2 |
 |      4 |            3 |
-|      6 |            1 |
-|      8 |            3 |
-|     10 |            4 |
+|      8 |            6 |
+|     10 |            5 |
 |     12 |            2 |
-|    16+ |           32 |
+|     14 |            1 |
+|    16+ |           44 |
 +--------+--------------+
 
 
@@ -50,68 +49,82 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |            1338 |          314 |
+| No           | No                    | No                     |            1418 |          353 |
 | No           | No                    | Yes                    |               4 |            1 |
-| No           | Yes                   | No                     |            1058 |          151 |
-| Yes          | No                    | No                     |             304 |           47 |
+| No           | Yes                   | No                     |            1538 |          211 |
+| Yes          | No                    | No                     |             428 |           80 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              36 |            5 |
+| Yes          | Yes                   | No                     |             136 |           21 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------------------------------------------------+---------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+----------------+
-|                                Clock Signal                               |                               Enable Signal                               |                                               Set/Reset Signal                                              | Slice Load Count | Bel Load Count |
-+---------------------------------------------------------------------------+---------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+----------------+
-|  top_screen_render/is_start                                               |                                                                           |                                                                                                             |                1 |              2 |
-|  run_top_module_battle/run_ability_select_main/countdown/clk_1hz/done_reg |                                                                           |                                                                                                             |                1 |              2 |
-|  run_top_module_battle/run_ability_select_main/countdown/clk_200hz/my_clk |                                                                           | run_top_module_battle/run_ability_select_main/countdown/an[1]_i_1_n_2                                       |                1 |              4 |
-|  run_top_module_battle/run_ability_select_main/countdown/clk_200hz/my_clk |                                                                           | run_top_module_battle/run_ability_select_main/countdown/state_reg[0]_0                                      |                1 |              4 |
-| ~clk6p25m_BUFG                                                            |                                                                           |                                                                                                             |                2 |              4 |
-|  debounce_btnR/btnR_stable                                                |                                                                           |                                                                                                             |                1 |              6 |
-|  run_top_module_battle/run_ability_select_main/countdown/clk_1hz/done_reg | run_top_module_battle/run_ability_select_main/countdown/state[3]_i_1_n_2  | run_top_module_battle/run_ability_select_main/countdown/state_reg[0]_0                                      |                1 |              8 |
-|  clk6p25m_0                                                               |                                                                           | top_screen_render/mainscreen/selector_arrow_render/oled_colour[12]_i_1__25_n_2                              |                2 |              8 |
-|  clk_IBUF_BUFG                                                            | run_top_module_battle/run_ability_select_main/countdown/SECOND[3]_i_1_n_2 | run_top_module_battle/run_ability_select_main/countdown/SECOND[6]_i_1_n_2                                   |                1 |              8 |
-|  run_top_module_battle/animation_instantiate/run_clk30fps/clk30fps        | n_0_2229_BUFG                                                             | run_top_module_battle/animation_instantiate/paper_clip_x[6]_i_1_n_2                                         |                1 |             10 |
-|  run_top_module_battle/animation_instantiate/run_clk25fps/clk25fps        | n_0_2229_BUFG                                                             |                                                                                                             |                1 |             10 |
-|  run_top_module_battle/animation_instantiate/run_clk30fps/clk30fps        | run_top_module_battle/animation_instantiate/rock_x[6]_i_2_n_2             | run_top_module_battle/animation_instantiate/rock_x[6]_i_1_n_2                                               |                2 |             10 |
-|  clk_IBUF_BUFG                                                            | run_top_module_battle/run_ability_select_main/countdown/SECOND[3]_i_1_n_2 |                                                                                                             |                1 |             10 |
-|  run_top_module_battle/animation_instantiate/run_clk30fps/clk30fps        |                                                                           |                                                                                                             |                3 |             12 |
-|  run_top_module_battle/animation_instantiate/run_clk35fps/clk35fps        | n_0_2229_BUFG                                                             |                                                                                                             |                4 |             12 |
-|  run_top_module_battle/run_ability_select_main/countdown/clk_200hz/my_clk |                                                                           | run_top_module_battle/run_ability_select_main/countdown/count[1]                                            |                2 |             18 |
-|  run_top_module_battle/animation_instantiate/run_fourfps/fourfps          |                                                                           |                                                                                                             |                5 |             18 |
-|  animation_instantiate/clk6p25                                            |                                                                           | oled_display_instance_R/oled_colour_reg[15]_11                                                              |                2 |             18 |
-|  animation_instantiate/clk6p25                                            |                                                                           | oled_display_instance_R/oled_colour_reg[10]_0                                                               |                5 |             24 |
-|  clk_IBUF_BUFG                                                            |                                                                           | run_top_module_battle/run_ability_select_main/countdown/state_reg[0]_0                                      |                5 |             34 |
-| ~clk6p25m_BUFG                                                            |                                                                           | oled_display_instance_L/frame_counter[16]_i_1__0_n_2                                                        |                5 |             34 |
-| ~clk6p25m_BUFG                                                            |                                                                           | oled_display_instance_R/frame_counter[16]_i_1_n_2                                                           |                5 |             34 |
-| ~clk6p25m_BUFG                                                            | oled_display_instance_R/delay[0]_i_1_n_2                                  |                                                                                                             |                5 |             40 |
-| ~clk6p25m_BUFG                                                            | oled_display_instance_L/delay[0]_i_1__0_n_2                               |                                                                                                             |                5 |             40 |
-|  clk_IBUF_BUFG                                                            |                                                                           | run_top_module_battle/run_ability_select_main/countdown/clk_200hz/count[0]_i_1__6_n_2                       |                8 |             64 |
-|  clk_IBUF_BUFG                                                            |                                                                           | run_top_module_battle/animation_instantiate/clk6p25m/count[0]_i_1__1_n_2                                    |                8 |             64 |
-|  clk_IBUF_BUFG                                                            |                                                                           | run_top_module_battle/animation_instantiate/run_clk25fps/count[0]_i_1__0_n_2                                |                8 |             64 |
-|  clk_IBUF_BUFG                                                            |                                                                           | run_top_module_battle/animation_instantiate/run_clk35fps/count[0]_i_1__3_n_2                                |                8 |             64 |
-|  clk_IBUF_BUFG                                                            |                                                                           | run_top_module_battle/animation_instantiate/run_fourfps/clear                                               |                8 |             64 |
-|  clk_IBUF_BUFG                                                            |                                                                           | run_top_module_battle/run_ability_select_main/countdown/clk_1hz/clear                                       |                8 |             64 |
-|  clk_IBUF_BUFG                                                            | run_top_module_battle/oled_colour_L[15]_i_1_n_2                           |                                                                                                             |               14 |             64 |
-|  clk_IBUF_BUFG                                                            |                                                                           | top_screen_render/clk6p25m_instantiate/clear                                                                |                8 |             64 |
-|  clk_IBUF_BUFG                                                            |                                                                           | clk6p25m_instantiate/clear                                                                                  |                8 |             64 |
-|  clk_IBUF_BUFG                                                            |                                                                           | run_top_module_battle/run_ability_select_main/select_screen_render/clk6p25m_instantiate/clear               |                8 |             64 |
-|  clk_IBUF_BUFG                                                            |                                                                           | run_top_module_battle/run_ability_select_main/select_screen_render/player_select/clk6p25m_instantiate/clear |                8 |             64 |
-|  clk_IBUF_BUFG                                                            |                                                                           | run_top_module_battle/animation_instantiate/run_clk30fps/clear__0                                           |                8 |             64 |
-| ~clk6p25m_BUFG                                                            | oled_display_instance_L/state                                             |                                                                                                             |                8 |             64 |
-| ~clk6p25m_BUFG                                                            | oled_display_instance_R/state                                             |                                                                                                             |                9 |             64 |
-|  n_0_2229_BUFG                                                            |                                                                           |                                                                                                             |               15 |             64 |
-|  n_1_2230_BUFG                                                            |                                                                           |                                                                                                             |               17 |             64 |
-| ~clk6p25m_BUFG                                                            |                                                                           | oled_display_instance_L/spi_word[39]_i_1__0_n_2                                                             |               15 |             90 |
-| ~clk6p25m_BUFG                                                            |                                                                           | oled_display_instance_R/spi_word[39]_i_1_n_2                                                                |               21 |             90 |
-|  run_ability_select_main/select_screen_render/player_select/clk6p25m      |                                                                           |                                                                                                             |               23 |            118 |
-|  run_ability_select_main/select_screen_render/clk6p25m                    |                                                                           |                                                                                                             |               34 |            154 |
-|  clk_IBUF_BUFG                                                            |                                                                           |                                                                                                             |               43 |            228 |
-|  clk6p25m_0                                                               |                                                                           |                                                                                                             |               67 |            236 |
-|  animation_instantiate/clk6p25                                            |                                                                           |                                                                                                             |              104 |            438 |
-+---------------------------------------------------------------------------+---------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+----------------+
++---------------------------------------------------------+------------------------------------------------------+---------------------------------------------------------------------------------------+------------------+----------------+
+|                       Clock Signal                      |                     Enable Signal                    |                                    Set/Reset Signal                                   | Slice Load Count | Bel Load Count |
++---------------------------------------------------------+------------------------------------------------------+---------------------------------------------------------------------------------------+------------------+----------------+
+|  run_ability_select_main/countdown/clk_200hz/my_clk     |                                                      | run_ability_select_main/ai_immediate_selection/random_value_reg[2]_0                  |                1 |              4 |
+| ~clk6p25m_BUFG                                          |                                                      |                                                                                       |                2 |              4 |
+|  run_ability_select_main/countdown/clk_200hz/my_clk     |                                                      | run_ability_select_main/countdown/an[1]_i_1_n_0                                       |                1 |              4 |
+|  animation_instantiate/run_clk30fps/clk30fps            |                                                      |                                                                                       |                2 |              8 |
+|  parry/led_clock/CLK                                    | parry/parry_count                                    |                                                                                       |                2 |              8 |
+|  clk_IBUF_BUFG                                          | parry/E[0]                                           |                                                                                       |                2 |              8 |
+|  clk_IBUF_BUFG                                          | run_ability_select_main/countdown/SECOND[3]_i_1_n_0  | run_ability_select_main/countdown/SECOND[6]_i_1_n_0                                   |                1 |              8 |
+|  parry/arrow_clock/CLK                                  | parry/run_delay_counter/arrow_count_reg[0]_0[0]      | parry/run_delay_counter/arrow_count_reg[0]                                            |                1 |              8 |
+|  clk6p25m_0                                             |                                                      | top_screen_render/mainscreen/selector_arrow_render/oled_colour[12]_i_1__35_n_0        |                4 |              8 |
+|  run_ability_select_main/countdown/clk_1hz/state_reg[1] |                                                      | run_ability_select_main/ai_immediate_selection/random_value_reg[2]_0                  |                1 |             10 |
+|  animation_instantiate/run_clk25fps/clk25fps            | animation_instantiate/paper_tack_x[4]_i_1_n_0        |                                                                                       |                1 |             10 |
+|  animation_instantiate/run_clk30fps/clk30fps            | animation_instantiate/paper_tack_x[4]_i_1_n_0        | animation_instantiate/paper_clip_x[6]_i_1_n_0                                         |                1 |             10 |
+|  clk_IBUF_BUFG                                          | run_ability_select_main/countdown/SECOND[3]_i_1_n_0  |                                                                                       |                2 |             10 |
+|  parry/arrow_clock/CLK                                  |                                                      | parry/run_delay_counter/counter[5]_i_1_n_0                                            |                2 |             10 |
+|  animation_instantiate/run_clk30fps/clk30fps            | animation_instantiate/rock_x[5]_i_1_n_0              |                                                                                       |                3 |             12 |
+|  animation_instantiate/run_clk35fps/clk35fps            | animation_instantiate/paper_tack_x[4]_i_1_n_0        |                                                                                       |                3 |             12 |
+|  parry/arrow_clock/CLK                                  | parry/run_delay_counter/E[0]                         | parry/run_delay_counter/SR[0]                                                         |                3 |             14 |
+|  run_ability_select_main/countdown/clk_200hz/my_clk     |                                                      | run_ability_select_main/countdown/count[1]                                            |                3 |             18 |
+|  animation_instantiate/run_fourfps/fourfps              |                                                      |                                                                                       |                5 |             18 |
+|  clk6p25                                                |                                                      | animation_instantiate/run_paper_airplane_attack/oled_colour[15]_i_1__25_n_0           |                2 |             18 |
+|  parry/arrow_clock/CLK                                  |                                                      |                                                                                       |                5 |             22 |
+|  clk6p25                                                |                                                      | oled_display_instance_R/oled_colour_reg[0]_67                                         |                4 |             24 |
+|  clk6p25                                                | animation_instantiate/oled_colour_player[15]_i_1_n_0 |                                                                                       |                8 |             32 |
+|  clk_IBUF_BUFG                                          | oled_colour_L                                        |                                                                                       |               11 |             32 |
+|  clk_IBUF_BUFG                                          | oled_colour_L                                        | oled_colour_L[15]_i_1_n_0                                                             |                6 |             32 |
+|  clk6p25                                                | run_ability_select_main/ai_immediate_selection/E[0]  |                                                                                       |                5 |             32 |
+|  clk_IBUF_BUFG                                          |                                                      | run_ability_select_main/ai_immediate_selection/random_value_reg[2]_0                  |                6 |             34 |
+| ~clk6p25m_BUFG                                          |                                                      | oled_display_instance_L/frame_counter[16]_i_1_n_0                                     |                5 |             34 |
+|  parry/led_clock/CLK                                    |                                                      |                                                                                       |                6 |             38 |
+| ~clk6p25m_BUFG                                          | oled_display_instance_R/delay[0]_i_1_n_0             |                                                                                       |                5 |             40 |
+| ~clk6p25m_BUFG                                          | oled_display_instance_L/delay[0]_i_1__0_n_0          |                                                                                       |                5 |             40 |
+| ~clk6p25m_BUFG                                          |                                                      | oled_display_instance_R/frame_counter[16]_i_1__0_n_0                                  |                6 |             46 |
+|  clk_IBUF_BUFG                                          |                                                      | debounce_btnL/counter[0]_i_1__1_n_0                                                   |                8 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | parry/arrow_clock/clear                                                               |                8 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | debounce_btnC/counter[0]_i_1__2_n_0                                                   |                8 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | debounce_btnR/counter[0]_i_1__0_n_0                                                   |                8 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | clk6p25m_instantiate/clear                                                            |                8 |             64 |
+|  clk_IBUF_BUFG                                          | count_delay[31]_i_2_n_0                              | count_delay[31]_i_1_n_0                                                               |                9 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | run_ability_select_main/countdown/clk_1hz/clear                                       |                8 |             64 |
+|  clk6p25                                                | animation_instantiate/oled_charac_arm_2              |                                                                                       |               12 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | top_screen_render/clk6p25m_instantiate/clear                                          |                8 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | debounce_btnU/counter[0]_i_1__4_n_0                                                   |                8 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | run_ability_select_main/select_screen_render/clk6p25m_instantiate/clear               |                8 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | run_ability_select_main/select_screen_render/player_select/clk6p25m_instantiate/clear |                8 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | run_ability_select_main/countdown/clk_200hz/count[0]_i_1__1_n_0                       |                8 |             64 |
+| ~clk6p25m_BUFG                                          | oled_display_instance_L/state                        |                                                                                       |               10 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | animation_instantiate/clk6p25m/count[0]_i_1__5_n_0                                    |                8 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | debounce_btnD/counter[0]_i_1__3_n_0                                                   |                8 |             64 |
+| ~clk6p25m_BUFG                                          | oled_display_instance_R/state                        |                                                                                       |               11 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | parry/led_clock/count[0]_i_1__8_n_0                                                   |                8 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | animation_instantiate/run_fourfps/clear                                               |                8 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | animation_instantiate/run_clk25fps/count[0]_i_1__3_n_0                                |                8 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | animation_instantiate/run_clk35fps/count[0]_i_1__6_n_0                                |                8 |             64 |
+|  clk_IBUF_BUFG                                          |                                                      | animation_instantiate/run_clk30fps/count[0]_i_1__4_n_0                                |                8 |             64 |
+| ~clk6p25m_BUFG                                          |                                                      | oled_display_instance_L/spi_word[39]_i_1__0_n_0                                       |               17 |             90 |
+| ~clk6p25m_BUFG                                          |                                                      | oled_display_instance_R/spi_word[39]_i_1_n_0                                          |               16 |             90 |
+|  select_screen_render/player_select/clk6p25m            |                                                      |                                                                                       |               26 |            118 |
+|  select_screen_render/clk6p25m                          |                                                      |                                                                                       |               40 |            172 |
+|  clk6p25m_0                                             |                                                      |                                                                                       |               67 |            236 |
+|  clk_IBUF_BUFG                                          |                                                      |                                                                                       |               72 |            246 |
+|  clk6p25                                                |                                                      |                                                                                       |              131 |            566 |
++---------------------------------------------------------+------------------------------------------------------+---------------------------------------------------------------------------------------+------------------+----------------+
 
 

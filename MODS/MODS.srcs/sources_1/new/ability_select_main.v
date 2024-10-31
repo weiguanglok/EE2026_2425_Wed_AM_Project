@@ -103,36 +103,31 @@ module abil_sel_ai(
             random_value <= 16'b1001_0101_0010_1011; // Initialize random value
         end
     end
-    wire turned_on_synced;
-    button_sync run_button_sync_1(
-        .clk(clk),             
-        .button_in(turned_on),       // Debounced button input
-        .button_sync(turned_on_synced));
     always @(posedge clk) begin
- 
-        if (turned_on_synced && ai_turn && ~success) begin
-            // Compare the 16 bits of the random number to the max value
-            if (random_value < 16'd21845) begin
-                success <= (P1_SEL==2'b11)?2'b10:2'b11; // top third
-                selected <= 1'b1;
-            end 
-            else if (random_value < 16'd43690) begin
-                success <= (P1_SEL==2'b10)?2'b01:2'b10; // mid third
-                selected <= 1'b1;
-            end 
-            else begin
-                success <= (P1_SEL==2'b01)?2'b11:2'b01; // bot third
-                selected <= 1'b1;
-            end
+    if (success ==2'b00 && turned_on && ai_turn) begin
+        if (random_value < 16'd21845) begin
+            success <= (P1_SEL==2'b11)?2'b10:2'b11; // top third
+            selected <= 1'b1;
         end 
-        else if (~ai_turn || ~turned_on_synced) begin
-            success <= 2'b00; // Reset success when either ai_turn or turned_on is off
-            selected <= 1'b0;
+        else if (random_value < 16'd43690) begin
+            success <= (P1_SEL==2'b10)?2'b01:2'b10; // mid third
+            selected <= 1'b1;
+        end 
+        else begin
+            success <= (P1_SEL==2'b01)?2'b11:2'b01; // bot third
+            selected <= 1'b1;
         end
+    end 
+    else if (~ai_turn || ~turned_on) begin
+        success <= 2'b00; // Reset success when either ai_turn or turned_on is off
+        selected <= 1'b0;
     end
-
-
+    else begin
+        success <= success;
+    end
+end
 endmodule
+
 
 module countdown_timer_flexi(
     input clk,

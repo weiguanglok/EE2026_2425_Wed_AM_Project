@@ -1,5 +1,7 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../MODS.srcs/sources_1/new/ability_select_main.v" \
+"../../../../MODS.srcs/sources_1/new/front_end.v" \
 "../../../../MODS.srcs/sources_1/new/sub_modules.v" \
 "../../../../MODS.srcs/sim_1/new/top_sim.v" \
 

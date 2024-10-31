@@ -1990,63 +1990,147 @@ module ability_select_screen(
     rps_confirmation_screen player_select(.clk(clk),.bot_has_chosen(ai_turn),.selection(state),.pixel_index(pixel_index),.oled_colour(oled_colour_confirmation));    
     
     initial begin
-        state <= ROCK;
-        ICON_X_COOR <= ROCK_X_COOR;
-    end
-
-    always @ (posedge btnL or posedge btnR)begin
-        if (turned_on && ~timer_up)begin
-            if (btnL)begin
-                case(state)
-                    ROCK: begin 
+            state <= ROCK;
+            ICON_X_COOR <= ROCK_X_COOR;
+        end
+    
+//    always @ (posedge btnL or posedge btnR)begin
+//        if (turned_on && ~timer_up)begin
+//            if (btnL)begin
+//                case(state)
+//                    ROCK: begin 
+//                        state <= SCISSORS;
+//                        ICON_X_COOR <= SCISSORS_X_COOR;
+//                        led = 4'b0001;
+//                    end
+//                    PAPER: begin
+//                        state <= ROCK;
+//                        ICON_X_COOR <= ROCK_X_COOR;
+//                        led = 4'b0100;
+//                    end
+//                    SCISSORS: begin
+//                        state <= PAPER;
+//                        ICON_X_COOR <= PAPER_X_COOR;
+//                        led = 4'b0010;
+//                    end
+//                endcase
+//            end
+//            else if (btnR)begin
+//                case(state)
+//                    ROCK: begin 
+//                    state <= PAPER;
+//                    ICON_X_COOR <= PAPER_X_COOR;
+//                    led = 4'b0010;
+//                end
+//                PAPER: begin
+//                    state <= SCISSORS;
+//                    ICON_X_COOR <= SCISSORS_X_COOR;
+//                    led = 4'b0001;
+//                end
+//                SCISSORS: begin
+//                    state <= ROCK;
+//                    ICON_X_COOR <= ROCK_X_COOR;
+//                    led = 4'b0100;
+//                end
+//                endcase
+//            end
+            
+//        end
+////        else begin //changed
+////            state <= ROCK;
+////            ICON_X_COOR <= ROCK_X_COOR;
+////        end
+//    end
+    
+    always @(posedge clk6p25m) begin
+        if (turned_on) begin
+            case (state)
+                ROCK: begin
+                    ICON_X_COOR <= ROCK_X_COOR;
+//                    led = 4'b0001;
+                    if (ai_turn) begin
+                        state <= state;
+                    end
+                    else if (btnC | timer_up) begin
                         state <= SCISSORS;
-                        ICON_X_COOR <= SCISSORS_X_COOR;
-                        led = 4'b0001;
+                        done <= SCISSORS;
+                        ai_turn <= 1'b1;
                     end
-                    PAPER: begin
-                        state <= ROCK;
-                        ICON_X_COOR <= ROCK_X_COOR;
-                        led = 4'b0100;
-                    end
-                    SCISSORS: begin
+                    else if (btnR) begin
                         state <= PAPER;
-                        ICON_X_COOR <= PAPER_X_COOR;
-                        led = 4'b0010;
                     end
-                endcase
-            end
-            else if (btnR)begin
-                case(state)
-                    ROCK: begin 
-                    state <= PAPER;
-                    ICON_X_COOR <= PAPER_X_COOR;
-                    led = 4'b0010;
+                    else if (btnL) begin
+                        state <= SCISSORS;
+                    end
+                    else begin
+                        state <= ROCK;
+                    end
                 end
                 PAPER: begin
-                    state <= SCISSORS;
-                    ICON_X_COOR <= SCISSORS_X_COOR;
-                    led = 4'b0001;
+                    ICON_X_COOR <= PAPER_X_COOR;
+//                    led = 4'b0010;
+                    if (ai_turn) begin
+                        state <= state;
+                    end
+                    else if (btnC | timer_up) begin
+                        state <= PAPER;
+                        done <= PAPER;
+                        ai_turn <= 1'b1;
+                    end
+                    else if (btnR) begin
+                        state <= SCISSORS;
+                    end
+                    else if (btnL) begin
+                        state <= ROCK;
+                    end
+                    else begin
+                        state <= PAPER;
+                    end
                 end
                 SCISSORS: begin
-                    state <= ROCK;
-                    ICON_X_COOR <= ROCK_X_COOR;
-                    led = 4'b0100;
+                    ICON_X_COOR <= SCISSORS_X_COOR;
+//                    led = 4'b0100;
+                    if (ai_turn) begin
+                        state <= state;
+                    end
+                    else if (btnC | timer_up) begin
+                        state <= SCISSORS;
+                        done <= SCISSORS;
+                        ai_turn <= 1'b1;
+                    end
+                    else if (btnR) begin
+                        state <= ROCK;
+                    end
+                    else if (btnL) begin
+                        state <= PAPER;
+                    end
+                    else begin
+                        state <= SCISSORS;
+                    end
                 end
-                endcase
-            end
-            
+            endcase
+        end
+        else begin
+            state <= ROCK;
+//            led = 4'b0000;
+            done <= 2'b00;
+            ai_turn <= 1'b0;
         end
     end
     
-    always @ (posedge clk) begin
-            if (btnC || timer_up) begin
-                done <= state;
-                ai_turn <= 1'b1;
-            end
-        end
+//    always @ (posedge clk) begin
+//            if ((btnC || timer_up) && turned_on) begin //added extra condition
+//                done <= state;
+//                ai_turn <= 1'b1;
+//            end
+//            else if (~turned_on) begin //changed
+//                done <= 1'b0;
+//                ai_turn <= 1'b0;
+//            end
+//        end
     
-    always @ (*)begin
-        if (btnC || timer_up) begin
+    always @ (posedge clk)begin //changed clk
+        if (btnC || timer_up) begin 
             oled_colour = oled_colour_confirmation;
         end
         else begin

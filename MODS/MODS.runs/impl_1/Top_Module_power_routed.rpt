@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Wed Oct 30 21:59:42 2024
-| Host             : DESKTOP-VGVE9I8 running 64-bit major release  (build 9200)
+| Date             : Thu Oct 31 17:35:09 2024
+| Host             : ASUS_Zenbook_WG running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Module_power_routed.rpt -pb Top_Module_power_summary_routed.pb -rpx Top_Module_power_routed.rpx
 | Design           : Top_Module
 | Device           : xc7a35tcpg236-1
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.085        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.013        |
+| Dynamic (W)              | 0.014        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -52,16 +52,16 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.005 |        3 |       --- |             --- |
-| Slice Logic             |     0.004 |    24869 |       --- |             --- |
-|   LUT as Logic          |     0.003 |    16667 |     20800 |           80.13 |
-|   Register              |    <0.001 |     1370 |     41600 |            3.29 |
-|   CARRY4                |    <0.001 |      735 |      8150 |            9.02 |
-|   F7/F8 Muxes           |    <0.001 |     4317 |     32600 |           13.24 |
-|   BUFG                  |    <0.001 |        7 |        32 |           21.88 |
-|   Others                |     0.000 |      134 |       --- |             --- |
-|   LUT as Shift Register |     0.000 |        4 |      9600 |            0.04 |
-| Signals                 |     0.003 |    13322 |       --- |             --- |
+| Clocks                  |     0.007 |        3 |       --- |             --- |
+| Slice Logic             |     0.002 |    30995 |       --- |             --- |
+|   LUT as Logic          |     0.002 |    20665 |     20800 |           99.35 |
+|   CARRY4                |    <0.001 |     1010 |      8150 |           12.39 |
+|   Register              |    <0.001 |     1762 |     41600 |            4.24 |
+|   LUT as Shift Register |    <0.001 |        5 |      9600 |            0.05 |
+|   Others                |     0.000 |      154 |       --- |             --- |
+|   F7/F8 Muxes           |     0.000 |     5358 |     32600 |           16.44 |
+|   BUFG                  |     0.000 |        5 |        32 |           15.63 |
+| Signals                 |     0.003 |    16376 |       --- |             --- |
 | I/O                     |     0.002 |       34 |       106 |           32.08 |
 | Static Power            |     0.072 |          |           |                 |
 | Total                   |     0.085 |          |           |                 |
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.021 |       0.012 |      0.010 |
+| Vccint    |       1.000 |     0.022 |       0.012 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -140,75 +140,86 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------------------------------+-----------+
-| Name                                  | Power (W) |
-+---------------------------------------+-----------+
-| Top_Module                            |     0.013 |
-|   clk6p25m_instantiate                |    <0.001 |
-|   debounce_btnC                       |    <0.001 |
-|   debounce_btnD                       |    <0.001 |
-|   debounce_btnL                       |    <0.001 |
-|   debounce_btnR                       |    <0.001 |
-|   debounce_btnU                       |    <0.001 |
-|   oled_display_instance_L             |    <0.001 |
-|   oled_display_instance_R             |    <0.001 |
-|   run_top_module_battle               |     0.008 |
-|     animation_instantiate             |     0.005 |
-|       battlescreen1                   |    <0.001 |
-|       battlescreen2                   |    <0.001 |
-|       clk6p25m                        |    <0.001 |
-|       run_biche_arm                   |    <0.001 |
-|       run_biche_arm_attack            |     0.000 |
-|       run_biche_head_n_body           |     0.000 |
-|       run_bob_arm                     |     0.000 |
-|       run_bob_arm_attack              |    <0.001 |
-|       run_bob_head_n_body             |     0.000 |
-|       run_clk25fps                    |    <0.001 |
-|       run_clk30fps                    |    <0.001 |
-|       run_clk35fps                    |    <0.001 |
-|       run_dmg_taken                   |    <0.001 |
-|       run_fourfps                     |    <0.001 |
-|       run_paper_airplane_attack       |    <0.001 |
-|       run_paper_clip_attack           |    <0.001 |
-|       run_paper_tack_attack           |    <0.001 |
-|       run_rock_attack                 |    <0.001 |
-|       run_scissor_close_attack        |     0.000 |
-|       run_scissor_open_attack         |    <0.001 |
-|     run_ability_select_main           |     0.003 |
-|       ai_immediate_selection          |    <0.001 |
-|         run_button_sync_1             |    <0.001 |
-|       countdown                       |     0.001 |
-|         clk_1hz                       |    <0.001 |
-|         clk_200hz                     |    <0.001 |
-|       nolabel_line75                  |    <0.001 |
-|       select_screen_render            |     0.001 |
-|         background_selection_render   |     0.000 |
-|         clk6p25m_instantiate          |    <0.001 |
-|         icon_paper_render             |     0.000 |
-|         icon_rock_render              |     0.000 |
-|         icon_scissors_render          |    <0.001 |
-|         icon_selector_render          |    <0.001 |
-|         player_select                 |    <0.001 |
-|           background_selection_render |    <0.001 |
-|           clk6p25m_instantiate        |    <0.001 |
-|           icon_paper_render           |     0.000 |
-|           icon_rock_render            |     0.000 |
-|           icon_scissors_render        |     0.000 |
-|   top_screen_render                   |    <0.001 |
-|     clk6p25m_instantiate              |    <0.001 |
-|     guidepage                         |    <0.001 |
-|       guide_page_one_render           |    <0.001 |
-|       guide_page_two_render           |     0.000 |
-|       mainscreen                      |     0.000 |
-|       run_button_sync_L               |     0.000 |
-|       run_button_sync_R               |     0.000 |
-|     mainscreen                        |     0.000 |
-|       mainscreen                      |     0.000 |
-|       run_button_sync_D               |     0.000 |
-|       run_button_sync_U               |     0.000 |
-|       selector_arrow_render           |     0.000 |
-|       selector_render                 |     0.000 |
-|       title                           |     0.000 |
-+---------------------------------------+-----------+
++-------------------------------------+-----------+
+| Name                                | Power (W) |
++-------------------------------------+-----------+
+| Top_Module                          |     0.014 |
+|   animation_instantiate             |     0.003 |
+|     battlescreen1                   |     0.000 |
+|     battlescreen2                   |     0.000 |
+|     clk6p25m                        |    <0.001 |
+|     icon_paper_render               |     0.000 |
+|     icon_rock_render                |     0.000 |
+|     icon_scissors_render            |    <0.001 |
+|     run_biche_arm                   |    <0.001 |
+|     run_biche_arm_attack            |     0.000 |
+|     run_biche_head_n_body           |     0.000 |
+|     run_bob_arm                     |    <0.001 |
+|     run_bob_arm_attack              |    <0.001 |
+|     run_bob_head_n_body             |     0.000 |
+|     run_clk25fps                    |    <0.001 |
+|     run_clk30fps                    |    <0.001 |
+|     run_clk35fps                    |    <0.001 |
+|     run_dmg_taken                   |    <0.001 |
+|     run_fourfps                     |    <0.001 |
+|     run_paper_airplane_attack       |     0.000 |
+|     run_paper_clip_attack           |     0.000 |
+|     run_paper_tack_attack           |     0.000 |
+|     run_parry_shield                |     0.000 |
+|     run_rock_attack                 |     0.000 |
+|     run_scissor_close_attack        |    <0.001 |
+|     run_scissor_open_attack         |     0.000 |
+|   button_Up                         |    <0.001 |
+|   clk6p25m_instantiate              |    <0.001 |
+|   debounce_btnC                     |    <0.001 |
+|   debounce_btnD                     |    <0.001 |
+|   debounce_btnL                     |    <0.001 |
+|   debounce_btnR                     |    <0.001 |
+|   debounce_btnU                     |    <0.001 |
+|   oled_display_instance_L           |    <0.001 |
+|   oled_display_instance_R           |    <0.001 |
+|   parry                             |     0.002 |
+|     arrow_clock                     |    <0.001 |
+|     led_clock                       |    <0.001 |
+|     mainscreen_background           |    <0.001 |
+|     miss_colour_inst                |    <0.001 |
+|     parry_background_inst           |    <0.001 |
+|     parry_colour_inst               |    <0.001 |
+|     run_delay_counter               |    <0.001 |
+|   run_ability_select_main           |     0.003 |
+|     ability_resolution              |    <0.001 |
+|     ai_immediate_selection          |    <0.001 |
+|     countdown                       |     0.001 |
+|       clk_1hz                       |    <0.001 |
+|       clk_200hz                     |    <0.001 |
+|     select_screen_render            |     0.001 |
+|       background_selection_render   |     0.000 |
+|       clk6p25m_instantiate          |    <0.001 |
+|       icon_paper_render             |     0.000 |
+|       icon_rock_render              |     0.000 |
+|       icon_scissors_render          |    <0.001 |
+|       icon_selector_render          |    <0.001 |
+|       player_select                 |    <0.001 |
+|         background_selection_render |     0.000 |
+|         clk6p25m_instantiate        |    <0.001 |
+|         icon_paper_render           |    <0.001 |
+|         icon_rock_render            |     0.000 |
+|         icon_scissors_render        |     0.000 |
+|   top_screen_render                 |    <0.001 |
+|     clk6p25m_instantiate            |    <0.001 |
+|     guidepage                       |    <0.001 |
+|       guide_page_one_render         |    <0.001 |
+|       guide_page_two_render         |     0.000 |
+|       mainscreen                    |     0.000 |
+|       run_button_sync_L             |    <0.001 |
+|       run_button_sync_R             |    <0.001 |
+|     mainscreen                      |    <0.001 |
+|       mainscreen                    |     0.000 |
+|       run_button_sync_D             |    <0.001 |
+|       run_button_sync_U             |    <0.001 |
+|       selector_arrow_render         |     0.000 |
+|       selector_render               |     0.000 |
+|       title                         |     0.000 |
++-------------------------------------+-----------+
 
 
