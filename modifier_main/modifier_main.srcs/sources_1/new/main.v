@@ -37,10 +37,9 @@ module main(
     wire [0:6] seg_start, seg_modif;
     wire [3:0] an_start, an_modif;
     
-    wire [1:0] modifier_sel;
-    
     // to be converted as output
-    wire double_damage,half_damage,double_speed,half_speed;
+    wire [1:0] modifier_sel;
+    wire double_damage,half_damage;
     wire [0:6] seg_double_speed,seg_half_speed,seg_no_change;
     wire [3:0] an_double_speed,an_half_speed,an_no_change;
     
@@ -61,7 +60,7 @@ module main(
     comp_sel ai_sel (.clk(clk),.turned_on(turned_on),.success(AI_SEL));
     debounce debounce_ai (.clk(clk),.button_in(AI_SEL),.button_out(AI_STABLE));
     
-    modifier_effects effects(.clk(clk),.modifier_sel(modifier_sel),.double_damage(double_damage),.half_damage(half_damage),.double_speed(double_speed),.half_speed(half_speed));
+    modifier_effects effects(.clk(clk),.modifier_sel(modifier_sel),.double_damage(double_damage),.half_damage(half_damage));
     //to test
     double_speed_disp double (.clk(clk),.turned_on(turned_on),.seg(seg_double_speed),.an(an_double_speed));
     half_speed_disp half (.clk(clk),.turned_on(turned_on),.seg(seg_half_speed),.an(an_half_speed));
