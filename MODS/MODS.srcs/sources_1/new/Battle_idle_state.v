@@ -112,8 +112,6 @@ module battle_animation(input clk,
                     scissor_x <=17;
                 end
             endcase
-            if (winner && (state >=STATE_RESOLVE_W)) atk <= {1'b1,P1_SEL};
-            else if (~winner && (state >=STATE_RESOLVE_P)) atk <= {1'b0,P2_SEL}; // logic for attack animation
         end
         // rock attack 
         wire [15:0] oled_rock_attack;
@@ -127,6 +125,8 @@ module battle_animation(input clk,
                 rock_x <=rock_x-1;
                 rotation_state <= (rotation_state==2'b11)? 0:rotation_state+1;
             end
+            if (winner && (state >=STATE_RESOLVE_W)) atk <= {1'b1,P1_SEL};
+            else if (~winner && (state >=STATE_RESOLVE_P)) atk <= {1'b0,P2_SEL}; // logic for attack animation
         end
         ///paper attack
         wire [15:0] oled_paper_clip_attack;

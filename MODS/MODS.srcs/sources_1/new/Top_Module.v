@@ -28,7 +28,7 @@ module Top_Module(
     output reg [0:6]seg = 7'b1111111,
     output reg [3:0]an = 4'b1111,
     output reg dp = 1'b1,          // OLED display interfacedefinerLED later
-    output reg [15:0] led = 16'b0000_0001_1000_0000
+    output [15:0] led
     );
     
     
@@ -77,8 +77,6 @@ module Top_Module(
     wire [0:7] seg_abil,seg_end,seg_parry;
     wire [3:0] an_abil,an_end,an_parry;
     
-    //led
-    wire [15:0] led_res;
     
     // Debounce all buttons
     wire btnR_stable, btnL_stable, btnC_stable, btnU_stable, btnD_stable;
@@ -110,18 +108,17 @@ module Top_Module(
                 state <= (is_start)? STATE_IDLE:STATE_START;
                 seg <= 7'b1111111;
                 an <= 4'b1111;
-                led <= 16'b0000_0001_1000_0000;
             end
             STATE_IDLE: begin 
                 state <= (btnU_synced)? STATE_SELECT:STATE_IDLE;
                 oled_colour_L <= oled_colour_ai;
                 oled_colour_R <= oled_colour_player;
-                led <= led_res;
             end
             STATE_SELECT: begin 
+                count_delay <= ((count_delay>=200_000_000)&& bot_selected)? 0 : count_delay+1; //added
                 oled_colour_L <= oled_colour_ai;
                 oled_colour_R <=oled_colour_ability_select;
-                state  <= (bot_selected)?STATE_WHO_WIN : STATE_SELECT;
+                state  <= (bot_selected && (count_delay==200_000_000))?STATE_WHO_WIN : STATE_SELECT; //modified
                 seg <= seg_abil;
                 an <= an_abil;
             end 
@@ -169,9 +166,15 @@ module Top_Module(
                 an <= 4'b1111;
             end // if else statement needed
            STATE_DMG_MODIFIER_n_RESOLUTE: begin //add on later on 
+//                count_delay <= (count_delay>=300_000_000)? 0 : count_delay+1;
                oled_colour_L <= oled_colour_ai;
                oled_colour_R <= oled_colour_player;
-               state  <= (endgame)?STATE_END:STATE_IDLE;
+               if ((led[0])||(led[15])) begin //changed
+                state <= STATE_END;
+               end
+               else begin
+                state  <= STATE_IDLE; //changed
+               end
            end
            STATE_END: begin
                 oled_colour_L <= 16'd0;
@@ -261,11 +264,11 @@ module Top_Module(
         .pmoden(JX[7])
     );
 
-    led_resolute(.turned_on(state>=STATE_DMG_MODIFIER_n_RESOLUTE),
+    led_resolute(.state(state),
    .clk(clk),
     .winner(winner),
     .parry_result(parry_result),
-    .led(led_res),
+    .led(led),
     .endgame(endgame)
     );
     

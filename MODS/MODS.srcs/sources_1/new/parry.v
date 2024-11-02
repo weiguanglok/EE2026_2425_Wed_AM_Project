@@ -39,7 +39,7 @@ module ddr_parry(
     reg [2:0] active_arrow; 
     reg [3:0] parry_count = 0;
     reg [3:0] arrow_count = 0;
-    reg miss = 1; 
+    reg [1:0] miss = 2'b10; 
     reg checked = 0;
     reg [31:0] time_count = 0;
     wire three_secs;
@@ -63,7 +63,7 @@ module ddr_parry(
     // Colors
     parameter ARROW_COLOR = 16'b1111100000000000; // RED
     
-    parameter TIME_BUTTON = 32'd249_999;
+    parameter TIME_BUTTON = 32'd499_999;
       
     parameter DIGIT1 = 7'b1001111, DIGIT2 = 7'b0010010, DIGIT3 = 7'b0000110;
     parameter DIGIT4 = 7'b1001100, DIGIT5 = 7'b0100100, DIGIT6 = 7'b0100000;
@@ -86,14 +86,14 @@ module ddr_parry(
 
     // Background instantiations
     battlescreen_background mainscreen_background(
-        .clk(basys_clock),
+        .clk(clk_led),
         .flip(0),
         .pixel_index(pixel_index),
         .oled_colour(main_bg)
     );
     
     parry_background parry_background_inst (
-        .clk(basys_clock),
+        .clk(clk_led),
         .pixel_index(pixel_index),
         .sprite_x(7'd12), 
         .sprite_y(7'd3),
@@ -102,7 +102,7 @@ module ddr_parry(
         .background_pixel(main_bg));
         
     parry_colour parry_colour_inst (
-        .clk(basys_clock),
+        .clk(clk_led),
         .pixel_index(pixel_index),
         .sprite_x(7'd22), 
         .sprite_y(7'd5),
@@ -111,7 +111,7 @@ module ddr_parry(
         .background_pixel(parry_bg));
         
     miss_colour miss_colour_inst (
-        .clk(basys_clock),
+        .clk(clk_led),
         .pixel_index(pixel_index),
         .sprite_x(7'd27), 
         .sprite_y(7'd5),
@@ -152,7 +152,7 @@ module ddr_parry(
     always @(posedge clk_led) begin
         led_colour <= parry_bg; // default parry screen background color
         if (reset) begin
-            miss <= 1;
+            miss <= 2'b10;
             checked <= 0;
             parry_status <= 2'b0;
             parry_count <= 4'b0;   
@@ -167,9 +167,10 @@ module ddr_parry(
         end
         
         if (arrow_y == 11) begin
-            miss <= 1;
+            miss <= 2'b10;
             checked <= 0;
             time_count <= 0;
+            led_colour <= parry_bg;
         
         end
 
@@ -179,17 +180,24 @@ module ddr_parry(
              time_count <= TIME_BUTTON) begin
             time_count<= time_count +1;
             
-            if((arrow_y >= PARRY_ZONE_Y && arrow_y <= PARRY_ZONE_Y + 10 || miss == 0)) begin
-                led_colour <= parry_colour;
-                miss <= 0;
+            if(arrow_y >= PARRY_ZONE_Y && arrow_y <= PARRY_ZONE_Y + 12) begin
+                miss <= 2'b00;
+            end
+            else if (arrow_y == 11) begin
+                miss<= 2'b10;           
             end
             else begin
-                led_colour <= miss_colour;
-                miss <= 1;
+                miss <= 2'b01;
             end
         end 
-        else if (arrow_y < PARRY_ZONE_Y && arrow_y > 11 && miss == 1) begin
-            led_colour <= miss_colour;
+        else if (miss == 2'b00) begin
+            led_colour <= parry_colour; //parried
+        end
+        else if (miss == 2'b01) begin
+            led_colour <= miss_colour; //miss
+        end
+        else if (arrow_y < PARRY_ZONE_Y && arrow_y > 11 && miss == 2'b10) begin
+            led_colour <= miss_colour; //didnt press button
         end 
         else
             led_colour <= parry_bg;
