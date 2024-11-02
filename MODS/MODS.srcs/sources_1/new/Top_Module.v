@@ -27,7 +27,8 @@ module Top_Module(
     output [7:0] JX,
     output [0:6]seg,
     output [3:0]an,
-    output dp          // OLED display interfacedefinerLED later
+    output dp,          // OLED display interfacedefinerLED later
+    output [15:0] led
     );
     
     
@@ -230,6 +231,6 @@ module Top_Module(
         .pmoden(JX[7])
     );
 
-    
+    led_resolute(.turned_on(state>=STATE_DMG_MODIFIER_n_RESOLUTE),.clk(clk),.winner(winner),.led(led));
     
 endmodule

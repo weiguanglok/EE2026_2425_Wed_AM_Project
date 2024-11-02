@@ -1523,9 +1523,7 @@ module battlescreen_background(input clk,
             .addra(rom_address),
             .clka(clk),
             .douta(oled_colour),
-            .ena(1),
-            .wea(1),
-            .dina(0));
+            .ena(1));
 endmodule
 
 

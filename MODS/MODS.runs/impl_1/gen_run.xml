@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730516161">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730517891">
   <File Type="BITSTR-BMM" Name="Top_Module_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="Top_Module_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="Top_Module_timing_summary_init.rpt"/>
@@ -125,6 +125,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/guide_page_render.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/led_resolute.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
