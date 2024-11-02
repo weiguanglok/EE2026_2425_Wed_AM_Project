@@ -1,0 +1,1631 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Nov  2 11:05:13 2024
+# Process ID: 45780
+# Current directory: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33916 C:\Users\stamp\Documents\NUS\Y2S1\EE2026\Project\MODS\MODS.xpr
+# Log file: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/vivado.log
+# Journal file: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/stamp/Downloads/MODS' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+close [ open C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/led_resolute.v w ]
+add_files C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/led_resolute.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 11:13:19 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 11:13:19 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+close_hw
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Port_A_Write_Rate {0}] [get_ips battleground_background]
+generate_target all [get_files  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'battleground_background'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'battleground_background'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'battleground_background'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'battleground_background'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'battleground_background'...
+catch { config_ip_cache -export [get_ips -all battleground_background] }
+export_ip_user_files -of_objects [get_files C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background.xci] -no_script -sync -force -quiet
+reset_run battleground_background_synth_1
+launch_runs -jobs 10 battleground_background_synth_1
+[Sat Nov  2 11:24:18 2024] Launched battleground_background_synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/battleground_background_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background.xci] -directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.ip_user_files -ipstatic_source_dir C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/compile_simlib/modelsim} {questa=C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/compile_simlib/questa} {riviera=C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/compile_simlib/riviera} {activehdl=C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 11:24:51 2024] Launched battleground_background_synth_1, synth_1...
+Run output will be captured here:
+battleground_background_synth_1: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/battleground_background_synth_1/runme.log
+synth_1: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 11:24:51 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+open_project C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/victory_screen/victory_screen.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+current_project MODS
+close [ open C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/end_screen.v w ]
+add_files C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/end_screen.v
+update_compile_order -fileset sources_1
+current_project victory_screen
+current_project MODS
+current_project victory_screen
+current_project MODS
+current_project victory_screen
+current_project MODS
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 11:53:12 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 11:53:13 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 12:02:28 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 12:02:28 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 12:09:57 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 12:09:57 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 12:16:36 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 12:16:36 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 13:10:51 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 13:10:51 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 13:17:54 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 13:17:54 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183BB4247A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background.coe' provided. It will be converted relative to IP Instance files '../../../../MODS.srcs/sources_1/ip/homescreen_background.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background.coe' provided. It will be converted relative to IP Instance files '../../../../MODS.srcs/sources_1/ip/homescreen_background.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background.coe' provided. It will be converted relative to IP Instance files '../../../../MODS.srcs/sources_1/ip/homescreen_background.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name homescreen_background -dir c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {homescreen_background} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Depth_A {6144} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips homescreen_background]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'homescreen_background' to 'homescreen_background' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background.coe' provided. It will be converted relative to IP Instance files '../homescreen_background.coe'
+generate_target {instantiation_template} [get_files c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background/homescreen_background.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'homescreen_background'...
+generate_target all [get_files  c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background/homescreen_background.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'homescreen_background'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'homescreen_background'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'homescreen_background'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'homescreen_background'...
+catch { config_ip_cache -export [get_ips -all homescreen_background] }
+export_ip_user_files -of_objects [get_files c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background/homescreen_background.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background/homescreen_background.xci]
+launch_runs -jobs 10 homescreen_background_synth_1
+[Sat Nov  2 14:25:05 2024] Launched homescreen_background_synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/homescreen_background_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background/homescreen_background.xci] -directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.ip_user_files -ipstatic_source_dir C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/compile_simlib/modelsim} {questa=C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/compile_simlib/questa} {riviera=C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/compile_simlib/riviera} {activehdl=C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+convert_ips [get_files  c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background/homescreen_background.xci]
+INFO: [filemgmt 56-106] Converting IP 'homescreen_background' into core container format.
+INFO: [filemgmt 56-101] Creating core container 'c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background.xcix' for IP 'homescreen_background'
+convert_ips: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2028.699 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files  c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background/homescreen_background.xci] -sync -lib_map_path [list {modelsim=C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/compile_simlib/modelsim} {questa=C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/compile_simlib/questa} {riviera=C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/compile_simlib/riviera} {activehdl=C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/compile_simlib/activehdl}] -force -quiet
+set_property coreContainer.enable 1 [current_project]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 14:29:20 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 14:29:20 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 14:30:56 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 14:30:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 2031.160 ; gain = 0.000
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 14:42:11 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 14:42:11 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/battleground_background.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/battleground_background.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/homescreen_background.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/homescreen_background.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/weights.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/00.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background/homescreen_background.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ability_select_main
+INFO: [VRFC 10-311] analyzing module abil_sel_ai
+INFO: [VRFC 10-311] analyzing module countdown_timer_flexi
+INFO: [VRFC 10-311] analyzing module ability_resolution
+INFO: [VRFC 10-311] analyzing module timer_master
+INFO: [VRFC 10-311] analyzing module ability_select_screen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mainscreen_background
+INFO: [VRFC 10-311] analyzing module homepage_title
+INFO: [VRFC 10-311] analyzing module guide_page_one
+INFO: [VRFC 10-311] analyzing module guide_page_two
+INFO: [VRFC 10-311] analyzing module main_screen_selector
+INFO: [VRFC 10-311] analyzing module main_screen_selector_arrow
+INFO: [VRFC 10-311] analyzing module blue_screen
+INFO: [VRFC 10-311] analyzing module biche_arm
+INFO: [VRFC 10-311] analyzing module biche_head_n_body
+INFO: [VRFC 10-311] analyzing module biche_arm_attack
+INFO: [VRFC 10-311] analyzing module bob_head_n_body
+INFO: [VRFC 10-311] analyzing module bob_arm
+INFO: [VRFC 10-311] analyzing module bob_arm_attack
+INFO: [VRFC 10-311] analyzing module rock_attack
+INFO: [VRFC 10-311] analyzing module paper_airplane_attack
+INFO: [VRFC 10-311] analyzing module paper_clip_attack
+INFO: [VRFC 10-311] analyzing module paper_tack_attack
+INFO: [VRFC 10-311] analyzing module scissor_close_attack
+INFO: [VRFC 10-311] analyzing module scissor_open_attack
+INFO: [VRFC 10-311] analyzing module parry_shield
+INFO: [VRFC 10-311] analyzing module pause_menu
+INFO: [VRFC 10-311] analyzing module dmg_taken
+INFO: [VRFC 10-311] analyzing module battlescreen_background
+INFO: [VRFC 10-311] analyzing module skillscreen_icon_rock
+INFO: [VRFC 10-311] analyzing module skillscreen_icon_paper
+INFO: [VRFC 10-311] analyzing module skillscreen_icon_scissors
+INFO: [VRFC 10-311] analyzing module skillscreen_selector
+INFO: [VRFC 10-311] analyzing module skillscreen_confirmation_background
+INFO: [VRFC 10-311] analyzing module skillscreen_selection_background
+INFO: [VRFC 10-311] analyzing module rps_confirmation_screen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/sub_modules.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flexi_clk
+INFO: [VRFC 10-311] analyzing module ind_to_coor
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-311] analyzing module button_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sim_1/new/top_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4c3086506e88427ca6f65a71a9035e44 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_sim_behav xil_defaultlib.top_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port turned_on [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sim_1/new/top_sim.v:41]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:391]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:392]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:393]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 6 for port sprite_y [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:394]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1913]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1914]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1915]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.blue_screen
+Compiling module xil_defaultlib.flexi_clk
+Compiling module xil_defaultlib.skillscreen_selection_background
+Compiling module xil_defaultlib.skillscreen_icon_rock
+Compiling module xil_defaultlib.skillscreen_icon_paper
+Compiling module xil_defaultlib.skillscreen_icon_scissors
+Compiling module xil_defaultlib.skillscreen_selector
+Compiling module xil_defaultlib.skillscreen_confirmation_backgro...
+Compiling module xil_defaultlib.rps_confirmation_screen
+Compiling module xil_defaultlib.ability_select_screen
+Compiling module xil_defaultlib.abil_sel_ai
+Compiling module xil_defaultlib.countdown_timer_flexi
+Compiling module xil_defaultlib.ability_resolution
+Compiling module xil_defaultlib.ability_select_main
+Compiling module xil_defaultlib.top_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_sim_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/xsim.dir/top_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Nov  2 14:58:44 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2031.160 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 2041.637 ; gain = 10.477
+run 700 ns
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 15:01:17 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 15:01:17 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 15:08:02 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 15:08:02 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/battleground_background.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/battleground_background.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/homescreen_background.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/homescreen_background.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/weights.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/00.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background/homescreen_background.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ability_select_main
+INFO: [VRFC 10-311] analyzing module abil_sel_ai
+INFO: [VRFC 10-311] analyzing module countdown_timer_flexi
+INFO: [VRFC 10-311] analyzing module ability_resolution
+INFO: [VRFC 10-311] analyzing module timer_master
+INFO: [VRFC 10-311] analyzing module ability_select_screen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mainscreen_background
+INFO: [VRFC 10-311] analyzing module homepage_title
+INFO: [VRFC 10-311] analyzing module guide_page_one
+INFO: [VRFC 10-311] analyzing module guide_page_two
+INFO: [VRFC 10-311] analyzing module main_screen_selector
+INFO: [VRFC 10-311] analyzing module main_screen_selector_arrow
+INFO: [VRFC 10-311] analyzing module blue_screen
+INFO: [VRFC 10-311] analyzing module biche_arm
+INFO: [VRFC 10-311] analyzing module biche_head_n_body
+INFO: [VRFC 10-311] analyzing module biche_arm_attack
+INFO: [VRFC 10-311] analyzing module bob_head_n_body
+INFO: [VRFC 10-311] analyzing module bob_arm
+INFO: [VRFC 10-311] analyzing module bob_arm_attack
+INFO: [VRFC 10-311] analyzing module rock_attack
+INFO: [VRFC 10-311] analyzing module paper_airplane_attack
+INFO: [VRFC 10-311] analyzing module paper_clip_attack
+INFO: [VRFC 10-311] analyzing module paper_tack_attack
+INFO: [VRFC 10-311] analyzing module scissor_close_attack
+INFO: [VRFC 10-311] analyzing module scissor_open_attack
+INFO: [VRFC 10-311] analyzing module parry_shield
+INFO: [VRFC 10-311] analyzing module pause_menu
+INFO: [VRFC 10-311] analyzing module dmg_taken
+INFO: [VRFC 10-311] analyzing module battlescreen_background
+INFO: [VRFC 10-311] analyzing module skillscreen_icon_rock
+INFO: [VRFC 10-311] analyzing module skillscreen_icon_paper
+INFO: [VRFC 10-311] analyzing module skillscreen_icon_scissors
+INFO: [VRFC 10-311] analyzing module skillscreen_selector
+INFO: [VRFC 10-311] analyzing module skillscreen_confirmation_background
+INFO: [VRFC 10-311] analyzing module skillscreen_selection_background
+INFO: [VRFC 10-311] analyzing module rps_confirmation_screen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/sub_modules.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flexi_clk
+INFO: [VRFC 10-311] analyzing module ind_to_coor
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-311] analyzing module button_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sim_1/new/top_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4c3086506e88427ca6f65a71a9035e44 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_sim_behav xil_defaultlib.top_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port turned_on [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sim_1/new/top_sim.v:41]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:391]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:392]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:393]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 6 for port sprite_y [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:394]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1913]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1914]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1915]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.blue_screen
+Compiling module xil_defaultlib.flexi_clk
+Compiling module xil_defaultlib.skillscreen_selection_background
+Compiling module xil_defaultlib.skillscreen_icon_rock
+Compiling module xil_defaultlib.skillscreen_icon_paper
+Compiling module xil_defaultlib.skillscreen_icon_scissors
+Compiling module xil_defaultlib.skillscreen_selector
+Compiling module xil_defaultlib.skillscreen_confirmation_backgro...
+Compiling module xil_defaultlib.rps_confirmation_screen
+Compiling module xil_defaultlib.ability_select_screen
+Compiling module xil_defaultlib.abil_sel_ai
+Compiling module xil_defaultlib.countdown_timer_flexi
+Compiling module xil_defaultlib.ability_resolution
+Compiling module xil_defaultlib.ability_select_main
+Compiling module xil_defaultlib.top_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2044.586 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/top_sim/dut/select_screen_render}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/top_sim/dut/select_screen_render/ai_turn}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/top_sim/dut/ai_immediate_selection/selected}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 700 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/battleground_background.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/battleground_background.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/homescreen_background.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/homescreen_background.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/weights.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/00.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background/homescreen_background.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ability_select_main
+INFO: [VRFC 10-311] analyzing module abil_sel_ai
+INFO: [VRFC 10-311] analyzing module countdown_timer_flexi
+INFO: [VRFC 10-311] analyzing module ability_resolution
+INFO: [VRFC 10-311] analyzing module timer_master
+INFO: [VRFC 10-311] analyzing module ability_select_screen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mainscreen_background
+INFO: [VRFC 10-311] analyzing module homepage_title
+INFO: [VRFC 10-311] analyzing module guide_page_one
+INFO: [VRFC 10-311] analyzing module guide_page_two
+INFO: [VRFC 10-311] analyzing module main_screen_selector
+INFO: [VRFC 10-311] analyzing module main_screen_selector_arrow
+INFO: [VRFC 10-311] analyzing module blue_screen
+INFO: [VRFC 10-311] analyzing module biche_arm
+INFO: [VRFC 10-311] analyzing module biche_head_n_body
+INFO: [VRFC 10-311] analyzing module biche_arm_attack
+INFO: [VRFC 10-311] analyzing module bob_head_n_body
+INFO: [VRFC 10-311] analyzing module bob_arm
+INFO: [VRFC 10-311] analyzing module bob_arm_attack
+INFO: [VRFC 10-311] analyzing module rock_attack
+INFO: [VRFC 10-311] analyzing module paper_airplane_attack
+INFO: [VRFC 10-311] analyzing module paper_clip_attack
+INFO: [VRFC 10-311] analyzing module paper_tack_attack
+INFO: [VRFC 10-311] analyzing module scissor_close_attack
+INFO: [VRFC 10-311] analyzing module scissor_open_attack
+INFO: [VRFC 10-311] analyzing module parry_shield
+INFO: [VRFC 10-311] analyzing module pause_menu
+INFO: [VRFC 10-311] analyzing module dmg_taken
+INFO: [VRFC 10-311] analyzing module battlescreen_background
+INFO: [VRFC 10-311] analyzing module skillscreen_icon_rock
+INFO: [VRFC 10-311] analyzing module skillscreen_icon_paper
+INFO: [VRFC 10-311] analyzing module skillscreen_icon_scissors
+INFO: [VRFC 10-311] analyzing module skillscreen_selector
+INFO: [VRFC 10-311] analyzing module skillscreen_confirmation_background
+INFO: [VRFC 10-311] analyzing module skillscreen_selection_background
+INFO: [VRFC 10-311] analyzing module rps_confirmation_screen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/sub_modules.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flexi_clk
+INFO: [VRFC 10-311] analyzing module ind_to_coor
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-311] analyzing module button_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sim_1/new/top_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4c3086506e88427ca6f65a71a9035e44 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_sim_behav xil_defaultlib.top_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port turned_on [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sim_1/new/top_sim.v:41]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:391]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:392]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:393]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 6 for port sprite_y [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:394]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1913]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1914]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1915]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.blue_screen
+Compiling module xil_defaultlib.flexi_clk
+Compiling module xil_defaultlib.skillscreen_selection_background
+Compiling module xil_defaultlib.skillscreen_icon_rock
+Compiling module xil_defaultlib.skillscreen_icon_paper
+Compiling module xil_defaultlib.skillscreen_icon_scissors
+Compiling module xil_defaultlib.skillscreen_selector
+Compiling module xil_defaultlib.skillscreen_confirmation_backgro...
+Compiling module xil_defaultlib.rps_confirmation_screen
+Compiling module xil_defaultlib.ability_select_screen
+Compiling module xil_defaultlib.abil_sel_ai
+Compiling module xil_defaultlib.countdown_timer_flexi
+Compiling module xil_defaultlib.ability_resolution
+Compiling module xil_defaultlib.ability_select_main
+Compiling module xil_defaultlib.top_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2047.852 ; gain = 1.695
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/battleground_background.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/battleground_background.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/homescreen_background.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/homescreen_background.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/weights.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim/00.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background/homescreen_background.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ability_select_main
+INFO: [VRFC 10-311] analyzing module abil_sel_ai
+INFO: [VRFC 10-311] analyzing module countdown_timer_flexi
+INFO: [VRFC 10-311] analyzing module ability_resolution
+INFO: [VRFC 10-311] analyzing module timer_master
+INFO: [VRFC 10-311] analyzing module ability_select_screen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mainscreen_background
+INFO: [VRFC 10-311] analyzing module homepage_title
+INFO: [VRFC 10-311] analyzing module guide_page_one
+INFO: [VRFC 10-311] analyzing module guide_page_two
+INFO: [VRFC 10-311] analyzing module main_screen_selector
+INFO: [VRFC 10-311] analyzing module main_screen_selector_arrow
+INFO: [VRFC 10-311] analyzing module blue_screen
+INFO: [VRFC 10-311] analyzing module biche_arm
+INFO: [VRFC 10-311] analyzing module biche_head_n_body
+INFO: [VRFC 10-311] analyzing module biche_arm_attack
+INFO: [VRFC 10-311] analyzing module bob_head_n_body
+INFO: [VRFC 10-311] analyzing module bob_arm
+INFO: [VRFC 10-311] analyzing module bob_arm_attack
+INFO: [VRFC 10-311] analyzing module rock_attack
+INFO: [VRFC 10-311] analyzing module paper_airplane_attack
+INFO: [VRFC 10-311] analyzing module paper_clip_attack
+INFO: [VRFC 10-311] analyzing module paper_tack_attack
+INFO: [VRFC 10-311] analyzing module scissor_close_attack
+INFO: [VRFC 10-311] analyzing module scissor_open_attack
+INFO: [VRFC 10-311] analyzing module parry_shield
+INFO: [VRFC 10-311] analyzing module pause_menu
+INFO: [VRFC 10-311] analyzing module dmg_taken
+INFO: [VRFC 10-311] analyzing module battlescreen_background
+INFO: [VRFC 10-311] analyzing module skillscreen_icon_rock
+INFO: [VRFC 10-311] analyzing module skillscreen_icon_paper
+INFO: [VRFC 10-311] analyzing module skillscreen_icon_scissors
+INFO: [VRFC 10-311] analyzing module skillscreen_selector
+INFO: [VRFC 10-311] analyzing module skillscreen_confirmation_background
+INFO: [VRFC 10-311] analyzing module skillscreen_selection_background
+INFO: [VRFC 10-311] analyzing module rps_confirmation_screen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/sub_modules.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flexi_clk
+INFO: [VRFC 10-311] analyzing module ind_to_coor
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-311] analyzing module button_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sim_1/new/top_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4c3086506e88427ca6f65a71a9035e44 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_sim_behav xil_defaultlib.top_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port turned_on [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sim_1/new/top_sim.v:41]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:391]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:392]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:393]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 6 for port sprite_y [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:394]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1913]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1914]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 7 for port sprite_x [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1915]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.blue_screen
+Compiling module xil_defaultlib.flexi_clk
+Compiling module xil_defaultlib.skillscreen_selection_background
+Compiling module xil_defaultlib.skillscreen_icon_rock
+Compiling module xil_defaultlib.skillscreen_icon_paper
+Compiling module xil_defaultlib.skillscreen_icon_scissors
+Compiling module xil_defaultlib.skillscreen_selector
+Compiling module xil_defaultlib.skillscreen_confirmation_backgro...
+Compiling module xil_defaultlib.rps_confirmation_screen
+Compiling module xil_defaultlib.ability_select_screen
+Compiling module xil_defaultlib.abil_sel_ai
+Compiling module xil_defaultlib.countdown_timer_flexi
+Compiling module xil_defaultlib.ability_resolution
+Compiling module xil_defaultlib.ability_select_main
+Compiling module xil_defaultlib.top_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2051.711 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 15:26:33 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 15:26:33 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183BB4247A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 15:52:10 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 15:52:10 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 16:15:27 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 16:15:27 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 16:17:35 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 16:17:35 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 16:50:34 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 16:50:34 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 16:51:39 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 16:51:39 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 16:52:10 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 16:52:10 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 16:53:53 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 16:53:53 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 16:54:27 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 16:54:27 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 2645 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2135.445 ; gain = 50.758
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 17:02:58 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 17:02:58 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2645 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.553 . Memory (MB): peak = 2757.164 ; gain = 0.000
+open_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2757.164 ; gain = 621.719
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 17:24:01 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 17:24:01 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 17:39:02 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 17:39:02 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 17:46:55 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 17:46:55 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 18:04:28 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 18:04:29 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 18:05:39 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 18:05:39 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2648 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.524 . Memory (MB): peak = 2822.539 ; gain = 0.000
+INFO: [Common 17-344] 'open_run' was cancelled
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 18:15:58 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 18:15:58 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov  2 18:36:40 2024] Launched synth_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/runme.log
+[Sat Nov  2 18:36:40 2024] Launched impl_1...
+Run output will be captured here: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/runme.log
+current_project victory_screen
+close_project
+open_project C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main/modifier_main.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+current_project MODS
+current_project modifier_main
+current_project MODS
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4247A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).

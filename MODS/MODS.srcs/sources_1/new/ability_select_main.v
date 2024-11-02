@@ -128,6 +128,20 @@ module abil_sel_ai(
             success <= (random_value) ? ROCK : PAPER;
             selected <= 1'b1;
         end
+//        case(P1_SEL)
+//            ROCK: begin //edited output logic
+//                    success <= (random_value>16'd32767) ? PAPER : SCISSORS;
+//                    selected <= 1'b1;
+//            end
+//            PAPER: begin
+//                        success <= (random_value>16'd32767) ? SCISSORS : ROCK;
+//                        selected <= 1'b1;
+//            end
+//            SCISSORS:begin
+//                success <= (random_value>16'd32767) ? ROCK : PAPER;
+//                selected <= 1'b1;
+//            end
+//        endcase
     end 
     else if (~ai_turn || ~turned_on) begin
         success <= 2'b00; // Reset success when either ai_turn or turned_on is off

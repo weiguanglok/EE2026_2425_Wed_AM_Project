@@ -306,14 +306,14 @@ module battle_animation(input clk,
             .sprite_x(42),                
             .sprite_y(23), 
             .flip((winner)?1:0),               
-            .background_pixel(oled_colour_battlescreen_layer2),                 
+            .background_pixel((winner)?oled_colour_battlescreen_layer1:oled_colour_battlescreen_layer2),                 
             .oled_colour(oled_lose));
          win run_win(.clk(clk6p25),               
             .pixel_index(pixel_index), 
             .sprite_x(40),                
             .sprite_y(24), 
             .flip((winner)?0:1),               
-            .background_pixel(oled_colour_battlescreen_layer2),                 
+            .background_pixel((winner)?oled_colour_battlescreen_layer2:oled_colour_battlescreen_layer1),                 
             .oled_colour(oled_win));
             
         always @(posedge clk6p25) begin

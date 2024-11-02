@@ -2216,3 +2216,2225 @@ INFO: [Common 17-1381] The checkpoint 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/
 INFO: [runtcl-4] Executing : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
 report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 951.387 ; gain = 0.000
 INFO: [Common 17-206] Exiting Vivado at Sat Nov  2 18:38:30 2024...
+
+*** Running vivado
+    with args -log Top_Module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_Module.tcl -notrace
+Command: synth_design -top Top_Module -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 45116 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 411.332 ; gain = 124.594
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Module' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:23]
+	Parameter STATE_START bound to: 0 - type: integer 
+	Parameter STATE_IDLE bound to: 1 - type: integer 
+	Parameter STATE_SELECT bound to: 2 - type: integer 
+	Parameter STATE_WHO_WIN bound to: 3 - type: integer 
+	Parameter STATE_RESOLVE_W bound to: 4 - type: integer 
+	Parameter STATE_RESOLVE_P bound to: 5 - type: integer 
+	Parameter STATE_RESOLVE_P_L bound to: 6 - type: integer 
+	Parameter STATE_RESOLVE_P_W bound to: 7 - type: integer 
+	Parameter STATE_DMG_MODIFIER_n_RESOLUTE bound to: 8 - type: integer 
+	Parameter STATE_END bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'flexi_clk' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'flexi_clk' (1#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:39]
+	Parameter DEBOUNCE_TIME bound to: 20000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:39]
+INFO: [Synth 8-6157] synthesizing module 'button_sync' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'button_sync' (3#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:74]
+INFO: [Synth 8-6157] synthesizing module 'Top_Home_Screen' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Student.v:13]
+	Parameter STATE_MAINSCREEN bound to: 2'b00 
+	Parameter STATE_STARTPAGE bound to: 2'b01 
+	Parameter STATE_GUIDEPAGE bound to: 2'b10 
+	Parameter STATE_DEFAULT bound to: 2'b11 
+	Parameter STATE_END bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mainscreen_page_render' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/mainscreen_page.v:22]
+	Parameter STATE_MS_START bound to: 0 - type: integer 
+	Parameter STATE_MS_GUIDE bound to: 1 - type: integer 
+	Parameter STATE_MS_START_LOC_X bound to: 22 - type: integer 
+	Parameter STATE_MS_START_LOC_Y bound to: 42 - type: integer 
+	Parameter STATE_MS_GUIDE_LOC_X bound to: 25 - type: integer 
+	Parameter STATE_MS_GUIDE_LOC_Y bound to: 53 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mainscreen_background' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:22]
+INFO: [Synth 8-6157] synthesizing module 'homescreen_background' [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/realtime/homescreen_background_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'homescreen_background' (4#1) [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/realtime/homescreen_background_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mainscreen_background' (5#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:22]
+INFO: [Synth 8-6157] synthesizing module 'homepage_title' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'homepage_title' (6#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:40]
+INFO: [Synth 8-6157] synthesizing module 'main_screen_selector' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:303]
+INFO: [Synth 8-6155] done synthesizing module 'main_screen_selector' (7#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:303]
+INFO: [Synth 8-6157] synthesizing module 'main_screen_selector_arrow' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:363]
+INFO: [Synth 8-6155] done synthesizing module 'main_screen_selector_arrow' (8#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:363]
+WARNING: [Synth 8-689] width (6) of port connection 'sprite_x' does not match port width (7) of module 'main_screen_selector_arrow' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/mainscreen_page.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'mainscreen_page_render' (9#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/mainscreen_page.v:22]
+INFO: [Synth 8-6157] synthesizing module 'guide_page_render' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/guide_page_render.v:22]
+	Parameter STATE_PAGE_ONE bound to: 1'b0 
+	Parameter STATE_PAGE_TWO bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'guide_page_one' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'guide_page_one' (10#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:112]
+INFO: [Synth 8-6157] synthesizing module 'guide_page_two' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:207]
+INFO: [Synth 8-6155] done synthesizing module 'guide_page_two' (11#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:207]
+INFO: [Synth 8-6155] done synthesizing module 'guide_page_render' (12#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/guide_page_render.v:22]
+INFO: [Synth 8-6157] synthesizing module 'blue_screen' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:412]
+INFO: [Synth 8-6155] done synthesizing module 'blue_screen' (13#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:412]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Home_Screen' (14#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Student.v:13]
+INFO: [Synth 8-6157] synthesizing module 'ability_select_main' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:23]
+	Parameter STATE_DEFAULT bound to: 0 - type: integer 
+	Parameter STATE_SELECTION bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ability_select_screen' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:358]
+	Parameter ROCK bound to: 2'b00 
+	Parameter PAPER bound to: 2'b01 
+	Parameter SCISSORS bound to: 2'b10 
+	Parameter ROCK_X_COOR bound to: 4 - type: integer 
+	Parameter PAPER_X_COOR bound to: 34 - type: integer 
+	Parameter SCISSORS_X_COOR bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'skillscreen_selection_background' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1804]
+INFO: [Synth 8-6155] done synthesizing module 'skillscreen_selection_background' (15#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1804]
+INFO: [Synth 8-6157] synthesizing module 'skillscreen_icon_rock' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1463]
+INFO: [Synth 8-6155] done synthesizing module 'skillscreen_icon_rock' (16#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1463]
+INFO: [Synth 8-6157] synthesizing module 'skillscreen_icon_paper' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1525]
+INFO: [Synth 8-6155] done synthesizing module 'skillscreen_icon_paper' (17#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1525]
+INFO: [Synth 8-6157] synthesizing module 'skillscreen_icon_scissors' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1587]
+INFO: [Synth 8-6155] done synthesizing module 'skillscreen_icon_scissors' (18#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1587]
+INFO: [Synth 8-6157] synthesizing module 'skillscreen_selector' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1649]
+INFO: [Synth 8-6155] done synthesizing module 'skillscreen_selector' (19#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1649]
+INFO: [Synth 8-6157] synthesizing module 'rps_confirmation_screen' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1890]
+	Parameter ROCK bound to: 2'b00 
+	Parameter PAPER bound to: 2'b01 
+	Parameter SCISSORS bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'skillscreen_confirmation_background' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1717]
+INFO: [Synth 8-6155] done synthesizing module 'skillscreen_confirmation_background' (20#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1717]
+INFO: [Synth 8-6155] done synthesizing module 'rps_confirmation_screen' (21#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1890]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:468]
+INFO: [Synth 8-6155] done synthesizing module 'ability_select_screen' (22#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:358]
+INFO: [Synth 8-6157] synthesizing module 'abil_sel_ai' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:85]
+	Parameter TOTAL bound to: 16'b1111111111111111 
+	Parameter ROCK bound to: 2'b00 
+	Parameter PAPER bound to: 2'b01 
+	Parameter SCISSORS bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'abil_sel_ai' (23#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:85]
+INFO: [Synth 8-6157] synthesizing module 'countdown_timer_flexi' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:159]
+	Parameter DIGIT1 bound to: 7'b1001111 
+	Parameter DIGIT2 bound to: 7'b0010010 
+	Parameter DIGIT3 bound to: 7'b0000110 
+	Parameter DIGIT4 bound to: 7'b1001100 
+	Parameter DIGIT5 bound to: 7'b0100100 
+	Parameter DIGIT6 bound to: 7'b0100000 
+	Parameter DIGIT7 bound to: 7'b0001111 
+	Parameter DIGIT8 bound to: 7'b0000000 
+	Parameter DIGIT9 bound to: 7'b0001100 
+	Parameter DIGIT0 bound to: 7'b0000001 
+	Parameter BLANK bound to: 7'b1111111 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:245]
+INFO: [Synth 8-6155] done synthesizing module 'countdown_timer_flexi' (24#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:159]
+INFO: [Synth 8-6157] synthesizing module 'ability_resolution' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:295]
+	Parameter ROCK bound to: 2'b00 
+	Parameter PAPER bound to: 2'b01 
+	Parameter SCISSORS bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'ability_resolution' (25#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:295]
+INFO: [Synth 8-6155] done synthesizing module 'ability_select_main' (26#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'ability_select_main' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:205]
+WARNING: [Synth 8-350] instance 'run_ability_select_main' of module 'ability_select_main' requires 16 connections, but only 14 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:199]
+INFO: [Synth 8-6157] synthesizing module 'battle_animation' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:23]
+	Parameter STATE_IDLE bound to: 1 - type: integer 
+	Parameter STATE_SELECT bound to: 2 - type: integer 
+	Parameter STATE_WHO_WIN bound to: 3 - type: integer 
+	Parameter STATE_RESOLVE_W bound to: 4 - type: integer 
+	Parameter STATE_RESOLVE_P bound to: 5 - type: integer 
+	Parameter STATE_RESOLVE_P_L bound to: 6 - type: integer 
+	Parameter STATE_RESOLVE_P_W bound to: 7 - type: integer 
+	Parameter STATE_DMG_MODIFIER_n_RESOLUTE bound to: 8 - type: integer 
+	Parameter STATE_END bound to: 9 - type: integer 
+	Parameter bob_x bound to: 7'b1000100 
+	Parameter bob_y bound to: 6'b000111 
+	Parameter biche_x bound to: 7'b1000000 
+	Parameter biche_y bound to: 6'b001000 
+	Parameter pause_x bound to: 7'b0000011 
+	Parameter pause_y bound to: 6'b000101 
+INFO: [Synth 8-6157] synthesizing module 'battlescreen_background' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1442]
+INFO: [Synth 8-6157] synthesizing module 'battleground_background' [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/realtime/battleground_background_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'battleground_background' (27#1) [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/realtime/battleground_background_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'battlescreen_background' (28#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1442]
+WARNING: [Synth 8-350] instance 'battlescreen1' of module 'battlescreen_background' requires 6 connections, but only 4 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:165]
+WARNING: [Synth 8-350] instance 'battlescreen2' of module 'battlescreen_background' requires 6 connections, but only 4 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:170]
+INFO: [Synth 8-6157] synthesizing module 'biche_head_n_body' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'biche_head_n_body' (29#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:474]
+INFO: [Synth 8-6157] synthesizing module 'biche_arm' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:422]
+INFO: [Synth 8-6155] done synthesizing module 'biche_arm' (30#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:422]
+WARNING: [Synth 8-689] width (32) of port connection 'sprite_y' does not match port width (6) of module 'biche_arm' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:189]
+INFO: [Synth 8-6157] synthesizing module 'biche_arm_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:559]
+INFO: [Synth 8-6155] done synthesizing module 'biche_arm_attack' (31#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:559]
+INFO: [Synth 8-6157] synthesizing module 'bob_head_n_body' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:617]
+INFO: [Synth 8-6155] done synthesizing module 'bob_head_n_body' (32#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:617]
+INFO: [Synth 8-6157] synthesizing module 'bob_arm' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:706]
+INFO: [Synth 8-6155] done synthesizing module 'bob_arm' (33#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:706]
+INFO: [Synth 8-6157] synthesizing module 'bob_arm_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:755]
+INFO: [Synth 8-6155] done synthesizing module 'bob_arm_attack' (34#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:755]
+INFO: [Synth 8-6157] synthesizing module 'rock_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:810]
+INFO: [Synth 8-226] default block is never used [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:837]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sprite_y_idx_reg' and it is trimmed from '6' to '5' bits. [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:840]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sprite_x_idx_reg' and it is trimmed from '7' to '5' bits. [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:839]
+INFO: [Synth 8-6155] done synthesizing module 'rock_attack' (35#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:810]
+INFO: [Synth 8-6157] synthesizing module 'paper_airplane_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:914]
+INFO: [Synth 8-6155] done synthesizing module 'paper_airplane_attack' (36#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:914]
+INFO: [Synth 8-6157] synthesizing module 'paper_clip_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:966]
+INFO: [Synth 8-6155] done synthesizing module 'paper_clip_attack' (37#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:966]
+INFO: [Synth 8-6157] synthesizing module 'paper_tack_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1025]
+INFO: [Synth 8-6155] done synthesizing module 'paper_tack_attack' (38#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1025]
+INFO: [Synth 8-6157] synthesizing module 'scissor_close_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'scissor_close_attack' (39#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'scissor_open_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1143]
+INFO: [Synth 8-6155] done synthesizing module 'scissor_open_attack' (40#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1143]
+INFO: [Synth 8-6157] synthesizing module 'parry_shield' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1204]
+INFO: [Synth 8-6155] done synthesizing module 'parry_shield' (41#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1204]
+WARNING: [Synth 8-350] instance 'run_parry_shield' of module 'parry_shield' requires 7 connections, but only 6 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:284]
+INFO: [Synth 8-6157] synthesizing module 'dmg_taken' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1362]
+INFO: [Synth 8-6155] done synthesizing module 'dmg_taken' (42#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1362]
+INFO: [Synth 8-6157] synthesizing module 'lose' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1981]
+INFO: [Synth 8-6155] done synthesizing module 'lose' (43#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1981]
+WARNING: [Synth 8-689] width (32) of port connection 'flip' does not match port width (1) of module 'lose' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:308]
+INFO: [Synth 8-6157] synthesizing module 'win' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1929]
+INFO: [Synth 8-6155] done synthesizing module 'win' (44#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1929]
+WARNING: [Synth 8-689] width (32) of port connection 'flip' does not match port width (1) of module 'win' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:315]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:331]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:320]
+WARNING: [Synth 8-6014] Unused sequential element oled_charac_arm_reg was removed.  [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:339]
+INFO: [Synth 8-6155] done synthesizing module 'battle_animation' (45#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:23]
+WARNING: [Synth 8-350] instance 'animation_instantiate' of module 'battle_animation' requires 11 connections, but only 9 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:209]
+INFO: [Synth 8-6157] synthesizing module 'ddr_parry' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/parry.v:23]
+	Parameter PARRY_ZONE_Y bound to: 7'b0010100 
+	Parameter LEFT_X bound to: 7'b0010111 
+	Parameter DOWN_X bound to: 7'b0111010 
+	Parameter UP_X bound to: 7'b0100111 
+	Parameter RIGHT_X bound to: 7'b1001011 
+	Parameter ARROW_COLOR bound to: 16'b1111100000000000 
+	Parameter TIME_BUTTON bound to: 499999 - type: integer 
+	Parameter DIGIT1 bound to: 7'b1001111 
+	Parameter DIGIT2 bound to: 7'b0010010 
+	Parameter DIGIT3 bound to: 7'b0000110 
+	Parameter DIGIT4 bound to: 7'b1001100 
+	Parameter DIGIT5 bound to: 7'b0100100 
+	Parameter DIGIT6 bound to: 7'b0100000 
+	Parameter DIGIT7 bound to: 7'b0001111 
+	Parameter DIGIT8 bound to: 7'b0000000 
+	Parameter DIGIT9 bound to: 7'b0001100 
+	Parameter DIGIT0 bound to: 7'b0000001 
+	Parameter BLANK bound to: 7'b1111111 
+INFO: [Synth 8-6157] synthesizing module 'delay_counter' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/delay_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'delay_counter' (46#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/delay_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ind_to_coor' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'ind_to_coor' (47#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:34]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (6) of module 'ind_to_coor' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/parry.v:81]
+WARNING: [Synth 8-350] instance 'mainscreen_background' of module 'battlescreen_background' requires 6 connections, but only 4 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/parry.v:88]
+INFO: [Synth 8-6157] synthesizing module 'parry_background' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/background.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'parry_background' (48#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/background.v:23]
+INFO: [Synth 8-6157] synthesizing module 'parry_colour' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/background.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'parry_colour' (49#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/background.v:115]
+INFO: [Synth 8-6157] synthesizing module 'miss_colour' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/background.v:165]
+INFO: [Synth 8-6155] done synthesizing module 'miss_colour' (50#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/background.v:165]
+WARNING: [Synth 8-3848] Net led in module/entity ddr_parry does not have driver. [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/parry.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ddr_parry' (51#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/parry.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'ddr_parry' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:226]
+WARNING: [Synth 8-350] instance 'parry' of module 'ddr_parry' requires 13 connections, but only 12 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:218]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:123]
+INFO: [Synth 8-226] default block is never used [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (52#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'led_resolute' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/led_resolute.v:23]
+	Parameter STATE_START bound to: 0 - type: integer 
+	Parameter STATE_IDLE bound to: 1 - type: integer 
+	Parameter STATE_SELECT bound to: 2 - type: integer 
+	Parameter STATE_WHO_WIN bound to: 3 - type: integer 
+	Parameter STATE_RESOLVE_W bound to: 4 - type: integer 
+	Parameter STATE_RESOLVE_P bound to: 5 - type: integer 
+	Parameter STATE_RESOLVE_P_L bound to: 6 - type: integer 
+	Parameter STATE_RESOLVE_P_W bound to: 7 - type: integer 
+	Parameter STATE_DMG_MODIFIER_n_RESOLUTE bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'led_resolute' (53#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/led_resolute.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'state' does not match port width (5) of module 'led_resolute' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:268]
+INFO: [Synth 8-6157] synthesizing module 'victory_screen_main' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'player_disp' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:42]
+	Parameter BLANK bound to: 7'b1111111 
+	Parameter LETTERc bound to: 7'b0110001 
+	Parameter LETTERh bound to: 7'b1001000 
+	Parameter LETTERo bound to: 7'b0000001 
+	Parameter LETTERs bound to: 7'b0100100 
+	Parameter LETTERe bound to: 7'b0110000 
+	Parameter LETTERm bound to: 7'b0101011 
+	Parameter LETTERd bound to: 7'b1000010 
+	Parameter LETTERf bound to: 7'b0111000 
+	Parameter LETTERr bound to: 7'b1111010 
+	Parameter LETTERa bound to: 7'b0001000 
+	Parameter LETTERp bound to: 7'b0011000 
+	Parameter LETTERw bound to: 7'b1010101 
+	Parameter LETTERn bound to: 7'b1101010 
+	Parameter LETTERb bound to: 7'b1100000 
+	Parameter LETTERu bound to: 7'b1100011 
+	Parameter LETTERg bound to: 7'b0100001 
+	Parameter LETTERy bound to: 7'b1000100 
+	Parameter LETTERi bound to: 7'b1001111 
+	Parameter LETTERl bound to: 7'b1110001 
+	Parameter DIGIT2 bound to: 7'b0010010 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'player_disp' (54#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:42]
+INFO: [Synth 8-6157] synthesizing module 'bot_disp' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:190]
+	Parameter BLANK bound to: 7'b1111111 
+	Parameter LETTERc bound to: 7'b0110001 
+	Parameter LETTERh bound to: 7'b1001000 
+	Parameter LETTERo bound to: 7'b0000001 
+	Parameter LETTERs bound to: 7'b0100100 
+	Parameter LETTERe bound to: 7'b0110000 
+	Parameter LETTERm bound to: 7'b0101011 
+	Parameter LETTERd bound to: 7'b1000010 
+	Parameter LETTERf bound to: 7'b0111000 
+	Parameter LETTERr bound to: 7'b1111010 
+	Parameter LETTERa bound to: 7'b0001000 
+	Parameter LETTERp bound to: 7'b0011000 
+	Parameter LETTERw bound to: 7'b1010101 
+	Parameter LETTERn bound to: 7'b1101010 
+	Parameter LETTERb bound to: 7'b1100000 
+	Parameter LETTERu bound to: 7'b1100011 
+	Parameter LETTERg bound to: 7'b0100001 
+	Parameter LETTERy bound to: 7'b1000100 
+	Parameter LETTERi bound to: 7'b1001111 
+	Parameter LETTERl bound to: 7'b1110001 
+	Parameter LETTERt bound to: 7'b1110000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:226]
+INFO: [Synth 8-6155] done synthesizing module 'bot_disp' (55#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:190]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_mux' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:320]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_mux' (56#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:320]
+INFO: [Synth 8-6155] done synthesizing module 'victory_screen_main' (57#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'victory_screen_main' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:280]
+WARNING: [Synth 8-350] instance 'victory' of module 'victory_screen_main' requires 6 connections, but only 5 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Module' (58#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:23]
+WARNING: [Synth 8-3917] design Top_Module has port dp driven by constant 1
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[14]
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[13]
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[12]
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[11]
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[10]
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[9]
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[8]
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[7]
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[6]
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[5]
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[4]
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[3]
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[2]
+WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[1]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[6]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[5]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[4]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[3]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[2]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[1]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[0]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_y[5]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_y[4]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_y[3]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_y[2]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_y[1]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_y[0]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[9]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[8]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[7]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[6]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[5]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[4]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[3]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[2]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[1]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[0]
+WARNING: [Synth 8-3331] design battle_animation has unconnected port reset
+WARNING: [Synth 8-3331] design battle_animation has unconnected port flip
+WARNING: [Synth 8-3331] design battle_animation has unconnected port bot_selected
+WARNING: [Synth 8-3331] design blue_screen has unconnected port pixel_index[12]
+WARNING: [Synth 8-3331] design blue_screen has unconnected port pixel_index[11]
+WARNING: [Synth 8-3331] design blue_screen has unconnected port pixel_index[10]
+WARNING: [Synth 8-3331] design blue_screen has unconnected port pixel_index[9]
+WARNING: [Synth 8-3331] design blue_screen has unconnected port pixel_index[8]
+WARNING: [Synth 8-3331] design blue_screen has unconnected port pixel_index[7]
+WARNING: [Synth 8-3331] design blue_screen has unconnected port pixel_index[6]
+WARNING: [Synth 8-3331] design blue_screen has unconnected port pixel_index[5]
+WARNING: [Synth 8-3331] design blue_screen has unconnected port pixel_index[4]
+WARNING: [Synth 8-3331] design blue_screen has unconnected port pixel_index[3]
+WARNING: [Synth 8-3331] design blue_screen has unconnected port pixel_index[2]
+WARNING: [Synth 8-3331] design blue_screen has unconnected port pixel_index[1]
+WARNING: [Synth 8-3331] design blue_screen has unconnected port pixel_index[0]
+WARNING: [Synth 8-3331] design ability_select_main has unconnected port ai_turned_on
+WARNING: [Synth 8-3331] design Top_Module has unconnected port JC[2]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port JX[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 577.402 ; gain = 290.664
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin run_parry_shield:flip to constant 0 [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:284]
+WARNING: [Synth 8-3295] tying undriven pin oled_display_instance_R:reset to constant 0 [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:235]
+WARNING: [Synth 8-3295] tying undriven pin oled_display_instance_L:reset to constant 0 [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:251]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 577.402 ; gain = 290.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 577.402 ; gain = 290.664
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'animation_instantiate/battlescreen1/run_battleground_background'
+Finished Parsing XDC File [c:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'animation_instantiate/battlescreen1/run_battleground_background'
+Parsing XDC File [c:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'animation_instantiate/battlescreen2/run_battleground_background'
+Finished Parsing XDC File [c:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'animation_instantiate/battlescreen2/run_battleground_background'
+Parsing XDC File [c:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'parry/mainscreen_background/run_battleground_background'
+Finished Parsing XDC File [c:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'parry/mainscreen_background/run_battleground_background'
+Parsing XDC File [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/mainscreen/mainscreen/run_homescreen_background'
+Finished Parsing XDC File [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/mainscreen/mainscreen/run_homescreen_background'
+Parsing XDC File [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/guidepage/mainscreen/run_homescreen_background'
+Finished Parsing XDC File [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/guidepage/mainscreen/run_homescreen_background'
+Parsing XDC File [C:/Users/stamp/Downloads/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]
+Finished Parsing XDC File [C:/Users/stamp/Downloads/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/stamp/Downloads/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 889.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 889.969 ; gain = 603.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 889.969 ; gain = 603.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for animation_instantiate/battlescreen1/run_battleground_background. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for animation_instantiate/battlescreen2/run_battleground_background. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for parry/mainscreen_background/run_battleground_background. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_screen_render/mainscreen/mainscreen/run_homescreen_background. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_screen_render/guidepage/mainscreen/run_homescreen_background. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 889.969 ; gain = 603.230
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Top_Home_Screen'
+INFO: [Synth 8-5544] ROM "is_start" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ability_select_screen'
+INFO: [Synth 8-5544] ROM "ICON_X_COOR" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'count_2_four_reg' in module 'battle_animation'
+INFO: [Synth 8-5544] ROM "scissor_x" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "phase" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count_2_four" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "checked" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        STATE_MAINSCREEN |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+*
+                  iSTATE |                               10 |                               11
+         STATE_GUIDEPAGE |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Top_Home_Screen'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ROCK |                              001 |                               00
+                SCISSORS |                              010 |                               10
+                   PAPER |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ability_select_screen'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'count_2_four_reg' using encoding 'sequential' in module 'battle_animation'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 889.969 ; gain = 603.230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |battle_animation__GB0 |           1|     34103|
+|2     |battle_animation__GB1 |           1|     12192|
+|3     |Top_Module__GCB0      |           1|     33488|
+|4     |Top_Module__GCB1      |           1|     15298|
+|5     |Top_Module__GCB2      |           1|     23471|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     17 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 33    
+	   3 Input      8 Bit       Adders := 34    
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 9     
+	   3 Input      7 Bit       Adders := 4     
+	   3 Input      6 Bit       Adders := 12    
+	   2 Input      6 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 38    
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 13    
+	   2 Input      4 Bit       Adders := 5     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               40 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 45    
+	                7 Bit    Registers := 23    
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 13    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 65    
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 6     
+	  32 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 6     
+	   3 Input     32 Bit        Muxes := 1     
+	  32 Input     20 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 2     
+	  48 Input     16 Bit        Muxes := 9     
+	   2 Input     16 Bit        Muxes := 89    
+	  14 Input     16 Bit        Muxes := 31    
+	  15 Input     16 Bit        Muxes := 25    
+	  19 Input     16 Bit        Muxes := 20    
+	  50 Input     16 Bit        Muxes := 7     
+	  10 Input     16 Bit        Muxes := 14    
+	  17 Input     16 Bit        Muxes := 8     
+	  21 Input     16 Bit        Muxes := 63    
+	  29 Input     16 Bit        Muxes := 23    
+	  13 Input     16 Bit        Muxes := 13    
+	  20 Input     16 Bit        Muxes := 33    
+	  24 Input     16 Bit        Muxes := 6     
+	   6 Input     16 Bit        Muxes := 2     
+	  18 Input     16 Bit        Muxes := 6     
+	   7 Input     16 Bit        Muxes := 7     
+	   4 Input     16 Bit        Muxes := 4     
+	  41 Input     16 Bit        Muxes := 38    
+	  23 Input     16 Bit        Muxes := 19    
+	  11 Input     16 Bit        Muxes := 2     
+	  64 Input     16 Bit        Muxes := 71    
+	   8 Input     16 Bit        Muxes := 15    
+	  27 Input     16 Bit        Muxes := 7     
+	  56 Input     16 Bit        Muxes := 24    
+	   9 Input     16 Bit        Muxes := 5     
+	  53 Input     16 Bit        Muxes := 52    
+	  24 Input     11 Bit        Muxes := 1     
+	  14 Input     11 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 6     
+	  13 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 3     
+	  11 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 22    
+	   4 Input      6 Bit        Muxes := 2     
+	  32 Input      6 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 9     
+	  32 Input      5 Bit        Muxes := 2     
+	  74 Input      5 Bit        Muxes := 1     
+	  51 Input      5 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 8     
+	  12 Input      3 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	  10 Input      3 Bit        Muxes := 2     
+	  64 Input      3 Bit        Muxes := 13    
+	  53 Input      3 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 46    
+	  13 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 5     
+	  12 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	  11 Input     16 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	  13 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 3     
+Module flexi_clk__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexi_clk__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexi_clk__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexi_clk__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexi_clk__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module battlescreen_background__xdcDup__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module battlescreen_background__xdcDup__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module biche_head_n_body 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  48 Input     16 Bit        Muxes := 9     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+Module biche_arm 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  14 Input     16 Bit        Muxes := 15    
+	  15 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
+Module biche_arm_attack 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  19 Input     16 Bit        Muxes := 8     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+Module bob_head_n_body 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  50 Input     16 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+Module bob_arm 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  10 Input     16 Bit        Muxes := 12    
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+Module bob_arm_attack 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 8     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+Module skillscreen_icon_rock__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  21 Input     16 Bit        Muxes := 8     
+	   2 Input     16 Bit        Muxes := 2     
+Module skillscreen_icon_paper__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  21 Input     16 Bit        Muxes := 9     
+	   2 Input     16 Bit        Muxes := 2     
+Module skillscreen_icon_scissors__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  21 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 2     
+Module rock_attack 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  29 Input     16 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 2     
+Module paper_airplane_attack 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 13    
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+Module paper_clip_attack 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  20 Input     16 Bit        Muxes := 24    
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+Module paper_tack_attack 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  19 Input     16 Bit        Muxes := 12    
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+Module parry_shield 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  24 Input     16 Bit        Muxes := 5     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	  24 Input     11 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 1     
+Module lose 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  18 Input     16 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+Module win 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  15 Input     16 Bit        Muxes := 7     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+Module dmg_taken 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  41 Input     16 Bit        Muxes := 38    
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+Module scissor_open_attack 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  23 Input     16 Bit        Muxes := 11    
+	   2 Input     16 Bit        Muxes := 2     
+Module scissor_close_attack 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  23 Input     16 Bit        Muxes := 8     
+	   2 Input     16 Bit        Muxes := 2     
+Module battle_animation 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 6     
+	   6 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	  10 Input     16 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 2     
+Module debounce__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module button_sync__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module flexi_clk__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexi_clk__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module skillscreen_selection_background 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  64 Input     16 Bit        Muxes := 29    
+	   8 Input     16 Bit        Muxes := 12    
+	  64 Input      3 Bit        Muxes := 12    
+Module skillscreen_icon_rock 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  21 Input     16 Bit        Muxes := 8     
+	   2 Input     16 Bit        Muxes := 2     
+Module skillscreen_icon_paper 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  21 Input     16 Bit        Muxes := 9     
+	   2 Input     16 Bit        Muxes := 2     
+Module skillscreen_icon_scissors 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  21 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 2     
+Module skillscreen_selector 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  27 Input     16 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 2     
+Module flexi_clk__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module skillscreen_confirmation_background 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  64 Input     16 Bit        Muxes := 42    
+	   7 Input     16 Bit        Muxes := 1     
+	  64 Input      3 Bit        Muxes := 1     
+Module skillscreen_icon_rock__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  21 Input     16 Bit        Muxes := 8     
+	   2 Input     16 Bit        Muxes := 2     
+Module skillscreen_icon_paper__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  21 Input     16 Bit        Muxes := 9     
+	   2 Input     16 Bit        Muxes := 2     
+Module skillscreen_icon_scissors__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  21 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 2     
+Module rps_confirmation_screen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+Module ability_select_screen 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+Module abil_sel_ai 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module flexi_clk__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexi_clk__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module countdown_timer_flexi 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  13 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+Module ability_resolution 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ability_select_main 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module Oled_Display__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module flexi_clk__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexi_clk__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module player_disp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+Module flexi_clk__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexi_clk__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module bot_disp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+Module seven_seg_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+Module led_resolute 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module flexi_clk__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexi_clk__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module delay_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module battlescreen_background 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module parry_background 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  56 Input     16 Bit        Muxes := 24    
+	  24 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	  74 Input      5 Bit        Muxes := 1     
+Module parry_colour 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  14 Input     16 Bit        Muxes := 16    
+	  20 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	  14 Input     11 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	  51 Input      5 Bit        Muxes := 1     
+Module miss_colour 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  15 Input     16 Bit        Muxes := 17    
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+Module ddr_parry 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 10    
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module debounce__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexi_clk__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module homepage_title 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  29 Input     16 Bit        Muxes := 17    
+	   2 Input     16 Bit        Muxes := 2     
+Module main_screen_selector 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  20 Input     16 Bit        Muxes := 8     
+	   2 Input     16 Bit        Muxes := 2     
+Module main_screen_selector_arrow 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   9 Input     16 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 2     
+Module button_sync__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module button_sync 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module mainscreen_page_render 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module guide_page_one 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  53 Input     16 Bit        Muxes := 15    
+	   7 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	  53 Input      3 Bit        Muxes := 3     
+Module guide_page_two 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  53 Input     16 Bit        Muxes := 37    
+	   8 Input     16 Bit        Muxes := 2     
+	   7 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	  53 Input      3 Bit        Muxes := 4     
+Module button_sync__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module button_sync__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module guide_page_render 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module Top_Home_Screen 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+Module debounce__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexi_clk 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design Top_Module has port dp driven by constant 1
+WARNING: [Synth 8-3331] design Top_Module has unconnected port JC[2]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port JX[2]
+INFO: [Synth 8-5545] ROM "clk6p25m/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "run_fourfps/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "run_clk30fps/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "run_clk25fps/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "run_clk35fps/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "run_clk30fps/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "run_clk35fps/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "run_fourfps/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk6p25m/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "run_clk25fps/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'phase_reg[2]' (FD) to 'phase_reg[5]'
+INFO: [Synth 8-3886] merging instance 'phase_reg[3]' (FD) to 'phase_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\phase_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\phase_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\scissor_x_reg[0] )
+INFO: [Synth 8-3886] merging instance 'scissor_x_reg[1]' (FD) to 'scissor_x_reg[2]'
+INFO: [Synth 8-3886] merging instance 'scissor_x_reg[2]' (FD) to 'scissor_x_reg[5]'
+INFO: [Synth 8-3886] merging instance 'scissor_x_reg[3]' (FD) to 'scissor_x_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\scissor_x_reg[6] )
+INFO: [Synth 8-5545] ROM "clk6p25m_instantiate/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "run_fourfps/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_1hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "run_fourfps/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk6p25m_instantiate/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "countdown/clk_1hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "countdown/clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design ability_select_main has unconnected port ai_turned_on
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[2]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[5]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/background_selection_render/oled_colour_reg[9]' (FD) to 'run_ability_select_main/select_screen_render/background_selection_render/oled_colour_reg[10]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[6]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[14]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/background_selection_render/oled_colour_reg[10]' (FD) to 'run_ability_select_main/select_screen_render/background_selection_render/oled_colour_reg[12]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[9]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[10]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[10]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[12]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/background_selection_render/oled_colour_reg[14]' (FD) to 'run_ability_select_main/select_screen_render/background_selection_render/oled_colour_reg[15]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[14]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[15]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/ICON_X_COOR_reg[0]' (FDE) to 'run_ability_select_main/select_screen_render/ICON_X_COOR_reg[3]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/ICON_X_COOR_reg[1]' (FDE) to 'run_ability_select_main/select_screen_render/ICON_X_COOR_reg[5]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/ICON_X_COOR_reg[3]' (FDE) to 'run_ability_select_main/select_screen_render/ICON_X_COOR_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\run_ability_select_main/select_screen_render /\ICON_X_COOR_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\run_ability_select_main/countdown/FIRST_reg[0] )
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/countdown/FIRST_reg[1]' (FDE) to 'run_ability_select_main/countdown/FIRST_reg[6]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/countdown/FIRST_reg[2]' (FDE) to 'run_ability_select_main/countdown/FIRST_reg[6]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/countdown/FIRST_reg[3]' (FDE) to 'run_ability_select_main/countdown/FIRST_reg[6]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/countdown/FIRST_reg[4]' (FDE) to 'run_ability_select_main/countdown/FIRST_reg[5]'
+WARNING: [Synth 8-3332] Sequential element (ICON_X_COOR_reg[4]) is unused and will be removed from module ability_select_screen.
+INFO: [Synth 8-5545] ROM "clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_3p75hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_3p75hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arrow_clock/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "led_clock/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "checked" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "arrow_clock/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "led_clock/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "checked" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "victory/player/clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "victory/player/clk_3p75hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "victory/bot/clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "victory/bot/clk_3p75hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[6]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[5]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[4]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[3]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[2]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[1]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[0]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_y[5]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_y[4]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_y[3]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_y[2]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_y[1]
+WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_y[0]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[9]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[8]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[7]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[6]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[5]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[4]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[3]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[2]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[1]
+WARNING: [Synth 8-3331] design ddr_parry has unconnected port led[0]
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[27]' (FDR) to 'parry/run_delay_counter/counter_reg[28]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[28]' (FDR) to 'parry/run_delay_counter/counter_reg[29]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[29]' (FDR) to 'parry/run_delay_counter/counter_reg[31]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[31]' (FDR) to 'parry/run_delay_counter/counter_reg[30]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[30]' (FDR) to 'parry/run_delay_counter/counter_reg[22]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[22]' (FDR) to 'parry/run_delay_counter/counter_reg[23]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[23]' (FDR) to 'parry/run_delay_counter/counter_reg[20]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[20]' (FDR) to 'parry/run_delay_counter/counter_reg[21]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[21]' (FDR) to 'parry/run_delay_counter/counter_reg[24]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[24]' (FDR) to 'parry/run_delay_counter/counter_reg[25]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[25]' (FDR) to 'parry/run_delay_counter/counter_reg[26]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[26]' (FDR) to 'parry/run_delay_counter/counter_reg[11]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[11]' (FDR) to 'parry/run_delay_counter/counter_reg[12]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[12]' (FDR) to 'parry/run_delay_counter/counter_reg[13]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[13]' (FDR) to 'parry/run_delay_counter/counter_reg[8]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[8]' (FDR) to 'parry/run_delay_counter/counter_reg[9]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[9]' (FDR) to 'parry/run_delay_counter/counter_reg[10]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[10]' (FDR) to 'parry/run_delay_counter/counter_reg[17]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[17]' (FDR) to 'parry/run_delay_counter/counter_reg[18]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[18]' (FDR) to 'parry/run_delay_counter/counter_reg[19]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[19]' (FDR) to 'parry/run_delay_counter/counter_reg[16]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[16]' (FDR) to 'parry/run_delay_counter/counter_reg[14]'
+INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[14]' (FDR) to 'parry/run_delay_counter/counter_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (parry/run_delay_counter/\counter_reg[15] )
+INFO: [Synth 8-3886] merging instance 'victory/bot/FIRST_reg[1]' (FDE) to 'victory/bot/FIRST_reg[3]'
+INFO: [Synth 8-3886] merging instance 'victory/bot/SECOND_reg[1]' (FDE) to 'victory/bot/SECOND_reg[3]'
+INFO: [Synth 8-3886] merging instance 'victory/bot/THIRD_reg[1]' (FDE) to 'victory/bot/THIRD_reg[3]'
+INFO: [Synth 8-3886] merging instance 'victory/bot/FOURTH_reg[1]' (FDE) to 'victory/bot/FOURTH_reg[3]'
+INFO: [Synth 8-3886] merging instance 'parry/an_reg[0]' (FDSE) to 'parry/an_reg[2]'
+INFO: [Synth 8-3886] merging instance 'parry/an_reg[1]' (FDSE) to 'parry/an_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (parry/\an_reg[2] )
+INFO: [Synth 8-3886] merging instance 'victory/bot/seg_reg[5]' (FD) to 'victory/bot/seg_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (counter_reg[15]) is unused and will be removed from module delay_counter.
+WARNING: [Synth 8-3332] Sequential element (an_reg[2]) is unused and will be removed from module ddr_parry.
+INFO: [Synth 8-5545] ROM "top_screen_render/clk6p25m_instantiate/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk6p25m_instantiate/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:01:08 . Memory (MB): peak = 889.969 ; gain = 603.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------------------------+------------+---------------+----------------+
+|Module Name                         | RTL Object | Depth x Width | Implemented As | 
++------------------------------------+------------+---------------+----------------+
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|homepage_title                      | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|main_screen_selector                | bitmap     | 32x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_one                      | bitmap     | 64x16         | LUT            | 
+|guide_page_two                      | bitmap     | 64x16         | LUT            | 
+|guide_page_two                      | bitmap     | 64x16         | LUT            | 
+|guide_page_two                      | bitmap     | 64x16         | LUT            | 
+|guide_page_two                      | bitmap     | 64x16         | LUT            | 
+|guide_page_two                      | bitmap     | 64x16         | LUT            | 
+|guide_page_two                      | bitmap     | 64x16         | LUT            | 
+|guide_page_two                      | bitmap     | 64x16         | LUT            | 
+|skillscreen_selection_background    | bitmap     | 64x16         | LUT            | 
+|skillscreen_selection_background    | bitmap     | 64x16         | LUT            | 
+|skillscreen_selection_background    | bitmap     | 64x16         | LUT            | 
+|skillscreen_icon_rock               | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_rock               | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_rock               | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_rock               | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_rock               | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_rock               | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_rock               | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_rock               | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_rock               | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_rock               | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_paper              | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_paper              | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_paper              | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_paper              | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_paper              | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_paper              | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_paper              | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_paper              | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_paper              | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_paper              | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_paper              | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_icon_scissors           | bitmap     | 32x16         | LUT            | 
+|skillscreen_confirmation_background | bitmap     | 64x16         | LUT            | 
+|skillscreen_confirmation_background | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_head_n_body                   | bitmap     | 64x16         | LUT            | 
+|biche_arm_attack                    | bitmap     | 32x16         | LUT            | 
+|biche_arm_attack                    | bitmap     | 32x16         | LUT            | 
+|biche_arm_attack                    | bitmap     | 32x16         | LUT            | 
+|biche_arm_attack                    | bitmap     | 32x16         | LUT            | 
+|biche_arm_attack                    | bitmap     | 32x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_head_n_body                     | bitmap     | 64x16         | LUT            | 
+|bob_arm_attack                      | bitmap     | 32x16         | LUT            | 
+|bob_arm_attack                      | bitmap     | 32x16         | LUT            | 
+|bob_arm_attack                      | bitmap     | 32x16         | LUT            | 
+|bob_arm_attack                      | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|rock_attack                         | bitmap     | 32x16         | LUT            | 
+|paper_tack_attack                   | bitmap     | 32x16         | LUT            | 
+|paper_tack_attack                   | bitmap     | 32x16         | LUT            | 
+|paper_tack_attack                   | bitmap     | 32x16         | LUT            | 
+|paper_tack_attack                   | bitmap     | 32x16         | LUT            | 
+|paper_tack_attack                   | bitmap     | 32x16         | LUT            | 
+|paper_tack_attack                   | bitmap     | 32x16         | LUT            | 
+|paper_tack_attack                   | bitmap     | 32x16         | LUT            | 
+|scissor_close_attack                | bitmap     | 32x16         | LUT            | 
+|scissor_close_attack                | bitmap     | 32x16         | LUT            | 
+|scissor_close_attack                | bitmap     | 32x16         | LUT            | 
+|scissor_close_attack                | bitmap     | 32x16         | LUT            | 
+|scissor_close_attack                | bitmap     | 32x16         | LUT            | 
+|scissor_close_attack                | bitmap     | 32x16         | LUT            | 
+|scissor_close_attack                | bitmap     | 32x16         | LUT            | 
+|scissor_open_attack                 | bitmap     | 32x16         | LUT            | 
+|scissor_open_attack                 | bitmap     | 32x16         | LUT            | 
+|scissor_open_attack                 | bitmap     | 32x16         | LUT            | 
+|scissor_open_attack                 | bitmap     | 32x16         | LUT            | 
+|scissor_open_attack                 | bitmap     | 32x16         | LUT            | 
+|scissor_open_attack                 | bitmap     | 32x16         | LUT            | 
+|scissor_open_attack                 | bitmap     | 32x16         | LUT            | 
+|scissor_open_attack                 | bitmap     | 32x16         | LUT            | 
+|scissor_open_attack                 | bitmap     | 32x16         | LUT            | 
+|scissor_open_attack                 | bitmap     | 32x16         | LUT            | 
+|scissor_open_attack                 | bitmap     | 32x16         | LUT            | 
+|lose                                | bitmap     | 32x16         | LUT            | 
+|lose                                | bitmap     | 32x16         | LUT            | 
+|lose                                | bitmap     | 32x16         | LUT            | 
++------------------------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |battle_animation__GB0 |           1|     14392|
+|2     |battle_animation__GB1 |           1|      3559|
+|3     |Top_Module__GCB0      |           1|     15360|
+|4     |Top_Module__GCB1      |           1|      5803|
+|5     |Top_Module__GCB2      |           1|     10229|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:01:14 . Memory (MB): peak = 889.969 ; gain = 603.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:01:20 . Memory (MB): peak = 929.289 ; gain = 642.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |battle_animation__GB0 |           1|     14392|
+|2     |battle_animation__GB1 |           1|      3528|
+|3     |Top_Module_GT0        |           1|     31309|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:01:32 . Memory (MB): peak = 929.289 ; gain = 642.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |battle_animation__GB0 |           1|      5927|
+|2     |battle_animation__GB1 |           1|      1251|
+|3     |Top_Module_GT0        |           1|     12373|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:01:34 . Memory (MB): peak = 929.289 ; gain = 642.551
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:01:34 . Memory (MB): peak = 929.289 ; gain = 642.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:01:35 . Memory (MB): peak = 929.289 ; gain = 642.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:01:35 . Memory (MB): peak = 929.289 ; gain = 642.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:01:36 . Memory (MB): peak = 929.289 ; gain = 642.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:01:36 . Memory (MB): peak = 929.289 ; gain = 642.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Top_Module  | top_screen_render/mainscreen/run_button_sync_U/button_sync_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Top_Module  | top_screen_render/mainscreen/run_button_sync_D/button_sync_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Top_Module  | top_screen_render/guidepage/run_button_sync_L/button_sync_reg  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Top_Module  | top_screen_render/guidepage/run_button_sync_R/button_sync_reg  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Top_Module  | button_Up/button_sync_reg                                      | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------+----------+
+|      |BlackBox name           |Instances |
++------+------------------------+----------+
+|1     |battleground_background |         3|
+|2     |homescreen_background   |         2|
++------+------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |battleground_background    |     1|
+|2     |battleground_background__3 |     1|
+|3     |battleground_background__4 |     1|
+|4     |homescreen_background      |     1|
+|5     |homescreen_background__2   |     1|
+|6     |BUFG                       |     8|
+|7     |CARRY4                     |  1117|
+|8     |LUT1                       |   390|
+|9     |LUT2                       |  2095|
+|10    |LUT3                       |   922|
+|11    |LUT4                       |  1291|
+|12    |LUT5                       |  3426|
+|13    |LUT6                       |  6879|
+|14    |MUXF7                      |  1396|
+|15    |MUXF8                      |   329|
+|16    |SRL16E                     |     5|
+|17    |FDCE                       |    14|
+|18    |FDE_1                      |    64|
+|19    |FDRE                       |  1905|
+|20    |FDSE                       |    41|
+|21    |IBUF                       |     6|
+|22    |OBUF                       |    42|
+|23    |OBUFT                      |     2|
++------+---------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------------+------------------------------------+------+
+|      |Instance                            |Module                              |Cells |
++------+------------------------------------+------------------------------------+------+
+|1     |top                                 |                                    | 20012|
+|2     |  animation_instantiate             |battle_animation                    |  3416|
+|3     |    battlescreen1                   |battlescreen_background__xdcDup__1  |    71|
+|4     |    battlescreen2                   |battlescreen_background__xdcDup__2  |    19|
+|5     |    clk6p25m                        |flexi_clk_24                        |    51|
+|6     |    icon_paper_render               |skillscreen_icon_paper_25           |    32|
+|7     |    icon_rock_render                |skillscreen_icon_rock_26            |    35|
+|8     |    icon_scissors_render            |skillscreen_icon_scissors_27        |    52|
+|9     |    run_biche_arm                   |biche_arm                           |    89|
+|10    |    run_biche_arm_attack            |biche_arm_attack                    |    30|
+|11    |    run_biche_head_n_body           |biche_head_n_body                   |    41|
+|12    |    run_bob_arm                     |bob_arm                             |    35|
+|13    |    run_bob_arm_attack              |bob_arm_attack                      |    50|
+|14    |    run_bob_head_n_body             |bob_head_n_body                     |    55|
+|15    |    run_clk25fps                    |flexi_clk_28                        |    55|
+|16    |    run_clk30fps                    |flexi_clk_29                        |    55|
+|17    |    run_clk35fps                    |flexi_clk_30                        |    55|
+|18    |    run_dmg_taken                   |dmg_taken                           |   372|
+|19    |    run_fourfps                     |flexi_clk_31                        |    55|
+|20    |    run_lose                        |lose                                |    23|
+|21    |    run_paper_airplane_attack       |paper_airplane_attack               |    53|
+|22    |    run_paper_clip_attack           |paper_clip_attack                   |    60|
+|23    |    run_paper_tack_attack           |paper_tack_attack                   |    81|
+|24    |    run_parry_shield                |parry_shield                        |    34|
+|25    |    run_rock_attack                 |rock_attack                         |   206|
+|26    |    run_scissor_close_attack        |scissor_close_attack                |   293|
+|27    |    run_scissor_open_attack         |scissor_open_attack                 |   301|
+|28    |    run_win                         |win                                 |    45|
+|29    |  button_Up                         |button_sync                         |     5|
+|30    |  clk6p25m_instantiate              |flexi_clk                           |    52|
+|31    |  debounce_btnC                     |debounce                            |    57|
+|32    |  debounce_btnD                     |debounce_0                          |    56|
+|33    |  debounce_btnL                     |debounce_1                          |    56|
+|34    |  debounce_btnR                     |debounce_2                          |    56|
+|35    |  debounce_btnU                     |debounce_3                          |    58|
+|36    |  nolabel_line268                   |led_resolute                        |    41|
+|37    |  oled_display_instance_L           |Oled_Display                        |   309|
+|38    |  oled_display_instance_R           |Oled_Display_4                      | 11491|
+|39    |  parry                             |ddr_parry                           |   968|
+|40    |    arrow_clock                     |flexi_clk_22                        |    54|
+|41    |    led_clock                       |flexi_clk_23                        |    51|
+|42    |    mainscreen_background           |battlescreen_background             |    32|
+|43    |    miss_colour_inst                |miss_colour                         |    36|
+|44    |    parry_background_inst           |parry_background                    |   304|
+|45    |    parry_colour_inst               |parry_colour                        |    73|
+|46    |    run_delay_counter               |delay_counter                       |    30|
+|47    |  run_ability_select_main           |ability_select_main                 |   941|
+|48    |    ability_resolution              |ability_resolution                  |    49|
+|49    |    ai_immediate_selection          |abil_sel_ai                         |    48|
+|50    |    countdown                       |countdown_timer_flexi               |   169|
+|51    |      clk_1hz                       |flexi_clk_20                        |    57|
+|52    |      clk_200hz                     |flexi_clk_21                        |    55|
+|53    |    select_screen_render            |ability_select_screen               |   674|
+|54    |      background_selection_render   |skillscreen_selection_background    |    23|
+|55    |      clk6p25m_instantiate          |flexi_clk_14                        |    51|
+|56    |      icon_paper_render             |skillscreen_icon_paper              |    41|
+|57    |      icon_rock_render              |skillscreen_icon_rock               |    57|
+|58    |      icon_scissors_render          |skillscreen_icon_scissors           |    71|
+|59    |      icon_selector_render          |skillscreen_selector                |    66|
+|60    |      player_select                 |rps_confirmation_screen             |   284|
+|61    |        background_selection_render |skillscreen_confirmation_background |    20|
+|62    |        clk6p25m_instantiate        |flexi_clk_16                        |    63|
+|63    |        icon_paper_render           |skillscreen_icon_paper_17           |    67|
+|64    |        icon_rock_render            |skillscreen_icon_rock_18            |    60|
+|65    |        icon_scissors_render        |skillscreen_icon_scissors_19        |    58|
+|66    |      run_fourfps                   |flexi_clk_15                        |    55|
+|67    |  top_screen_render                 |Top_Home_Screen                     |  1669|
+|68    |    clk6p25m_instantiate            |flexi_clk_9                         |    52|
+|69    |    guidepage                       |guide_page_render                   |  1413|
+|70    |      guide_page_one_render         |guide_page_one                      |   706|
+|71    |      guide_page_two_render         |guide_page_two                      |   644|
+|72    |      mainscreen                    |mainscreen_background               |    57|
+|73    |      run_button_sync_L             |button_sync_12                      |     3|
+|74    |      run_button_sync_R             |button_sync_13                      |     2|
+|75    |    mainscreen                      |mainscreen_page_render              |   196|
+|76    |      mainscreen                    |mainscreen_background__xdcDup__1    |    16|
+|77    |      run_button_sync_D             |button_sync_10                      |     2|
+|78    |      run_button_sync_U             |button_sync_11                      |     2|
+|79    |      selector_arrow_render         |main_screen_selector_arrow          |    86|
+|80    |      selector_render               |main_screen_selector                |    56|
+|81    |      title                         |homepage_title                      |    33|
+|82    |  victory                           |victory_screen_main                 |   433|
+|83    |    bot                             |bot_disp                            |   199|
+|84    |      clk_200hz                     |flexi_clk_7                         |    55|
+|85    |      clk_3p75hz                    |flexi_clk_8                         |    56|
+|86    |    nolabel_line37                  |seven_seg_mux                       |    23|
+|87    |    player                          |player_disp                         |   211|
+|88    |      clk_200hz                     |flexi_clk_5                         |    55|
+|89    |      clk_3p75hz                    |flexi_clk_6                         |    56|
++------+------------------------------------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:01:36 . Memory (MB): peak = 929.289 ; gain = 642.551
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:01:30 . Memory (MB): peak = 929.289 ; gain = 329.984
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:01:36 . Memory (MB): peak = 929.289 ; gain = 642.551
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2912 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+257 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:01:40 . Memory (MB): peak = 929.289 ; gain = 654.066
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/Top_Module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 929.289 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  2 20:23:48 2024...
