@@ -76,6 +76,7 @@ set rc [catch {
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   add_files -quiet C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/Top_Module.dcp
   read_ip -quiet C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background.xci
+  read_ip -quiet c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/homescreen_background/homescreen_background.xci
   read_xdc C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc
   link_design -top Top_Module -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb

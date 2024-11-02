@@ -28,7 +28,9 @@ module ddr_parry(
     input [12:0] pixel_index,  
     output reg [15:0] led_colour,
     output reg [1:0] parry_status = 2'b0,
-    output reg [9:0]led
+    output reg [9:0]led,
+    output reg [0:6]seg = 7'b1111111,
+    output reg [3:0]an = 4'b1111
 );
 
     // Convert pixel index to (x, y) coordinates
@@ -38,7 +40,8 @@ module ddr_parry(
     reg [3:0] parry_count = 0;
     reg [3:0] arrow_count = 0;
     reg miss = 1; 
-    reg btn = 0;
+    reg checked = 0;
+    reg [31:0] time_count = 0;
     wire three_secs;
     
     
@@ -59,6 +62,13 @@ module ddr_parry(
 
     // Colors
     parameter ARROW_COLOR = 16'b1111100000000000; // RED
+    
+    parameter TIME_BUTTON = 32'd249_999;
+      
+    parameter DIGIT1 = 7'b1001111, DIGIT2 = 7'b0010010, DIGIT3 = 7'b0000110;
+    parameter DIGIT4 = 7'b1001100, DIGIT5 = 7'b0100100, DIGIT6 = 7'b0100000;
+    parameter DIGIT7 = 7'b0001111,DIGIT8 = 7'b0000000, DIGIT9 = 7'b0001100;
+    parameter DIGIT0 = 7'b0000001, BLANK = 7'b1111111;
 
     // Clock divider for arrow speed
     wire clk_arrow;
@@ -143,34 +153,39 @@ module ddr_parry(
         led_colour <= parry_bg; // default parry screen background color
         if (reset) begin
             miss <= 1;
-            btn <= 0;
+            checked <= 0;
             parry_status <= 2'b0;
-            parry_count <= 4'b0;               
+            parry_count <= 4'b0;   
+            time_count <= 0;            
+        end
+        
+        if (arrow_y == 12) begin
+            if (miss == 0 && checked == 0) begin                    
+                parry_count <= parry_count + 1;
+                checked <= 1;
+            end
         end
         
         if (arrow_y == 11) begin
-            if (miss == 0) begin                    
-                parry_count <= parry_count + 1;
-                miss <= 1;
-                btn <= 0;
-            end else begin
-                miss <= 1;
-                btn <= 0;
-            end
+            miss <= 1;
+            checked <= 0;
+            time_count <= 0;
+        
         end
 
         // Set led colour for successful or missed parries
         if ((btnL && active_arrow == 2'b00 || btnU && active_arrow == 2'b01 ||
-             btnD && active_arrow == 2'b10 || btnR && active_arrow == 2'b11)) begin
-            if((arrow_y >= PARRY_ZONE_Y && arrow_y <= PARRY_ZONE_Y + 12 || miss == 0)) begin
+             btnD && active_arrow == 2'b10 || btnR && active_arrow == 2'b11) &&
+             time_count <= TIME_BUTTON) begin
+            time_count<= time_count +1;
+            
+            if((arrow_y >= PARRY_ZONE_Y && arrow_y <= PARRY_ZONE_Y + 10 || miss == 0)) begin
                 led_colour <= parry_colour;
                 miss <= 0;
-                btn <= 1;
             end
             else begin
                 led_colour <= miss_colour;
                 miss <= 1;
-                btn <= 1;
             end
         end 
         else if (arrow_y < PARRY_ZONE_Y && arrow_y > 11 && miss == 1) begin
@@ -180,7 +195,7 @@ module ddr_parry(
             led_colour <= parry_bg;
 
         // Display active arrow based on active_arrow value if game is still active
-        if (arrow_count < 11) begin
+        if (arrow_count < 10) begin
             case (active_arrow)
                 3'b000: if ((x == LEFT_X  && y >= arrow_y - 4 && y <= arrow_y + 4) ||
                            (x == LEFT_X - 1  && y >= arrow_y - 4 && y <= arrow_y + 4) ||
@@ -208,9 +223,51 @@ module ddr_parry(
                            (x == RIGHT_X + 5 && y == arrow_y)) led_colour <= ARROW_COLOR;
                 default: led_colour <= parry_bg ;
             endcase
+            case (parry_count)
+                4'd1 : begin
+                    seg <= DIGIT1;
+                    an <= 4'b0111;
+                end
+                4'd2 : begin
+                    seg <= DIGIT2;
+                    an <= 4'b0111;
+                end
+                4'd3 : begin
+                    seg <= DIGIT3;
+                    an <= 4'b0111;
+                end
+                4'd4 : begin
+                    seg <= DIGIT4;
+                    an <= 4'b0111;
+                end
+                4'd5 : begin
+                    seg <= DIGIT5;
+                    an <= 4'b0111;
+                end
+                4'd6 : begin
+                    seg <= DIGIT6;
+                    an <= 4'b0111;
+                end
+                4'd7 : begin
+                    seg <= DIGIT7;
+                    an <= 4'b0111;
+                end
+                4'd8 : begin
+                    seg <= DIGIT8;
+                    an <= 4'b0111;
+                end
+                4'd9 : begin
+                    seg <= DIGIT9;
+                    an <= 4'b0111;
+                end
+                default : begin
+                    seg <= DIGIT0;
+                    an <= 4'b0111;
+                end
+            endcase
         end
-        if (arrow_count == 11) begin
-            if (parry_count >= 9)
+        if (arrow_count == 10) begin
+            if (parry_count >= 8)
                 parry_status <= 2'b01; 
             else
                 parry_status <= 2'b10;

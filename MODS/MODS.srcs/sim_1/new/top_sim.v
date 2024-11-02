@@ -22,7 +22,7 @@
 
 module top_sim();
 
-    reg clk = 1'b0,btnR= 1'b0,btnL = 1'b0,btnC = 1'b0,btnD = 1'b0,btnU = 1'b0;
+    reg clk = 1'b0,btnR= 1'b0,btnL = 1'b0,btnC = 1'b1,btnD = 1'b0,btnU = 1'b0;
     wire [7:0]JC,JX;
     wire [0:6] seg;
     wire [3:0] an;

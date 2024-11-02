@@ -101,7 +101,6 @@ module abil_sel_ai(
             // Linear Feedback Shift Register (LFSR) for pseudo-random numbers
             random_value <= {random_value[14:0], random_value[8] ^ random_value[3]};
         end else begin
-            random_value <= 16'd32767; // Initialize random value
         end
     end
     always @(posedge clk) begin
@@ -137,6 +136,7 @@ module abil_sel_ai(
     end
     else begin
         success <= success;
+//        selected <= 1'b0;
     end
 end
 endmodule
@@ -362,6 +362,9 @@ module ability_select_screen(
         .m_const(32'd7),
         .my_clk(clk6p25m)
     );
+    
+    wire fourfps;
+    flexi_clk run_fourfps(.clk(clk), .m_const(12499999), .my_clk(fourfps));
 
     
     reg [1:0] state;
@@ -446,7 +449,7 @@ module ability_select_screen(
 ////        end
 //    end
     
-    always @(posedge clk6p25m) begin
+    always @(posedge fourfps) begin //changed
         if (turned_on) begin
             case (state)
                 ROCK: begin
@@ -454,25 +457,25 @@ module ability_select_screen(
 //                    led = 4'b0001;
                     if (ai_turn) begin
                         state <= state;
-                        oled_colour <= oled_colour_confirmation; //added
+//                        oled_colour <= oled_colour_confirmation; //added
                     end
                     else if (btnC | timer_up) begin
                         state <= ROCK;
                         done <= ROCK;
                         ai_turn <= 1'b1;
-                        oled_colour <= oled_colour_confirmation; //added
+//                        oled_colour <= oled_colour_confirmation; //added
                     end
                     else if (btnR) begin
                         state <= PAPER;
-                        oled_colour <= oled_colour_bg_layerFinal; //added
+//                        oled_colour <= oled_colour_bg_layerFinal; //added
                     end
                     else if (btnL) begin
                         state <= SCISSORS;
-                        oled_colour <= oled_colour_bg_layerFinal; //added
+//                        oled_colour <= oled_colour_bg_layerFinal; //added
                     end
                     else begin
                         state <= ROCK;
-                        oled_colour <= oled_colour_bg_layerFinal; //added
+//                        oled_colour <= oled_colour_bg_layerFinal; //added
                     end
                 end
                 PAPER: begin
@@ -480,25 +483,25 @@ module ability_select_screen(
 //                    led = 4'b0010;
                     if (ai_turn) begin
                         state <= state;
-                        oled_colour <= oled_colour_confirmation; //added
+//                        oled_colour <= oled_colour_confirmation; //added
                     end
                     else if (btnC | timer_up) begin
                         state <= PAPER;
                         done <= PAPER;
                         ai_turn <= 1'b1;
-                        oled_colour <= oled_colour_confirmation; //added
+//                        oled_colour <= oled_colour_confirmation; //added
                     end
                     else if (btnR) begin
                         state <= SCISSORS;
-                        oled_colour <= oled_colour_bg_layerFinal; //added
+//                        oled_colour <= oled_colour_bg_layerFinal; //added
                     end
                     else if (btnL) begin
                         state <= ROCK;
-                        oled_colour <= oled_colour_bg_layerFinal; //added
+//                        oled_colour <= oled_colour_bg_layerFinal; //added
                     end
                     else begin
                         state <= PAPER;
-                        oled_colour <= oled_colour_bg_layerFinal; //added
+//                        oled_colour <= oled_colour_bg_layerFinal; //added
                     end
                 end
                 SCISSORS: begin
@@ -506,25 +509,25 @@ module ability_select_screen(
 //                    led = 4'b0100;
                     if (ai_turn) begin
                         state <= state;
-                        oled_colour <= oled_colour_confirmation; //added
+//                        oled_colour <= oled_colour_confirmation; //added
                     end
                     else if (btnC | timer_up) begin
                         state <= SCISSORS;
                         done <= SCISSORS;
                         ai_turn <= 1'b1;
-                        oled_colour <= oled_colour_confirmation; //added
+//                        oled_colour <= oled_colour_confirmation; //added
                     end
                     else if (btnR) begin
                         state <= ROCK;
-                        oled_colour <= oled_colour_bg_layerFinal; //added
+//                        oled_colour <= oled_colour_bg_layerFinal; //added
                     end
                     else if (btnL) begin
                         state <= PAPER;
-                        oled_colour <= oled_colour_bg_layerFinal; //added
+//                        oled_colour <= oled_colour_bg_layerFinal; //added
                     end
                     else begin
                         state <= SCISSORS;
-                        oled_colour <= oled_colour_bg_layerFinal; //added
+//                        oled_colour <= oled_colour_bg_layerFinal; //added
                     end
                 end
             endcase
@@ -534,7 +537,6 @@ module ability_select_screen(
 //            led = 4'b0000;
             done <= 2'b00;
             ai_turn <= 1'b0;
-            oled_colour <= oled_colour_bg_layerFinal; //added
         end
     end
     
@@ -549,13 +551,13 @@ module ability_select_screen(
 //            end
 //        end
     
-//    always @ (posedge clk6p25m)begin //changed clk
-//        if (btnC || timer_up) begin 
-//            oled_colour = oled_colour_confirmation; //added
-//        end
-//        else begin
-//            oled_colour = oled_colour_bg_layerFinal; //added
-//        end
-//    end
+    always @ (*)begin //changed clk
+        if (btnC || timer_up) begin 
+            oled_colour = oled_colour_confirmation; //added
+        end
+        else begin
+            oled_colour = oled_colour_bg_layerFinal; //added
+        end
+    end
 endmodule
 

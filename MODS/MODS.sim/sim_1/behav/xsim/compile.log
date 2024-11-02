@@ -4,6 +4,7 @@ INFO: [VRFC 10-311] analyzing module abil_sel_ai
 INFO: [VRFC 10-311] analyzing module countdown_timer_flexi
 INFO: [VRFC 10-311] analyzing module ability_resolution
 INFO: [VRFC 10-311] analyzing module timer_master
+INFO: [VRFC 10-311] analyzing module ability_select_screen
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mainscreen_background
 INFO: [VRFC 10-311] analyzing module homepage_title
@@ -33,7 +34,6 @@ INFO: [VRFC 10-311] analyzing module skillscreen_icon_paper
 INFO: [VRFC 10-311] analyzing module skillscreen_icon_scissors
 INFO: [VRFC 10-311] analyzing module skillscreen_selector
 INFO: [VRFC 10-311] analyzing module skillscreen_confirmation_background
-INFO: [VRFC 10-311] analyzing module ability_select_screen
 INFO: [VRFC 10-311] analyzing module skillscreen_selection_background
 INFO: [VRFC 10-311] analyzing module rps_confirmation_screen
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/sub_modules.v" into library xil_defaultlib

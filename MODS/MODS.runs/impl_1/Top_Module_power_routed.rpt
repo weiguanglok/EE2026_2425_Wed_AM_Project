@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Sat Nov  2 11:28:38 2024
+| Date             : Sat Nov  2 15:29:59 2024
 | Host             : ASUS_Zenbook_WG running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Module_power_routed.rpt -pb Top_Module_power_summary_routed.pb -rpx Top_Module_power_routed.rpx
 | Design           : Top_Module
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.092        |
+| Total On-Chip Power (W)  | 0.109        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.020        |
+| Dynamic (W)              | 0.036        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.007 |        3 |       --- |             --- |
-| Slice Logic             |     0.004 |    23247 |       --- |             --- |
-|   LUT as Logic          |     0.004 |    15432 |     20800 |           74.19 |
-|   CARRY4                |    <0.001 |     1022 |      8150 |           12.54 |
-|   Register              |    <0.001 |     1734 |     41600 |            4.17 |
-|   F7/F8 Muxes           |    <0.001 |     2805 |     32600 |            8.60 |
-|   LUT as Shift Register |    <0.001 |        6 |      9600 |            0.06 |
-|   Others                |     0.000 |      174 |       --- |             --- |
-|   BUFG                  |     0.000 |        5 |        32 |           15.63 |
-| Signals                 |     0.004 |    13802 |       --- |             --- |
-| Block RAM               |     0.004 |        9 |        50 |           18.00 |
-| I/O                     |     0.002 |       50 |       106 |           47.17 |
+| Slice Logic             |     0.004 |    19431 |       --- |             --- |
+|   LUT as Logic          |     0.004 |    12515 |     20800 |           60.17 |
+|   CARRY4                |    <0.001 |     1075 |      8150 |           13.19 |
+|   Register              |    <0.001 |     2015 |     41600 |            4.84 |
+|   F7/F8 Muxes           |    <0.001 |     1551 |     32600 |            4.76 |
+|   LUT as Shift Register |    <0.001 |        7 |      9600 |            0.07 |
+|   BUFG                  |     0.000 |        7 |        32 |           21.88 |
+|   Others                |     0.000 |      203 |       --- |             --- |
+| Signals                 |     0.005 |    12424 |       --- |             --- |
+| Block RAM               |     0.004 |       15 |        50 |           30.00 |
+| I/O                     |     0.016 |       50 |       106 |           47.17 |
 | Static Power            |     0.072 |          |           |                 |
-| Total                   |     0.092 |          |           |                 |
+| Total                   |     0.109 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,16 +75,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.028 |       0.018 |      0.010 |
-| Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vccint    |       1.000 |     0.030 |       0.020 |      0.010 |
+| Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |
+| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -141,126 +141,161 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+--------------------------------------------------+-----------+
-| Name                                             | Power (W) |
-+--------------------------------------------------+-----------+
-| Top_Module                                       |     0.020 |
-|   animation_instantiate                          |     0.005 |
-|     battlescreen1                                |     0.000 |
-|       run_battleground_background                |     0.000 |
-|         U0                                       |     0.000 |
-|           inst_blk_mem_gen                       |     0.000 |
-|             gnbram.gnativebmg.native_blk_mem_gen |     0.000 |
-|               valid.cstr                         |     0.000 |
-|                 bindec_a.bindec_inst_a           |     0.000 |
-|                 has_mux_a.A                      |     0.000 |
-|                 ramloop[0].ram.r                 |     0.000 |
-|                   prim_init.ram                  |     0.000 |
-|                 ramloop[1].ram.r                 |     0.000 |
-|                   prim_init.ram                  |     0.000 |
-|                 ramloop[2].ram.r                 |     0.000 |
-|                   prim_init.ram                  |     0.000 |
-|     battlescreen2                                |     0.000 |
-|       run_battleground_background                |     0.000 |
-|         U0                                       |     0.000 |
-|           inst_blk_mem_gen                       |     0.000 |
-|             gnbram.gnativebmg.native_blk_mem_gen |     0.000 |
-|               valid.cstr                         |     0.000 |
-|                 bindec_a.bindec_inst_a           |     0.000 |
-|                 has_mux_a.A                      |     0.000 |
-|                 ramloop[0].ram.r                 |     0.000 |
-|                   prim_init.ram                  |     0.000 |
-|                 ramloop[1].ram.r                 |     0.000 |
-|                   prim_init.ram                  |     0.000 |
-|                 ramloop[2].ram.r                 |     0.000 |
-|                   prim_init.ram                  |     0.000 |
-|     clk6p25m                                     |    <0.001 |
-|     icon_paper_render                            |    <0.001 |
-|     icon_rock_render                             |     0.000 |
-|     icon_scissors_render                         |     0.000 |
-|     run_biche_arm                                |    <0.001 |
-|     run_biche_arm_attack                         |     0.000 |
-|     run_biche_head_n_body                        |     0.000 |
-|     run_bob_arm                                  |    <0.001 |
-|     run_bob_arm_attack                           |    <0.001 |
-|     run_bob_head_n_body                          |     0.000 |
-|     run_clk25fps                                 |    <0.001 |
-|     run_clk30fps                                 |    <0.001 |
-|     run_clk35fps                                 |    <0.001 |
-|     run_dmg_taken                                |    <0.001 |
-|     run_fourfps                                  |    <0.001 |
-|     run_paper_airplane_attack                    |    <0.001 |
-|     run_paper_clip_attack                        |    <0.001 |
-|     run_paper_tack_attack                        |    <0.001 |
-|     run_parry_shield                             |    <0.001 |
-|     run_rock_attack                              |     0.001 |
-|     run_scissor_close_attack                     |     0.000 |
-|     run_scissor_open_attack                      |     0.000 |
-|   button_Up                                      |    <0.001 |
-|   clk6p25m_instantiate                           |    <0.001 |
-|   debounce_btnC                                  |    <0.001 |
-|   debounce_btnD                                  |    <0.001 |
-|   debounce_btnL                                  |    <0.001 |
-|   debounce_btnR                                  |    <0.001 |
-|   debounce_btnU                                  |    <0.001 |
-|   nolabel_line234                                |    <0.001 |
-|   oled_display_instance_L                        |    <0.001 |
-|   oled_display_instance_R                        |    <0.001 |
-|   parry                                          |     0.005 |
-|     arrow_clock                                  |    <0.001 |
-|     led_clock                                    |    <0.001 |
-|     mainscreen_background                        |     0.004 |
-|       run_battleground_background                |     0.004 |
-|         U0                                       |     0.004 |
-|           inst_blk_mem_gen                       |     0.004 |
-|             gnbram.gnativebmg.native_blk_mem_gen |     0.004 |
-|               valid.cstr                         |     0.004 |
-|                 bindec_a.bindec_inst_a           |     0.000 |
-|                 has_mux_a.A                      |    <0.001 |
-|                 ramloop[0].ram.r                 |     0.002 |
-|                   prim_init.ram                  |     0.002 |
-|                 ramloop[1].ram.r                 |    <0.001 |
-|                   prim_init.ram                  |    <0.001 |
-|                 ramloop[2].ram.r                 |     0.002 |
-|                   prim_init.ram                  |     0.002 |
-|     miss_colour_inst                             |    <0.001 |
-|     parry_background_inst                        |    <0.001 |
-|     parry_colour_inst                            |    <0.001 |
-|     run_delay_counter                            |    <0.001 |
-|   run_ability_select_main                        |     0.003 |
-|     ability_resolution                           |    <0.001 |
-|     ai_immediate_selection                       |    <0.001 |
-|     countdown                                    |     0.001 |
-|       clk_1hz                                    |    <0.001 |
-|       clk_200hz                                  |    <0.001 |
-|     select_screen_render                         |     0.001 |
-|       background_selection_render                |     0.000 |
-|       clk6p25m_instantiate                       |    <0.001 |
-|       icon_paper_render                          |     0.000 |
-|       icon_rock_render                           |     0.000 |
-|       icon_scissors_render                       |    <0.001 |
-|       icon_selector_render                       |    <0.001 |
-|       player_select                              |    <0.001 |
-|         background_selection_render              |     0.000 |
-|         clk6p25m_instantiate                     |    <0.001 |
-|         icon_paper_render                        |    <0.001 |
-|         icon_rock_render                         |     0.000 |
-|         icon_scissors_render                     |     0.000 |
-|   top_screen_render                              |    <0.001 |
-|     clk6p25m_instantiate                         |    <0.001 |
-|     guidepage                                    |    <0.001 |
-|       guide_page_one_render                      |    <0.001 |
-|       guide_page_two_render                      |     0.000 |
-|       mainscreen                                 |     0.000 |
-|       run_button_sync_L                          |    <0.001 |
-|       run_button_sync_R                          |    <0.001 |
-|     mainscreen                                   |    <0.001 |
-|       mainscreen                                 |     0.000 |
-|       run_button_sync_D                          |    <0.001 |
-|       run_button_sync_U                          |    <0.001 |
-|       selector_arrow_render                      |     0.000 |
-|       selector_render                            |     0.000 |
-|       title                                      |     0.000 |
-+--------------------------------------------------+-----------+
++----------------------------------------------------+-----------+
+| Name                                               | Power (W) |
++----------------------------------------------------+-----------+
+| Top_Module                                         |     0.036 |
+|   animation_instantiate                            |     0.005 |
+|     battlescreen1                                  |     0.000 |
+|       run_battleground_background                  |     0.000 |
+|         U0                                         |     0.000 |
+|           inst_blk_mem_gen                         |     0.000 |
+|             gnbram.gnativebmg.native_blk_mem_gen   |     0.000 |
+|               valid.cstr                           |     0.000 |
+|                 bindec_a.bindec_inst_a             |     0.000 |
+|                 has_mux_a.A                        |     0.000 |
+|                 ramloop[0].ram.r                   |     0.000 |
+|                   prim_init.ram                    |     0.000 |
+|                 ramloop[1].ram.r                   |     0.000 |
+|                   prim_init.ram                    |     0.000 |
+|                 ramloop[2].ram.r                   |     0.000 |
+|                   prim_init.ram                    |     0.000 |
+|     battlescreen2                                  |     0.000 |
+|       run_battleground_background                  |     0.000 |
+|         U0                                         |     0.000 |
+|           inst_blk_mem_gen                         |     0.000 |
+|             gnbram.gnativebmg.native_blk_mem_gen   |     0.000 |
+|               valid.cstr                           |     0.000 |
+|                 bindec_a.bindec_inst_a             |     0.000 |
+|                 has_mux_a.A                        |     0.000 |
+|                 ramloop[0].ram.r                   |     0.000 |
+|                   prim_init.ram                    |     0.000 |
+|                 ramloop[1].ram.r                   |     0.000 |
+|                   prim_init.ram                    |     0.000 |
+|                 ramloop[2].ram.r                   |     0.000 |
+|                   prim_init.ram                    |     0.000 |
+|     clk6p25m                                       |    <0.001 |
+|     icon_paper_render                              |    <0.001 |
+|     icon_rock_render                               |     0.000 |
+|     icon_scissors_render                           |     0.000 |
+|     run_biche_arm                                  |    <0.001 |
+|     run_biche_arm_attack                           |     0.000 |
+|     run_biche_head_n_body                          |     0.000 |
+|     run_bob_arm                                    |    <0.001 |
+|     run_bob_arm_attack                             |    <0.001 |
+|     run_bob_head_n_body                            |     0.000 |
+|     run_clk25fps                                   |    <0.001 |
+|     run_clk30fps                                   |    <0.001 |
+|     run_clk35fps                                   |    <0.001 |
+|     run_dmg_taken                                  |    <0.001 |
+|     run_fourfps                                    |    <0.001 |
+|     run_paper_airplane_attack                      |    <0.001 |
+|     run_paper_clip_attack                          |    <0.001 |
+|     run_paper_tack_attack                          |    <0.001 |
+|     run_parry_shield                               |    <0.001 |
+|     run_rock_attack                                |     0.001 |
+|     run_scissor_close_attack                       |     0.000 |
+|     run_scissor_open_attack                        |    <0.001 |
+|   button_Up                                        |    <0.001 |
+|   clk6p25m_instantiate                             |    <0.001 |
+|   debounce_btnC                                    |    <0.001 |
+|   debounce_btnD                                    |    <0.001 |
+|   debounce_btnL                                    |    <0.001 |
+|   debounce_btnR                                    |    <0.001 |
+|   debounce_btnU                                    |    <0.001 |
+|   nolabel_line264                                  |    <0.001 |
+|   oled_display_instance_L                          |    <0.001 |
+|   oled_display_instance_R                          |    <0.001 |
+|   parry                                            |     0.005 |
+|     arrow_clock                                    |    <0.001 |
+|     led_clock                                      |    <0.001 |
+|     mainscreen_background                          |     0.004 |
+|       run_battleground_background                  |     0.004 |
+|         U0                                         |     0.004 |
+|           inst_blk_mem_gen                         |     0.004 |
+|             gnbram.gnativebmg.native_blk_mem_gen   |     0.004 |
+|               valid.cstr                           |     0.004 |
+|                 bindec_a.bindec_inst_a             |     0.000 |
+|                 has_mux_a.A                        |    <0.001 |
+|                 ramloop[0].ram.r                   |     0.002 |
+|                   prim_init.ram                    |     0.002 |
+|                 ramloop[1].ram.r                   |    <0.001 |
+|                   prim_init.ram                    |    <0.001 |
+|                 ramloop[2].ram.r                   |     0.002 |
+|                   prim_init.ram                    |     0.002 |
+|     miss_colour_inst                               |    <0.001 |
+|     parry_background_inst                          |    <0.001 |
+|     parry_colour_inst                              |    <0.001 |
+|     run_delay_counter                              |    <0.001 |
+|   run_ability_select_main                          |     0.003 |
+|     ability_resolution                             |    <0.001 |
+|     ai_immediate_selection                         |    <0.001 |
+|     countdown                                      |     0.001 |
+|       clk_1hz                                      |    <0.001 |
+|       clk_200hz                                    |    <0.001 |
+|     select_screen_render                           |     0.002 |
+|       background_selection_render                  |     0.000 |
+|       clk6p25m_instantiate                         |    <0.001 |
+|       icon_paper_render                            |     0.000 |
+|       icon_rock_render                             |     0.000 |
+|       icon_scissors_render                         |    <0.001 |
+|       icon_selector_render                         |    <0.001 |
+|       player_select                                |    <0.001 |
+|         background_selection_render                |     0.000 |
+|         clk6p25m_instantiate                       |    <0.001 |
+|         icon_paper_render                          |    <0.001 |
+|         icon_rock_render                           |     0.000 |
+|         icon_scissors_render                       |     0.000 |
+|       run_fourfps                                  |    <0.001 |
+|   top_screen_render                                |    <0.001 |
+|     clk6p25m_instantiate                           |    <0.001 |
+|     guidepage                                      |    <0.001 |
+|       guide_page_one_render                        |    <0.001 |
+|       guide_page_two_render                        |     0.000 |
+|       mainscreen                                   |     0.000 |
+|         run_homescreen_background                  |     0.000 |
+|           U0                                       |     0.000 |
+|             inst_blk_mem_gen                       |     0.000 |
+|               gnbram.gnativebmg.native_blk_mem_gen |     0.000 |
+|                 valid.cstr                         |     0.000 |
+|                   bindec_a.bindec_inst_a           |     0.000 |
+|                   has_mux_a.A                      |     0.000 |
+|                   ramloop[0].ram.r                 |     0.000 |
+|                     prim_init.ram                  |     0.000 |
+|                   ramloop[1].ram.r                 |     0.000 |
+|                     prim_init.ram                  |     0.000 |
+|                   ramloop[2].ram.r                 |     0.000 |
+|                     prim_init.ram                  |     0.000 |
+|       run_button_sync_L                            |    <0.001 |
+|       run_button_sync_R                            |    <0.001 |
+|     mainscreen                                     |    <0.001 |
+|       mainscreen                                   |     0.000 |
+|         run_homescreen_background                  |     0.000 |
+|           U0                                       |     0.000 |
+|             inst_blk_mem_gen                       |     0.000 |
+|               gnbram.gnativebmg.native_blk_mem_gen |     0.000 |
+|                 valid.cstr                         |     0.000 |
+|                   bindec_a.bindec_inst_a           |     0.000 |
+|                   has_mux_a.A                      |     0.000 |
+|                   ramloop[0].ram.r                 |     0.000 |
+|                     prim_init.ram                  |     0.000 |
+|                   ramloop[1].ram.r                 |     0.000 |
+|                     prim_init.ram                  |     0.000 |
+|                   ramloop[2].ram.r                 |     0.000 |
+|                     prim_init.ram                  |     0.000 |
+|       run_button_sync_D                            |    <0.001 |
+|       run_button_sync_U                            |    <0.001 |
+|       selector_arrow_render                        |     0.000 |
+|       selector_render                              |     0.000 |
+|       title                                        |     0.000 |
+|   victory                                          |     0.002 |
+|     bot                                            |    <0.001 |
+|       clk_200hz                                    |    <0.001 |
+|       clk_3p75hz                                   |    <0.001 |
+|     nolabel_line38                                 |    <0.001 |
+|     player                                         |    <0.001 |
+|       clk_200hz                                    |    <0.001 |
+|       clk_3p75hz                                   |    <0.001 |
++----------------------------------------------------+-----------+
 
 

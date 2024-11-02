@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730517891">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730532393">
   <File Type="BITSTR-BMM" Name="Top_Module_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="Top_Module_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="Top_Module_timing_summary_init.rpt"/>
@@ -117,6 +117,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/end_screen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/front_end.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -211,6 +218,12 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/ip/homescreen_background.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="Top_Module"/>
@@ -241,4 +254,5 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="battleground_background"/>
+  <BlockFileSet Type="BlockSrcs" Name="homescreen_background"/>
 </GenRun>

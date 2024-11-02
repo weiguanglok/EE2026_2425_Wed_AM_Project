@@ -1,0 +1,2 @@
+homescreen_background.v,verilog,xil_defaultlib,../../../ip/homescreen_background/sim/homescreen_background.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

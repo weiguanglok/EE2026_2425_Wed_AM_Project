@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730517891">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730532393">
   <File Type="PA-TCL" Name="Top_Module.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Top_Module_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Top_Module_reports.tcl"/>
@@ -51,6 +51,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/delay_counter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/end_screen.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -151,6 +158,12 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/ip/homescreen_background.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="Top_Module"/>
@@ -173,4 +186,5 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="battleground_background"/>
+  <BlockFileSet Type="BlockSrcs" Name="homescreen_background"/>
 </GenRun>

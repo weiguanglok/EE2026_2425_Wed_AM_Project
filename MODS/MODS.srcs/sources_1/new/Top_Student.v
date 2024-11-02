@@ -13,6 +13,7 @@
 module Top_Home_Screen(
     input clk,
     input [12:0]pixel_index,
+    input [3:0]STATE,
     input btnR, btnL, btnC, btnD, btnU,   // Buttons for navigation and selection 
     output reg[15:0]oled_colour, 
     output reg is_start 
@@ -23,6 +24,7 @@ module Top_Home_Screen(
     parameter STATE_STARTPAGE = 2'b01;
     parameter STATE_GUIDEPAGE = 2'b10;
     parameter STATE_DEFAULT = 2'b11;
+    parameter STATE_END = 9;
     
     reg [1:0] state;  // Register to store the current state
     wire clk6p25m;
@@ -39,9 +41,6 @@ module Top_Home_Screen(
         .m_const(32'd7),
         .my_clk(clk6p25m)
     );
-    
-
-
     
     // Instantiate the mainscreen_page_render module
     mainscreen_page_render mainscreen(
@@ -69,6 +68,7 @@ module Top_Home_Screen(
         state = STATE_MAINSCREEN;
     end
     always @ (posedge clk) begin
+        if (STATE ==STATE_END) is_start <= 0; 
         if(btnC)begin
             case (state)
                 STATE_MAINSCREEN: begin

@@ -24,18 +24,43 @@ module led_resolute(
     input turned_on,
     input clk,
     input winner,
-    output reg [15:0] led = 16'b0000_0001_1000_0000
+    input [1:0] parry_result,
+    output reg [15:0] led = 16'b0100_0001_1000_0000,
+    output reg endgame = 1'b0
     );
+    
+    parameter STATE_START = 0;
+    parameter STATE_IDLE = 1;
+    parameter STATE_SELECT = 2;
+    parameter STATE_WHO_WIN = 3;
+    parameter STATE_RESOLVE_W =4;
+    parameter STATE_RESOLVE_P = 5;
+    parameter STATE_RESOLVE_P_L = 6;
+    parameter STATE_RESOLVE_P_W = 7;
+    parameter STATE_DMG_MODIFIER_n_RESOLUTE = 8;
     
     always @(posedge clk) begin
         if (turned_on) begin
-            if (winner) begin
+            if (parry_result) begin
+            end
+            else if ((parry_result == 2'b10)&&(led[14])&~winner) begin
+                endgame <= 1'b1;
+                led = led << 1;
+            end
+            else if ((led[1])&& winner) begin
+                endgame <= 1'b1;
+                led = led >> 1;
+            end
+            else if (winner) begin
                 led = led << 1;
             end
             else begin
                 led = led >> 1;
             end
         end
+//        else begin
+//            led <= 16'b0000_0001_1000_0000; //changed
+//        end
     end
     
 endmodule
