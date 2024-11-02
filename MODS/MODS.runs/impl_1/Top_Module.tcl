@@ -60,22 +60,22 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/wt [current_project]
-  set_property parent.project_path C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.xpr [current_project]
-  set_property ip_output_repo C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/stamp/Downloads/MODS/MODS.cache/wt [current_project]
+  set_property parent.project_path C:/Users/stamp/Downloads/MODS/MODS.xpr [current_project]
+  set_property ip_output_repo C:/Users/stamp/Downloads/MODS/MODS.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/Top_Module.dcp
-  read_xdc C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc
+  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
+  add_files -quiet C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/Top_Module.dcp
+  read_ip -quiet C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background.xci
+  read_xdc C:/Users/stamp/Downloads/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc
   link_design -top Top_Module -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -155,6 +155,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   catch { write_mem_info -force Top_Module.mmi }
   write_bitstream -force Top_Module.bit 
   catch {write_debug_probes -quiet -force Top_Module}

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Tay Xu Yang" Host="DESKTOP-VGVE9I8" Pid="116116">
+    <Process Command="vivado.bat" Owner="stamp" Host="ASUS_ZENBOOK_WG" Pid="30368">
     </Process>
 </ProcessHandle>

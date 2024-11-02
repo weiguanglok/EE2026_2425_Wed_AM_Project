@@ -17,35 +17,39 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/wt [current_project]
-set_property parent.project_path C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.xpr [current_project]
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
+set_property webtalk.parent_dir C:/Users/stamp/Downloads/MODS/MODS.cache/wt [current_project]
+set_property parent.project_path C:/Users/stamp/Downloads/MODS/MODS.xpr [current_project]
+set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.cache/ip [current_project]
+set_property ip_output_repo c:/Users/stamp/Downloads/MODS/MODS.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/imports/res/weights.coe
-add_files C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/imports/res/00.coe
+add_files C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/imports/res/weights.coe
+add_files C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/imports/res/00.coe
+add_files C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background.coe
 read_verilog -library xil_defaultlib {
-  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v
-  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v
-  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Student.v
-  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v
-  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/background.v
-  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/delay_counter.v
-  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v
-  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/guide_page_render.v
-  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/mainscreen_page.v
-  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/parry.v
-  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/sub_modules.v
-  C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v
+  C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v
+  C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v
+  C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Student.v
+  C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v
+  C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/background.v
+  C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/delay_counter.v
+  C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v
+  C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/guide_page_render.v
+  C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/mainscreen_page.v
+  C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/parry.v
+  C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v
+  C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v
 }
+read_ip -quiet C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background.xci
+set_property used_in_implementation false [get_files -all c:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background_ooc.xdc]
+
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -54,8 +58,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc
-set_property used_in_implementation false [get_files C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]
+read_xdc C:/Users/stamp/Downloads/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc
+set_property used_in_implementation false [get_files C:/Users/stamp/Downloads/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
