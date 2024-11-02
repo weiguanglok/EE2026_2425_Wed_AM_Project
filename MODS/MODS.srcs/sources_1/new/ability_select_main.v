@@ -97,11 +97,8 @@ module abil_sel_ai(
 
     // Random number generation (simple linear feedback shift register)
     always @(posedge clk) begin
-        if (turned_on) begin
-            // Linear Feedback Shift Register (LFSR) for pseudo-random numbers
-            random_value <= {random_value[14:0], random_value[8] ^ random_value[3]};
-        end else begin
-        end
+        // Linear Feedback Shift Register (LFSR) for pseudo-random numbers
+        random_value <= {random_value[14:0], random_value[15] ^ random_value[13] ^ random_value[12] ^ random_value[10]};
     end
     always @(posedge clk) begin
     if (success ==2'b00 && turned_on && ai_turn) begin

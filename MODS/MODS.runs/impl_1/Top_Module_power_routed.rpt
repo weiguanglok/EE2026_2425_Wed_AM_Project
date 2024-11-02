@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Sat Nov  2 17:06:14 2024
+| Date             : Sat Nov  2 17:42:21 2024
 | Host             : ASUS_Zenbook_WG running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Module_power_routed.rpt -pb Top_Module_power_summary_routed.pb -rpx Top_Module_power_routed.rpx
 | Design           : Top_Module
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.095        |
+| Total On-Chip Power (W)  | 0.102        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.023        |
+| Dynamic (W)              | 0.029        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -52,20 +52,20 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.006 |        3 |       --- |             --- |
-| Slice Logic             |     0.005 |    19358 |       --- |             --- |
-|   LUT as Logic          |     0.005 |    12502 |     20800 |           60.11 |
+| Clocks                  |     0.007 |        3 |       --- |             --- |
+| Slice Logic             |     0.005 |    19392 |       --- |             --- |
+|   LUT as Logic          |     0.004 |    12499 |     20800 |           60.09 |
 |   CARRY4                |    <0.001 |     1075 |      8150 |           13.19 |
-|   Register              |    <0.001 |     2002 |     41600 |            4.81 |
-|   F7/F8 Muxes           |    <0.001 |     1549 |     32600 |            4.75 |
-|   LUT as Shift Register |    <0.001 |        7 |      9600 |            0.07 |
+|   Register              |    <0.001 |     2003 |     41600 |            4.81 |
+|   F7/F8 Muxes           |    <0.001 |     1552 |     32600 |            4.76 |
+|   LUT as Shift Register |    <0.001 |        6 |      9600 |            0.06 |
 |   Others                |     0.000 |      201 |       --- |             --- |
 |   BUFG                  |     0.000 |        7 |        32 |           21.88 |
-| Signals                 |     0.005 |    12378 |       --- |             --- |
+| Signals                 |     0.005 |    12392 |       --- |             --- |
 | Block RAM               |     0.000 |       15 |        50 |           30.00 |
-| I/O                     |     0.006 |       50 |       106 |           47.17 |
+| I/O                     |     0.013 |       50 |       106 |           47.17 |
 | Static Power            |     0.072 |          |           |                 |
-| Total                   |     0.095 |          |           |                 |
+| Total                   |     0.102 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,9 +75,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.027 |       0.017 |      0.010 |
+| Vccint    |       1.000 |     0.026 |       0.016 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
+| Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -144,8 +144,8 @@ Table of Contents
 +----------------------------------------------------+-----------+
 | Name                                               | Power (W) |
 +----------------------------------------------------+-----------+
-| Top_Module                                         |     0.023 |
-|   animation_instantiate                            |     0.006 |
+| Top_Module                                         |     0.029 |
+|   animation_instantiate                            |     0.005 |
 |     battlescreen1                                  |     0.000 |
 |       run_battleground_background                  |     0.000 |
 |         U0                                         |     0.000 |
@@ -193,7 +193,7 @@ Table of Contents
 |     run_paper_clip_attack                          |    <0.001 |
 |     run_paper_tack_attack                          |    <0.001 |
 |     run_parry_shield                               |    <0.001 |
-|     run_rock_attack                                |     0.002 |
+|     run_rock_attack                                |     0.001 |
 |     run_scissor_close_attack                       |     0.000 |
 |     run_scissor_open_attack                        |    <0.001 |
 |   button_Up                                        |    <0.001 |
@@ -203,10 +203,10 @@ Table of Contents
 |   debounce_btnL                                    |    <0.001 |
 |   debounce_btnR                                    |    <0.001 |
 |   debounce_btnU                                    |    <0.001 |
-|   nolabel_line267                                  |    <0.001 |
+|   nolabel_line268                                  |    <0.001 |
 |   oled_display_instance_L                          |    <0.001 |
 |   oled_display_instance_R                          |    <0.001 |
-|   parry                                            |     0.001 |
+|   parry                                            |    <0.001 |
 |     arrow_clock                                    |    <0.001 |
 |     led_clock                                      |    <0.001 |
 |     mainscreen_background                          |     0.000 |
@@ -223,9 +223,9 @@ Table of Contents
 |                   prim_init.ram                    |     0.000 |
 |                 ramloop[2].ram.r                   |     0.000 |
 |                   prim_init.ram                    |     0.000 |
-|     miss_colour_inst                               |    <0.001 |
-|     parry_background_inst                          |    <0.001 |
-|     parry_colour_inst                              |     0.000 |
+|     miss_colour_inst                               |     0.000 |
+|     parry_background_inst                          |     0.000 |
+|     parry_colour_inst                              |    <0.001 |
 |     run_delay_counter                              |    <0.001 |
 |   run_ability_select_main                          |     0.003 |
 |     ability_resolution                             |    <0.001 |
@@ -241,9 +241,9 @@ Table of Contents
 |       icon_scissors_render                         |    <0.001 |
 |       icon_selector_render                         |    <0.001 |
 |       player_select                                |    <0.001 |
-|         background_selection_render                |    <0.001 |
+|         background_selection_render                |     0.000 |
 |         clk6p25m_instantiate                       |    <0.001 |
-|         icon_paper_render                          |     0.000 |
+|         icon_paper_render                          |    <0.001 |
 |         icon_rock_render                           |     0.000 |
 |         icon_scissors_render                       |     0.000 |
 |       run_fourfps                                  |    <0.001 |

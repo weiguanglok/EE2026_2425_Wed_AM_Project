@@ -169,7 +169,7 @@ module Top_Module(
 //                count_delay <= (count_delay>=300_000_000)? 0 : count_delay+1;
                oled_colour_L <= oled_colour_ai;
                oled_colour_R <= oled_colour_player;
-               if ((led[0])||(led[15])) begin //changed
+               if ((led[1]&&winner)||((led[14])&&(parry_result==2'b10))) begin //changed
                 state <= STATE_END;
                end
                else begin
@@ -192,6 +192,7 @@ module Top_Module(
         .pixel_index(pixel_index_R),
         .clk(clk),
         .btnR(btnR_stable), .btnL(btnL_stable), .btnC(btnC_stable), .btnD(btnD_stable), .btnU(btnU_stable),
+        .STATE(state),
         .oled_colour(oled_colour_start),
         .is_start(is_start)         
     );
@@ -217,8 +218,8 @@ module Top_Module(
      ddr_parry parry(
         .basys_clock(clk),
         .reset(state<STATE_RESOLVE_P),
-        .btnL(btnL_stable), .btnD(btnD_stable), .btnU(btnU_stable), 
-        .btnR(btnR_stable), .pixel_index(pixel_index_R),
+        .btnL(btnL), .btnD(btnD), .btnU(btnU), 
+        .btnR(btnR), .pixel_index(pixel_index_R),
         .led_colour(oled_colour_parry), 
         .parry_status(parry_result), 
         .lfsr_input({~P1_SEL,P2_SEL}),

@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Nov  2 17:03:00 2024
-# Process ID: 36216
+# Start of session at: Sat Nov  2 17:39:03 2024
+# Process ID: 18072
 # Current directory: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1
 # Command line: vivado.exe -log Top_Module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
 # Log file: C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/Top_Module.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 27528 
+INFO: Helper process launched with PID 8040 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 410.730 ; gain = 124.672
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 410.703 ; gain = 124.758
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top_Module' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:23]
 	Parameter STATE_START bound to: 0 - type: integer 
@@ -51,8 +51,8 @@ INFO: [Synth 8-6157] synthesizing module 'mainscreen_page_render' [C:/Users/stam
 	Parameter STATE_MS_GUIDE_LOC_X bound to: 25 - type: integer 
 	Parameter STATE_MS_GUIDE_LOC_Y bound to: 53 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mainscreen_background' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:22]
-INFO: [Synth 8-6157] synthesizing module 'homescreen_background' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-36216-ASUS_Zenbook_WG/realtime/homescreen_background_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'homescreen_background' (4#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-36216-ASUS_Zenbook_WG/realtime/homescreen_background_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'homescreen_background' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-18072-ASUS_Zenbook_WG/realtime/homescreen_background_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'homescreen_background' (4#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-18072-ASUS_Zenbook_WG/realtime/homescreen_background_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'mainscreen_background' (5#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:22]
 INFO: [Synth 8-6157] synthesizing module 'homepage_title' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:40]
 INFO: [Synth 8-6155] done synthesizing module 'homepage_title' (6#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:40]
@@ -73,11 +73,10 @@ INFO: [Synth 8-6155] done synthesizing module 'guide_page_render' (12#1) [C:/Use
 INFO: [Synth 8-6157] synthesizing module 'blue_screen' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:412]
 INFO: [Synth 8-6155] done synthesizing module 'blue_screen' (13#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:412]
 INFO: [Synth 8-6155] done synthesizing module 'Top_Home_Screen' (14#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Student.v:13]
-WARNING: [Synth 8-350] instance 'top_screen_render' of module 'Top_Home_Screen' requires 10 connections, but only 9 given [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:191]
 INFO: [Synth 8-6157] synthesizing module 'ability_select_main' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:23]
 	Parameter STATE_DEFAULT bound to: 0 - type: integer 
 	Parameter STATE_SELECTION bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'ability_select_screen' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:344]
+INFO: [Synth 8-6157] synthesizing module 'ability_select_screen' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:341]
 	Parameter ROCK bound to: 2'b00 
 	Parameter PAPER bound to: 2'b01 
 	Parameter SCISSORS bound to: 2'b10 
@@ -101,15 +100,15 @@ INFO: [Synth 8-6157] synthesizing module 'rps_confirmation_screen' [C:/Users/sta
 INFO: [Synth 8-6157] synthesizing module 'skillscreen_confirmation_background' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1717]
 INFO: [Synth 8-6155] done synthesizing module 'skillscreen_confirmation_background' (20#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1717]
 INFO: [Synth 8-6155] done synthesizing module 'rps_confirmation_screen' (21#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1890]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:454]
-INFO: [Synth 8-6155] done synthesizing module 'ability_select_screen' (22#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:344]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:451]
+INFO: [Synth 8-6155] done synthesizing module 'ability_select_screen' (22#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:341]
 INFO: [Synth 8-6157] synthesizing module 'abil_sel_ai' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:85]
 	Parameter TOTAL bound to: 16'b1111111111111111 
 	Parameter ROCK bound to: 2'b00 
 	Parameter PAPER bound to: 2'b01 
 	Parameter SCISSORS bound to: 2'b10 
 INFO: [Synth 8-6155] done synthesizing module 'abil_sel_ai' (23#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:85]
-INFO: [Synth 8-6157] synthesizing module 'countdown_timer_flexi' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:145]
+INFO: [Synth 8-6157] synthesizing module 'countdown_timer_flexi' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:142]
 	Parameter DIGIT1 bound to: 7'b1001111 
 	Parameter DIGIT2 bound to: 7'b0010010 
 	Parameter DIGIT3 bound to: 7'b0000110 
@@ -121,16 +120,16 @@ INFO: [Synth 8-6157] synthesizing module 'countdown_timer_flexi' [C:/Users/stamp
 	Parameter DIGIT9 bound to: 7'b0001100 
 	Parameter DIGIT0 bound to: 7'b0000001 
 	Parameter BLANK bound to: 7'b1111111 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:231]
-INFO: [Synth 8-6155] done synthesizing module 'countdown_timer_flexi' (24#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:145]
-INFO: [Synth 8-6157] synthesizing module 'ability_resolution' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:281]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:228]
+INFO: [Synth 8-6155] done synthesizing module 'countdown_timer_flexi' (24#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:142]
+INFO: [Synth 8-6157] synthesizing module 'ability_resolution' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:278]
 	Parameter ROCK bound to: 2'b00 
 	Parameter PAPER bound to: 2'b01 
 	Parameter SCISSORS bound to: 2'b10 
-INFO: [Synth 8-6155] done synthesizing module 'ability_resolution' (25#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:281]
+INFO: [Synth 8-6155] done synthesizing module 'ability_resolution' (25#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:278]
 INFO: [Synth 8-6155] done synthesizing module 'ability_select_main' (26#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:23]
-WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'ability_select_main' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:204]
-WARNING: [Synth 8-350] instance 'run_ability_select_main' of module 'ability_select_main' requires 16 connections, but only 14 given [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:198]
+WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'ability_select_main' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:205]
+WARNING: [Synth 8-350] instance 'run_ability_select_main' of module 'ability_select_main' requires 16 connections, but only 14 given [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:199]
 INFO: [Synth 8-6157] synthesizing module 'battle_animation' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:23]
 	Parameter STATE_IDLE bound to: 1 - type: integer 
 	Parameter STATE_SELECT bound to: 2 - type: integer 
@@ -147,8 +146,8 @@ INFO: [Synth 8-6157] synthesizing module 'battle_animation' [C:/Users/stamp/Docu
 	Parameter pause_x bound to: 7'b0000011 
 	Parameter pause_y bound to: 6'b000101 
 INFO: [Synth 8-6157] synthesizing module 'battlescreen_background' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1442]
-INFO: [Synth 8-6157] synthesizing module 'battleground_background' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-36216-ASUS_Zenbook_WG/realtime/battleground_background_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'battleground_background' (27#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-36216-ASUS_Zenbook_WG/realtime/battleground_background_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'battleground_background' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-18072-ASUS_Zenbook_WG/realtime/battleground_background_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'battleground_background' (27#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-18072-ASUS_Zenbook_WG/realtime/battleground_background_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'battlescreen_background' (28#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/front_end.v:1442]
 WARNING: [Synth 8-350] instance 'battlescreen1' of module 'battlescreen_background' requires 6 connections, but only 4 given [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:163]
 WARNING: [Synth 8-350] instance 'battlescreen2' of module 'battlescreen_background' requires 6 connections, but only 4 given [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:168]
@@ -189,7 +188,7 @@ INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stam
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:305]
 WARNING: [Synth 8-6014] Unused sequential element oled_charac_arm_reg was removed.  [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:324]
 INFO: [Synth 8-6155] done synthesizing module 'battle_animation' (43#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:23]
-WARNING: [Synth 8-350] instance 'animation_instantiate' of module 'battle_animation' requires 11 connections, but only 9 given [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:208]
+WARNING: [Synth 8-350] instance 'animation_instantiate' of module 'battle_animation' requires 11 connections, but only 9 given [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:209]
 INFO: [Synth 8-6157] synthesizing module 'ddr_parry' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/parry.v:23]
 	Parameter PARRY_ZONE_Y bound to: 7'b0010100 
 	Parameter LEFT_X bound to: 7'b0010111 
@@ -223,8 +222,8 @@ INFO: [Synth 8-6157] synthesizing module 'miss_colour' [C:/Users/stamp/Documents
 INFO: [Synth 8-6155] done synthesizing module 'miss_colour' (48#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/background.v:165]
 WARNING: [Synth 8-3848] Net led in module/entity ddr_parry does not have driver. [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/parry.v:31]
 INFO: [Synth 8-6155] done synthesizing module 'ddr_parry' (49#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/parry.v:23]
-WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'ddr_parry' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:225]
-WARNING: [Synth 8-350] instance 'parry' of module 'ddr_parry' requires 13 connections, but only 12 given [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:217]
+WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'ddr_parry' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:226]
+WARNING: [Synth 8-350] instance 'parry' of module 'ddr_parry' requires 13 connections, but only 12 given [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:218]
 INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
 	Parameter Width bound to: 96 - type: integer 
 	Parameter Height bound to: 64 - type: integer 
@@ -291,7 +290,7 @@ INFO: [Synth 8-6157] synthesizing module 'led_resolute' [C:/Users/stamp/Document
 	Parameter STATE_RESOLVE_P_W bound to: 7 - type: integer 
 	Parameter STATE_DMG_MODIFIER_n_RESOLUTE bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'led_resolute' (51#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/led_resolute.v:23]
-WARNING: [Synth 8-689] width (4) of port connection 'state' does not match port width (5) of module 'led_resolute' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:267]
+WARNING: [Synth 8-689] width (4) of port connection 'state' does not match port width (5) of module 'led_resolute' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:268]
 INFO: [Synth 8-6157] synthesizing module 'victory_screen_main' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/end_screen.v:23]
 INFO: [Synth 8-6157] synthesizing module 'player_disp' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/end_screen.v:43]
 	Parameter BLANK bound to: 7'b1111111 
@@ -344,8 +343,8 @@ INFO: [Synth 8-6155] done synthesizing module 'bot_disp' (53#1) [C:/Users/stamp/
 INFO: [Synth 8-6157] synthesizing module 'seven_seg_mux' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/end_screen.v:321]
 INFO: [Synth 8-6155] done synthesizing module 'seven_seg_mux' (54#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/end_screen.v:321]
 INFO: [Synth 8-6155] done synthesizing module 'victory_screen_main' (55#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/end_screen.v:23]
-WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'victory_screen_main' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:279]
-WARNING: [Synth 8-350] instance 'victory' of module 'victory_screen_main' requires 6 connections, but only 5 given [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:275]
+WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'victory_screen_main' [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:280]
+WARNING: [Synth 8-350] instance 'victory' of module 'victory_screen_main' requires 6 connections, but only 5 given [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:276]
 INFO: [Synth 8-6155] done synthesizing module 'Top_Module' (56#1) [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:23]
 WARNING: [Synth 8-3917] design Top_Module has port dp driven by constant 1
 WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[14]
@@ -405,7 +404,7 @@ WARNING: [Synth 8-3331] design ability_select_main has unconnected port ai_turne
 WARNING: [Synth 8-3331] design Top_Module has unconnected port JC[2]
 WARNING: [Synth 8-3331] design Top_Module has unconnected port JX[2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 573.418 ; gain = 287.359
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 574.250 ; gain = 288.305
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -415,20 +414,16 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 WARNING: [Synth 8-3295] tying undriven pin run_parry_shield:flip to constant 0 [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:282]
-WARNING: [Synth 8-3295] tying undriven pin top_screen_render:STATE[3] to constant 0 [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:191]
-WARNING: [Synth 8-3295] tying undriven pin top_screen_render:STATE[2] to constant 0 [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:191]
-WARNING: [Synth 8-3295] tying undriven pin top_screen_render:STATE[1] to constant 0 [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:191]
-WARNING: [Synth 8-3295] tying undriven pin top_screen_render:STATE[0] to constant 0 [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:191]
-WARNING: [Synth 8-3295] tying undriven pin oled_display_instance_R:reset to constant 0 [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:234]
-WARNING: [Synth 8-3295] tying undriven pin oled_display_instance_L:reset to constant 0 [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:250]
+WARNING: [Synth 8-3295] tying undriven pin oled_display_instance_R:reset to constant 0 [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:235]
+WARNING: [Synth 8-3295] tying undriven pin oled_display_instance_L:reset to constant 0 [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:251]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 573.418 ; gain = 287.359
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 574.250 ; gain = 288.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 573.418 ; gain = 287.359
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 574.250 ; gain = 288.305
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -441,10 +436,10 @@ Parsing XDC File [c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.src
 Finished Parsing XDC File [c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'animation_instantiate/battlescreen2/run_battleground_background'
 Parsing XDC File [c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'parry/mainscreen_background/run_battleground_background'
 Finished Parsing XDC File [c:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'parry/mainscreen_background/run_battleground_background'
-Parsing XDC File [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-36216-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/mainscreen/mainscreen/run_homescreen_background'
-Finished Parsing XDC File [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-36216-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/mainscreen/mainscreen/run_homescreen_background'
-Parsing XDC File [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-36216-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/guidepage/mainscreen/run_homescreen_background'
-Finished Parsing XDC File [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-36216-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/guidepage/mainscreen/run_homescreen_background'
+Parsing XDC File [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-18072-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/mainscreen/mainscreen/run_homescreen_background'
+Finished Parsing XDC File [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-18072-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/mainscreen/mainscreen/run_homescreen_background'
+Parsing XDC File [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-18072-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/guidepage/mainscreen/run_homescreen_background'
+Finished Parsing XDC File [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/.Xil/Vivado-18072-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/guidepage/mainscreen/run_homescreen_background'
 Parsing XDC File [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]
 Finished Parsing XDC File [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
@@ -454,16 +449,16 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 886.066 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 885.480 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 886.066 ; gain = 600.008
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 885.480 ; gain = 599.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 886.066 ; gain = 600.008
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 885.480 ; gain = 599.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -474,22 +469,20 @@ Applied set_property DONT_TOUCH = true for parry/mainscreen_background/run_battl
 Applied set_property DONT_TOUCH = true for top_screen_render/mainscreen/mainscreen/run_homescreen_background. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for top_screen_render/guidepage/mainscreen/run_homescreen_background. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 886.066 ; gain = 600.008
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 885.480 ; gain = 599.535
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Top_Home_Screen'
 INFO: [Synth 8-5544] ROM "is_start" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ability_select_screen'
 INFO: [Synth 8-5544] ROM "ICON_X_COOR" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-3936] Found unconnected internal register 'random_value_reg' and it is trimmed from '16' to '15' bits. [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:102]
 INFO: [Synth 8-802] inferred FSM for state register 'count_2_four_reg' in module 'battle_animation'
 INFO: [Synth 8-5544] ROM "scissor_x" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "phase" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "count_2_four" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "miss" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "checked" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -561,7 +554,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'count_2_four_reg' using en
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 886.066 ; gain = 600.008
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 885.480 ; gain = 599.535
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -570,9 +563,9 @@ Report RTL Partitions:
 +------+----------------------+------------+----------+
 |1     |battle_animation__GB0 |           1|     27634|
 |2     |battle_animation__GB1 |           1|     16061|
-|3     |Top_Module__GCB0      |           1|     32285|
-|4     |Top_Module__GCB1      |           1|     15320|
-|5     |Top_Module__GCB2      |           1|     24466|
+|3     |Top_Module__GCB0      |           1|     33433|
+|4     |Top_Module__GCB1      |           1|     15298|
+|5     |Top_Module__GCB2      |           1|     23471|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -595,13 +588,13 @@ Detailed RTL Component Info :
 	   3 Input      3 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 4     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
 	               40 Bit    Registers := 2     
 	               32 Bit    Registers := 2     
 	               17 Bit    Registers := 2     
-	               16 Bit    Registers := 42    
-	               15 Bit    Registers := 1     
+	               16 Bit    Registers := 43    
 	                7 Bit    Registers := 23    
 	                6 Bit    Registers := 3     
 	                4 Bit    Registers := 13    
@@ -634,20 +627,20 @@ Detailed RTL Component Info :
 	  20 Input     16 Bit        Muxes := 33    
 	  13 Input     16 Bit        Muxes := 13    
 	  29 Input     16 Bit        Muxes := 23    
+	  11 Input     16 Bit        Muxes := 1     
 	  64 Input     16 Bit        Muxes := 71    
 	   8 Input     16 Bit        Muxes := 15    
 	  27 Input     16 Bit        Muxes := 7     
 	   7 Input     16 Bit        Muxes := 5     
 	  56 Input     16 Bit        Muxes := 24    
-	  11 Input     16 Bit        Muxes := 1     
 	  53 Input     16 Bit        Muxes := 52    
 	  24 Input     11 Bit        Muxes := 1     
 	  14 Input     11 Bit        Muxes := 4     
 	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 4     
-	   4 Input      7 Bit        Muxes := 3     
-	  11 Input      7 Bit        Muxes := 4     
 	  13 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 4     
+	  11 Input      7 Bit        Muxes := 4     
 	   2 Input      6 Bit        Muxes := 20    
 	   4 Input      6 Bit        Muxes := 2     
 	  32 Input      6 Bit        Muxes := 2     
@@ -657,8 +650,8 @@ Detailed RTL Component Info :
 	  74 Input      5 Bit        Muxes := 1     
 	  51 Input      5 Bit        Muxes := 1     
 	  19 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 8     
 	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 8     
 	   9 Input      3 Bit        Muxes := 2     
 	  12 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 4     
@@ -668,14 +661,15 @@ Detailed RTL Component Info :
 	  53 Input      3 Bit        Muxes := 7     
 	   4 Input      2 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 5     
-	   3 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
 	   9 Input      1 Bit        Muxes := 2     
 	  12 Input      1 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 45    
-	  14 Input      1 Bit        Muxes := 1     
-	  11 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 46    
 	   3 Input      1 Bit        Muxes := 5     
 	  13 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -694,12 +688,12 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
-	   6 Input     16 Bit        Muxes := 1     
 	  11 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 4     
 	   2 Input      4 Bit        Muxes := 1     
-	  11 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 3     
+	  11 Input      3 Bit        Muxes := 1     
 	  13 Input      1 Bit        Muxes := 1     
 	  11 Input      1 Bit        Muxes := 3     
 Module battlescreen_background__xdcDup__1 
@@ -979,96 +973,16 @@ Detailed RTL Component Info :
 	   9 Input      1 Bit        Muxes := 2     
 	  12 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 3     
-Module flexi_clk__13 
+Module debounce__1 
 Detailed RTL Component Info : 
 +---Registers : 
-	                1 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module flexi_clk__14 
+Module button_sync__1 
 Detailed RTL Component Info : 
 +---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module player_disp 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      4 Bit       Adders := 1     
-	   2 Input      2 Bit       Adders := 1     
-+---Registers : 
-	                7 Bit    Registers := 5     
-	                4 Bit    Registers := 2     
-	                2 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      7 Bit        Muxes := 1     
-	   4 Input      7 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 1     
-	  14 Input      1 Bit        Muxes := 1     
-Module flexi_clk__11 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module flexi_clk__12 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module bot_disp 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      4 Bit       Adders := 1     
-	   2 Input      2 Bit       Adders := 1     
-+---Registers : 
-	                7 Bit    Registers := 5     
-	                4 Bit    Registers := 2     
-	                2 Bit    Registers := 1     
-+---Muxes : 
-	  11 Input      7 Bit        Muxes := 4     
-	   2 Input      7 Bit        Muxes := 1     
-	   4 Input      7 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 1     
-	  11 Input      1 Bit        Muxes := 1     
-Module seven_seg_mux 
-Detailed RTL Component Info : 
-+---Registers : 
-	                7 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      7 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 2     
-Module led_resolute 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     16 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
-Module Oled_Display__1 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     17 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 1     
-+---Registers : 
-	               40 Bit    Registers := 1     
-	               17 Bit    Registers := 1     
-	                6 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     40 Bit        Muxes := 3     
-	  32 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 2     
-	  32 Input     20 Bit        Muxes := 1     
-	   2 Input     17 Bit        Muxes := 1     
-	  32 Input      6 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 2     
-	  32 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	                1 Bit    Registers := 3     
 Module flexi_clk__9 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1198,9 +1112,9 @@ Detailed RTL Component Info :
 Module abil_sel_ai 
 Detailed RTL Component Info : 
 +---XORs : 
-	   2 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               15 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
@@ -1244,6 +1158,46 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 1     
+Module Oled_Display__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 Module flexi_clk__15 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1251,6 +1205,76 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
 Module flexi_clk__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module player_disp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+Module flexi_clk__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexi_clk__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module bot_disp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+Module seven_seg_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+Module led_resolute 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module flexi_clk__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexi_clk__12 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
@@ -1334,29 +1358,21 @@ Detailed RTL Component Info :
 	   2 Input     16 Bit        Muxes := 10    
 	   4 Input     16 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 3     
-	   2 Input      2 Bit        Muxes := 2     
-	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 7     
-Module Oled_Display 
+Module debounce__2 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     17 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 1     
 +---Registers : 
-	               40 Bit    Registers := 1     
-	               17 Bit    Registers := 1     
-	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input     40 Bit        Muxes := 3     
-	  32 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 2     
-	  32 Input     20 Bit        Muxes := 1     
-	   2 Input     17 Bit        Muxes := 1     
-	  32 Input      6 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 2     
-	  32 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
 Module flexi_clk__17 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1398,11 +1414,11 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   9 Input     16 Bit        Muxes := 5     
 	   2 Input     16 Bit        Muxes := 2     
-Module button_sync__3 
+Module button_sync__4 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 3     
-Module button_sync__4 
+Module button_sync 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 3     
@@ -1443,11 +1459,11 @@ Detailed RTL Component Info :
 	   7 Input     16 Bit        Muxes := 2     
 	   2 Input     16 Bit        Muxes := 2     
 	  53 Input      3 Bit        Muxes := 4     
-Module button_sync__1 
+Module button_sync__2 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 3     
-Module button_sync__2 
+Module button_sync__3 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 3     
@@ -1463,32 +1479,9 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   4 Input     16 Bit        Muxes := 1     
-	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
 	   3 Input      1 Bit        Muxes := 2     
-Module button_sync 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 3     
-Module debounce__1 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module debounce__2 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module debounce__3 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
 Module debounce__4 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1545,10 +1538,6 @@ INFO: [Synth 8-3886] merging instance 'scissor_x_reg[1]' (FD) to 'scissor_x_reg[
 INFO: [Synth 8-3886] merging instance 'scissor_x_reg[2]' (FD) to 'scissor_x_reg[5]'
 INFO: [Synth 8-3886] merging instance 'scissor_x_reg[3]' (FD) to 'scissor_x_reg[6]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\scissor_x_reg[6] )
-INFO: [Synth 8-5545] ROM "clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "clk_3p75hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "clk_3p75hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk6p25m_instantiate/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "run_fourfps/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk_1hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -1556,23 +1545,21 @@ INFO: [Synth 8-5545] ROM "clk_200hz/my_clk0" won't be mapped to RAM because addr
 INFO: [Synth 8-5545] ROM "my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "run_fourfps/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk6p25m_instantiate/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element run_ability_select_main/countdown/dp_reg was removed.  [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:200]
-WARNING: [Synth 8-3936] Found unconnected internal register 'run_ability_select_main/ai_immediate_selection/random_value_reg' and it is trimmed from '15' to '14' bits. [C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:102]
-INFO: [Synth 8-5546] ROM "oled_display_instance_R/fsm_next_state0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "victory/player/clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "victory/player/clk_3p75hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "victory/bot/clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "victory/bot/clk_3p75hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "oled_display_instance_R/fsm_next_state0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "run_ability_select_main/countdown/clk_1hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "run_ability_select_main/countdown/clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "countdown/clk_1hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "countdown/clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design ability_select_main has unconnected port ai_turned_on
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[2]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[5]'
 INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/background_selection_render/oled_colour_reg[9]' (FD) to 'run_ability_select_main/select_screen_render/background_selection_render/oled_colour_reg[10]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[6]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[14]'
 INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/background_selection_render/oled_colour_reg[10]' (FD) to 'run_ability_select_main/select_screen_render/background_selection_render/oled_colour_reg[12]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[9]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[10]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[10]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[12]'
 INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/background_selection_render/oled_colour_reg[14]' (FD) to 'run_ability_select_main/select_screen_render/background_selection_render/oled_colour_reg[15]'
-INFO: [Synth 8-3886] merging instance 'victory/bot/FIRST_reg[1]' (FDE) to 'victory/bot/FIRST_reg[3]'
-INFO: [Synth 8-3886] merging instance 'victory/bot/SECOND_reg[1]' (FDE) to 'victory/bot/SECOND_reg[3]'
-INFO: [Synth 8-3886] merging instance 'victory/bot/THIRD_reg[1]' (FDE) to 'victory/bot/THIRD_reg[3]'
-INFO: [Synth 8-3886] merging instance 'victory/bot/FOURTH_reg[1]' (FDE) to 'victory/bot/FOURTH_reg[3]'
+INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[14]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[15]'
 INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/ICON_X_COOR_reg[0]' (FDE) to 'run_ability_select_main/select_screen_render/ICON_X_COOR_reg[3]'
 INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/ICON_X_COOR_reg[1]' (FDE) to 'run_ability_select_main/select_screen_render/ICON_X_COOR_reg[5]'
 INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/ICON_X_COOR_reg[3]' (FDE) to 'run_ability_select_main/select_screen_render/ICON_X_COOR_reg[4]'
@@ -1582,21 +1569,21 @@ INFO: [Synth 8-3886] merging instance 'run_ability_select_main/countdown/FIRST_r
 INFO: [Synth 8-3886] merging instance 'run_ability_select_main/countdown/FIRST_reg[2]' (FDE) to 'run_ability_select_main/countdown/FIRST_reg[6]'
 INFO: [Synth 8-3886] merging instance 'run_ability_select_main/countdown/FIRST_reg[3]' (FDE) to 'run_ability_select_main/countdown/FIRST_reg[6]'
 INFO: [Synth 8-3886] merging instance 'run_ability_select_main/countdown/FIRST_reg[4]' (FDE) to 'run_ability_select_main/countdown/FIRST_reg[5]'
-INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[2]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[5]'
-INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[6]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[14]'
-INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[9]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[10]'
-INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[10]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[12]'
-INFO: [Synth 8-3886] merging instance 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[14]' (FD) to 'run_ability_select_main/select_screen_render/player_select/background_selection_render/oled_colour_reg[15]'
-INFO: [Synth 8-3886] merging instance 'victory/bot/seg_reg[5]' (FD) to 'victory/bot/seg_reg[3]'
 WARNING: [Synth 8-3332] Sequential element (ICON_X_COOR_reg[4]) is unused and will be removed from module ability_select_screen.
+INFO: [Synth 8-5545] ROM "clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_3p75hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_3p75hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "arrow_clock/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "led_clock/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "miss" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "checked" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "arrow_clock/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "led_clock/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "miss" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "oled_display_instance_L/fsm_next_state0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "oled_display_instance_L/fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "checked" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "victory/player/clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "victory/player/clk_3p75hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "victory/bot/clk_200hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "victory/bot/clk_3p75hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[6]
 WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[5]
 WARNING: [Synth 8-3331] design battlescreen_background has unconnected port sprite_x[4]
@@ -1644,15 +1631,20 @@ INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[19]' 
 INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[16]' (FDR) to 'parry/run_delay_counter/counter_reg[14]'
 INFO: [Synth 8-3886] merging instance 'parry/run_delay_counter/counter_reg[14]' (FDR) to 'parry/run_delay_counter/counter_reg[15]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (parry/run_delay_counter/\counter_reg[15] )
+INFO: [Synth 8-3886] merging instance 'victory/bot/FIRST_reg[1]' (FDE) to 'victory/bot/FIRST_reg[3]'
+INFO: [Synth 8-3886] merging instance 'victory/bot/SECOND_reg[1]' (FDE) to 'victory/bot/SECOND_reg[3]'
+INFO: [Synth 8-3886] merging instance 'victory/bot/THIRD_reg[1]' (FDE) to 'victory/bot/THIRD_reg[3]'
+INFO: [Synth 8-3886] merging instance 'victory/bot/FOURTH_reg[1]' (FDE) to 'victory/bot/FOURTH_reg[3]'
 INFO: [Synth 8-3886] merging instance 'parry/an_reg[0]' (FDSE) to 'parry/an_reg[2]'
 INFO: [Synth 8-3886] merging instance 'parry/an_reg[1]' (FDSE) to 'parry/an_reg[2]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (parry/\an_reg[2] )
+INFO: [Synth 8-3886] merging instance 'victory/bot/seg_reg[5]' (FD) to 'victory/bot/seg_reg[3]'
 WARNING: [Synth 8-3332] Sequential element (counter_reg[15]) is unused and will be removed from module delay_counter.
 WARNING: [Synth 8-3332] Sequential element (an_reg[2]) is unused and will be removed from module ddr_parry.
 INFO: [Synth 8-5545] ROM "top_screen_render/clk6p25m_instantiate/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk6p25m_instantiate/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:01:09 . Memory (MB): peak = 886.066 ; gain = 600.008
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:01:10 . Memory (MB): peak = 885.480 ; gain = 599.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1916,21 +1908,21 @@ Report RTL Partitions:
 +------+----------------------+------------+----------+
 |1     |battle_animation__GB0 |           1|     11640|
 |2     |battle_animation__GB1 |           1|      5467|
-|3     |Top_Module__GCB0      |           1|     15101|
-|4     |Top_Module__GCB1      |           1|      5753|
-|5     |Top_Module__GCB2      |           1|     10810|
+|3     |Top_Module__GCB0      |           1|     15297|
+|4     |Top_Module__GCB1      |           1|      5803|
+|5     |Top_Module__GCB2      |           1|     10229|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:01:15 . Memory (MB): peak = 886.066 ; gain = 600.008
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:01:16 . Memory (MB): peak = 885.480 ; gain = 599.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:01:19 . Memory (MB): peak = 918.762 ; gain = 632.703
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:01:21 . Memory (MB): peak = 917.449 ; gain = 631.504
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1939,13 +1931,13 @@ Report RTL Partitions:
 +------+----------------------+------------+----------+
 |1     |battle_animation__GB0 |           1|     11640|
 |2     |battle_animation__GB1 |           1|      5467|
-|3     |Top_Module_GT0        |           1|     31647|
+|3     |Top_Module_GT0        |           1|     31293|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:01:30 . Memory (MB): peak = 946.383 ; gain = 660.324
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:01:33 . Memory (MB): peak = 946.469 ; gain = 660.523
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1954,7 +1946,7 @@ Report RTL Partitions:
 +------+----------------------+------------+----------+
 |1     |battle_animation__GB0 |           1|      4353|
 |2     |battle_animation__GB1 |           1|      2236|
-|3     |Top_Module_GT0        |           1|     12301|
+|3     |Top_Module_GT0        |           1|     12360|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1972,7 +1964,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:01:33 . Memory (MB): peak = 946.383 ; gain = 660.324
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:01:35 . Memory (MB): peak = 946.469 ; gain = 660.523
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1985,7 +1977,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:01:33 . Memory (MB): peak = 946.383 ; gain = 660.324
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:01:35 . Memory (MB): peak = 946.469 ; gain = 660.523
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1997,42 +1989,41 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:01:33 . Memory (MB): peak = 946.383 ; gain = 660.324
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:01:36 . Memory (MB): peak = 946.469 ; gain = 660.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:01:34 . Memory (MB): peak = 946.383 ; gain = 660.324
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:01:36 . Memory (MB): peak = 946.469 ; gain = 660.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:01:34 . Memory (MB): peak = 946.383 ; gain = 660.324
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:01:36 . Memory (MB): peak = 946.469 ; gain = 660.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:01:34 . Memory (MB): peak = 946.383 ; gain = 660.324
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:01:36 . Memory (MB): peak = 946.469 ; gain = 660.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Top_Module  | top_screen_render/mainscreen/run_button_sync_U/button_sync_reg     | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|Top_Module  | top_screen_render/mainscreen/run_button_sync_D/button_sync_reg     | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|Top_Module  | top_screen_render/guidepage/run_button_sync_R/button_sync_reg      | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|Top_Module  | top_screen_render/guidepage/run_button_sync_L/button_sync_reg      | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|Top_Module  | button_Up/button_sync_reg                                          | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|Top_Module  | run_ability_select_main/ai_immediate_selection/random_value_reg[8] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|Top_Module  | run_ability_select_main/ai_immediate_selection/random_value_reg[3] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-+------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+---------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Top_Module  | top_screen_render/mainscreen/run_button_sync_U/button_sync_reg      | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Top_Module  | top_screen_render/mainscreen/run_button_sync_D/button_sync_reg      | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Top_Module  | button_Up/button_sync_reg                                           | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Top_Module  | top_screen_render/guidepage/run_button_sync_R/button_sync_reg       | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Top_Module  | top_screen_render/guidepage/run_button_sync_L/button_sync_reg       | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Top_Module  | run_ability_select_main/ai_immediate_selection/random_value_reg[10] | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+---------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -2060,18 +2051,18 @@ Report Cell Usage:
 |5     |homescreen_background__2   |     1|
 |6     |BUFG                       |     8|
 |7     |CARRY4                     |  1075|
-|8     |LUT1                       |   316|
-|9     |LUT2                       |  1939|
-|10    |LUT3                       |   841|
-|11    |LUT4                       |  1238|
-|12    |LUT5                       |  3287|
-|13    |LUT6                       |  6770|
-|14    |MUXF7                      |  1346|
+|8     |LUT1                       |   358|
+|9     |LUT2                       |  1977|
+|10    |LUT3                       |   851|
+|11    |LUT4                       |  1259|
+|12    |LUT5                       |  3268|
+|13    |LUT6                       |  6750|
+|14    |MUXF7                      |  1349|
 |15    |MUXF8                      |   328|
-|16    |SRL16E                     |     7|
+|16    |SRL16E                     |     6|
 |17    |FDCE                       |    14|
 |18    |FDE_1                      |    64|
-|19    |FDRE                       |  1863|
+|19    |FDRE                       |  1864|
 |20    |FDSE                       |    41|
 |21    |IBUF                       |     6|
 |22    |OBUF                       |    42|
@@ -2082,8 +2073,8 @@ Report Instance Areas:
 +------+------------------------------------+------------------------------------+------+
 |      |Instance                            |Module                              |Cells |
 +------+------------------------------------+------------------------------------+------+
-|1     |top                                 |                                    | 19267|
-|2     |  animation_instantiate             |battle_animation                    |  2938|
+|1     |top                                 |                                    | 19342|
+|2     |  animation_instantiate             |battle_animation                    |  3012|
 |3     |    clk6p25m                        |flexi_clk_24                        |    51|
 |4     |    run_clk25fps                    |flexi_clk_28                        |    55|
 |5     |    run_clk30fps                    |flexi_clk_29                        |    55|
@@ -2101,57 +2092,57 @@ Report Instance Areas:
 |17    |    run_bob_arm_attack              |bob_arm_attack                      |    50|
 |18    |    run_bob_head_n_body             |bob_head_n_body                     |    55|
 |19    |    run_dmg_taken                   |dmg_taken                           |   372|
-|20    |    run_paper_airplane_attack       |paper_airplane_attack               |    94|
-|21    |    run_paper_clip_attack           |paper_clip_attack                   |    65|
+|20    |    run_paper_airplane_attack       |paper_airplane_attack               |   106|
+|21    |    run_paper_clip_attack           |paper_clip_attack                   |   114|
 |22    |    run_paper_tack_attack           |paper_tack_attack                   |   132|
 |23    |    run_parry_shield                |parry_shield                        |    50|
 |24    |    run_rock_attack                 |rock_attack                         |   207|
 |25    |    run_scissor_close_attack        |scissor_close_attack                |    44|
 |26    |    run_scissor_open_attack         |scissor_open_attack                 |    76|
-|27    |  button_Up                         |button_sync                         |     5|
+|27    |  button_Up                         |button_sync                         |     4|
 |28    |  clk6p25m_instantiate              |flexi_clk                           |    52|
 |29    |  debounce_btnC                     |debounce                            |    57|
 |30    |  debounce_btnD                     |debounce_0                          |    56|
 |31    |  debounce_btnL                     |debounce_1                          |    56|
 |32    |  debounce_btnR                     |debounce_2                          |    56|
-|33    |  debounce_btnU                     |debounce_3                          |    58|
-|34    |  nolabel_line267                   |led_resolute                        |    44|
-|35    |  oled_display_instance_L           |Oled_Display                        |   293|
-|36    |  oled_display_instance_R           |Oled_Display_4                      | 11537|
-|37    |  parry                             |ddr_parry                           |  1005|
+|33    |  debounce_btnU                     |debounce_3                          |    56|
+|34    |  nolabel_line268                   |led_resolute                        |    44|
+|35    |  oled_display_instance_L           |Oled_Display                        |   309|
+|36    |  oled_display_instance_R           |Oled_Display_4                      | 11259|
+|37    |  parry                             |ddr_parry                           |   956|
 |38    |    arrow_clock                     |flexi_clk_22                        |    54|
 |39    |    led_clock                       |flexi_clk_23                        |    51|
 |40    |    mainscreen_background           |battlescreen_background             |    32|
-|41    |    miss_colour_inst                |miss_colour                         |    68|
-|42    |    parry_background_inst           |parry_background                    |   320|
-|43    |    parry_colour_inst               |parry_colour                        |    41|
-|44    |    run_delay_counter               |delay_counter                       |    29|
-|45    |  run_ability_select_main           |ability_select_main                 |   859|
+|41    |    miss_colour_inst                |miss_colour                         |    36|
+|42    |    parry_background_inst           |parry_background                    |   304|
+|43    |    parry_colour_inst               |parry_colour                        |    73|
+|44    |    run_delay_counter               |delay_counter                       |    30|
+|45    |  run_ability_select_main           |ability_select_main                 |   890|
 |46    |    ability_resolution              |ability_resolution                  |     9|
-|47    |    ai_immediate_selection          |abil_sel_ai                         |    19|
-|48    |    countdown                       |countdown_timer_flexi               |   169|
-|49    |      clk_1hz                       |flexi_clk_20                        |    54|
-|50    |      clk_200hz                     |flexi_clk_21                        |    53|
-|51    |    select_screen_render            |ability_select_screen               |   661|
+|47    |    ai_immediate_selection          |abil_sel_ai                         |    20|
+|48    |    countdown                       |countdown_timer_flexi               |   182|
+|49    |      clk_1hz                       |flexi_clk_20                        |    57|
+|50    |      clk_200hz                     |flexi_clk_21                        |    55|
+|51    |    select_screen_render            |ability_select_screen               |   677|
 |52    |      background_selection_render   |skillscreen_selection_background    |    23|
 |53    |      clk6p25m_instantiate          |flexi_clk_14                        |    51|
 |54    |      icon_paper_render             |skillscreen_icon_paper              |    41|
 |55    |      icon_rock_render              |skillscreen_icon_rock               |    57|
 |56    |      icon_scissors_render          |skillscreen_icon_scissors           |    71|
 |57    |      icon_selector_render          |skillscreen_selector                |    66|
-|58    |      player_select                 |rps_confirmation_screen             |   271|
-|59    |        background_selection_render |skillscreen_confirmation_background |    33|
+|58    |      player_select                 |rps_confirmation_screen             |   287|
+|59    |        background_selection_render |skillscreen_confirmation_background |    17|
 |60    |        clk6p25m_instantiate        |flexi_clk_16                        |    63|
-|61    |        icon_paper_render           |skillscreen_icon_paper_17           |    41|
+|61    |        icon_paper_render           |skillscreen_icon_paper_17           |    73|
 |62    |        icon_rock_render            |skillscreen_icon_rock_18            |    60|
 |63    |        icon_scissors_render        |skillscreen_icon_scissors_19        |    58|
 |64    |      run_fourfps                   |flexi_clk_15                        |    55|
-|65    |  top_screen_render                 |Top_Home_Screen                     |  1391|
+|65    |  top_screen_render                 |Top_Home_Screen                     |  1669|
 |66    |    clk6p25m_instantiate            |flexi_clk_9                         |    52|
-|67    |    guidepage                       |guide_page_render                   |  1136|
-|68    |      guide_page_one_render         |guide_page_one                      |   417|
+|67    |    guidepage                       |guide_page_render                   |  1413|
+|68    |      guide_page_one_render         |guide_page_one                      |   706|
 |69    |      guide_page_two_render         |guide_page_two                      |   644|
-|70    |      mainscreen                    |mainscreen_background               |    69|
+|70    |      mainscreen                    |mainscreen_background               |    57|
 |71    |      run_button_sync_L             |button_sync_12                      |     3|
 |72    |      run_button_sync_R             |button_sync_13                      |     2|
 |73    |    mainscreen                      |mainscreen_page_render              |   196|
@@ -2161,23 +2152,23 @@ Report Instance Areas:
 |77    |      selector_arrow_render         |main_screen_selector_arrow          |    86|
 |78    |      selector_render               |main_screen_selector                |    56|
 |79    |      title                         |homepage_title                      |    33|
-|80    |  victory                           |victory_screen_main                 |   414|
-|81    |    bot                             |bot_disp                            |   196|
-|82    |      clk_200hz                     |flexi_clk_7                         |    53|
-|83    |      clk_3p75hz                    |flexi_clk_8                         |    55|
+|80    |  victory                           |victory_screen_main                 |   422|
+|81    |    bot                             |bot_disp                            |   199|
+|82    |      clk_200hz                     |flexi_clk_7                         |    55|
+|83    |      clk_3p75hz                    |flexi_clk_8                         |    56|
 |84    |    nolabel_line38                  |seven_seg_mux                       |    12|
-|85    |    player                          |player_disp                         |   206|
-|86    |      clk_200hz                     |flexi_clk_5                         |    53|
-|87    |      clk_3p75hz                    |flexi_clk_6                         |    55|
+|85    |    player                          |player_disp                         |   211|
+|86    |      clk_200hz                     |flexi_clk_5                         |    55|
+|87    |      clk_3p75hz                    |flexi_clk_6                         |    56|
 +------+------------------------------------+------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:01:34 . Memory (MB): peak = 946.383 ; gain = 660.324
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:01:36 . Memory (MB): peak = 946.469 ; gain = 660.523
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:01:29 . Memory (MB): peak = 946.383 ; gain = 347.676
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:01:34 . Memory (MB): peak = 946.383 ; gain = 660.324
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:01:31 . Memory (MB): peak = 946.469 ; gain = 349.293
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:01:37 . Memory (MB): peak = 946.469 ; gain = 660.523
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 2819 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2822 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -2186,11 +2177,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDE_1 => FDRE (inverted pins: C): 64 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-254 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
+253 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:01:38 . Memory (MB): peak = 946.383 ; gain = 671.840
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:01:41 . Memory (MB): peak = 946.469 ; gain = 672.055
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/synth_1/Top_Module.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 946.383 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Nov  2 17:04:43 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 946.469 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  2 17:40:50 2024...

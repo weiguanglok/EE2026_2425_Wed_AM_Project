@@ -68,7 +68,10 @@ module Top_Home_Screen(
         state = STATE_MAINSCREEN;
     end
     always @ (posedge clk) begin
-        if (STATE ==STATE_END) is_start <= 0; 
+        if (STATE ==STATE_END) begin
+        is_start <= 0; 
+        state<=2'b00; //added
+        end
         if(btnC)begin
             case (state)
                 STATE_MAINSCREEN: begin

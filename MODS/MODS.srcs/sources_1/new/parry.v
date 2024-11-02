@@ -173,18 +173,14 @@ module ddr_parry(
             led_colour <= parry_bg;
         
         end
-
         // Set led colour for successful or missed parries
-        if ((btnL && active_arrow == 2'b00 || btnU && active_arrow == 2'b01 ||
+        else if ((btnL && active_arrow == 2'b00 || btnU && active_arrow == 2'b01 ||
              btnD && active_arrow == 2'b10 || btnR && active_arrow == 2'b11) &&
              time_count <= TIME_BUTTON) begin
             time_count<= time_count +1;
             
             if(arrow_y >= PARRY_ZONE_Y && arrow_y <= PARRY_ZONE_Y + 12) begin
                 miss <= 2'b00;
-            end
-            else if (arrow_y == 11) begin
-                miss<= 2'b10;           
             end
             else begin
                 miss <= 2'b01;
