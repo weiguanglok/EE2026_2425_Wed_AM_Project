@@ -27,17 +27,18 @@ module battle_animation(input clk,
     input [1:0] P1_SEL,
     input [1:0] P2_SEL, 
     input winner,
+    input bot_selected,
     input [12:0] pixel_index,  // Pixel index (passed from top-level)
     output reg [15:0] oled_colour_ai,
     output reg [15:0] oled_colour_player);
-        parameter STATE_IDLE = 1;
-        parameter STATE_SELECT = 2;
-        parameter STATE_WHO_WIN = 3;
-        parameter STATE_RESOLVE_W =4;
-        parameter STATE_RESOLVE_P = 5;
-        parameter STATE_RESOLVE_P_L = 6;
-        parameter STATE_RESOLVE_P_W = 7;
-        parameter STATE_DMG_MODIFIER_n_RESOLUTE = 8;
+       parameter STATE_IDLE = 1;
+       parameter STATE_SELECT = 2;
+       parameter STATE_WHO_WIN = 3;
+       parameter STATE_RESOLVE_W =4;
+       parameter STATE_RESOLVE_P = 5;
+       parameter STATE_RESOLVE_P_L = 6;
+       parameter STATE_RESOLVE_P_W = 7;
+       parameter STATE_DMG_MODIFIER_n_RESOLUTE = 8;
          wire clk6p25;
         flexi_clk clk6p25m(.clk(clk), .m_const(7), .my_clk(clk6p25));
         
@@ -111,8 +112,8 @@ module battle_animation(input clk,
                     scissor_x <=17;
                 end
             endcase
-            if (winner&& state >=STATE_RESOLVE_W) atk <= {1'b1,P1_SEL};
-            else if (~winner&&state >=STATE_RESOLVE_P) atk <= {1'b0,P2_SEL}; // logic for attack animation
+            if (winner && (state >=STATE_RESOLVE_W)) atk <= {1'b1,P1_SEL};
+            else if (~winner && (state >=STATE_RESOLVE_P)) atk <= {1'b0,P2_SEL}; // logic for attack animation
         end
         // rock attack 
         wire [15:0] oled_rock_attack;
@@ -121,12 +122,10 @@ module battle_animation(input clk,
         flexi_clk run_clk30fps(.clk(clk), .m_const(1666666), .my_clk(clk30fps));
         //rock attack
         always @ (posedge clk30fps) begin
-            if ((state == STATE_RESOLVE_W)||(state == STATE_RESOLVE_P_L)) begin
-                if (rock_x==0) rock_x <=36;
-                else if (rock_x>0 && (atk[1:0]==2'b0)) begin
-                    rock_x <=rock_x-1;
-                    rotation_state <= (rotation_state==2'b11)? 0:rotation_state+1;
-                end
+            if (rock_x==0) rock_x <=36;
+            else if (rock_x>0 && (atk[1:0]==2'b00)&&(state >=STATE_WHO_WIN)) begin
+                rock_x <=rock_x-1;
+                rotation_state <= (rotation_state==2'b11)? 0:rotation_state+1;
             end
         end
         ///paper attack
@@ -138,19 +137,19 @@ module battle_animation(input clk,
         wire clk35fps;
         flexi_clk run_clk35fps(.clk(clk), .m_const(1428570), .my_clk(clk35fps));
         always @ (posedge clk30fps) begin
-            if ((state == STATE_RESOLVE_W)||(state == STATE_RESOLVE_P_L)) begin
+            if ((atk[1:0]==2'b01)&&(state >=STATE_WHO_WIN)) begin
                 if (paper_clip_x==0) paper_clip_x <= 34; 
                 else paper_clip_x <= paper_clip_x-1;
             end
         end
         always @ (posedge clk25fps) begin
-            if ((state == STATE_RESOLVE_W)||(state == STATE_RESOLVE_P_L)) begin
+            if ((atk[1:0]==2'b01)&&(state >=STATE_WHO_WIN)) begin
                 if (paper_tack_x==0) paper_tack_x <= 25; 
                 else paper_tack_x <= paper_tack_x-1;
             end
         end
         always @ (posedge clk35fps) begin
-            if ((state == STATE_RESOLVE_W)||(state == STATE_RESOLVE_P_L)) begin
+            if ((atk[1:0]==2'b01)&&(state >=STATE_WHO_WIN)) begin
                 if (paper_plane_x==0) paper_plane_x <= 40; 
                 else paper_plane_x <= paper_plane_x-1;
             end
@@ -313,7 +312,7 @@ module battle_animation(input clk,
                  oled_colour_ai <=oled_biche_arm;
              end
              STATE_WHO_WIN: begin 
-                 oled_colour_player <= 16'd0;
+                 oled_colour_player <= oled_bob_arm;
                  casez(P2_SEL)
                     2'b00:oled_colour_ai <=oled_colour_ai_chose_R;
                     2'b01:oled_colour_ai <=oled_colour_ai_chose_P;

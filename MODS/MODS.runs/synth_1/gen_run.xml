@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730367079">
   <File Type="PA-TCL" Name="Top_Module.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Top_Module_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Top_Module_reports.tcl"/>
   <File Type="RDS-RDS" Name="Top_Module.vds"/>
   <File Type="RDS-UTIL" Name="Top_Module_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Top_Module_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Top_Module.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Top_Module_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Top_Module_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Battle_idle_state.v">

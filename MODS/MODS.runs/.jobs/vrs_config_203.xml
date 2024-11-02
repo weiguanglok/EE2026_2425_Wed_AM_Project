@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="battleground_background_synth_1" LaunchDir="C:/Users/Tay Xu Yang/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/battleground_background_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
