@@ -169,7 +169,7 @@ module Top_Module(
 //                count_delay <= (count_delay>=300_000_000)? 0 : count_delay+1;
                oled_colour_L <= oled_colour_ai;
                oled_colour_R <= oled_colour_player;
-               if ((led[1]&&winner)||((led[14])&&(parry_result==2'b10))) begin //changed
+               if ((led[1]&&~winner&&(parry_result==2'b10))||((led[14])&&winner)) begin //changed
                 state <= STATE_END;
                end
                else begin
@@ -177,8 +177,8 @@ module Top_Module(
                end
            end
            STATE_END: begin
-                oled_colour_L <= 16'd0;
-                oled_colour_R <= 16'b11111_111111_11111;
+                oled_colour_L <= oled_colour_ai;
+                oled_colour_R <= oled_colour_player;
                 state <= (btnU_stable)?STATE_START:STATE_END;
                 seg <= seg_end;
                 an <= an_end;

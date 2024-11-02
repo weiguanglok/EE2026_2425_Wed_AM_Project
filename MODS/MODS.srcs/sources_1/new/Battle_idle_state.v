@@ -39,6 +39,7 @@ module battle_animation(input clk,
        parameter STATE_RESOLVE_P_L = 6;
        parameter STATE_RESOLVE_P_W = 7;
        parameter STATE_DMG_MODIFIER_n_RESOLUTE = 8;
+       parameter STATE_END = 9;
          wire clk6p25;
         flexi_clk clk6p25m(.clk(clk), .m_const(7), .my_clk(clk6p25));
         
@@ -79,7 +80,8 @@ module battle_animation(input clk,
         reg [15:0] oled_charac_arm;
         reg [15:0] oled_charac_arm_attack;
         reg [15:0] oled_charac_arm_2;
-        
+        wire [15:0] oled_win;
+        wire [15:0] oled_lose;
         // create states for arm movements 
         reg [2:0]atk;
 //        reg atk_syncR, atk_syncP, atk_syncS, parry_sync, pause_sync; 
@@ -299,7 +301,20 @@ module battle_animation(input clk,
             .flip(~atk[2]),               
             .background_pixel(oled_charac_arm_2),                 
             .oled_colour(oled_dmg_taken));
-           
+        lose run_lose(.clk(clk6p25),               
+            .pixel_index(pixel_index), 
+            .sprite_x(42),                
+            .sprite_y(23), 
+            .flip((winner)?1:0),               
+            .background_pixel(oled_colour_battlescreen_layer2),                 
+            .oled_colour(oled_lose));
+         win run_win(.clk(clk6p25),               
+            .pixel_index(pixel_index), 
+            .sprite_x(40),                
+            .sprite_y(24), 
+            .flip((winner)?0:1),               
+            .background_pixel(oled_colour_battlescreen_layer2),                 
+            .oled_colour(oled_win));
             
         always @(posedge clk6p25) begin
              case(state)
@@ -370,6 +385,16 @@ module battle_animation(input clk,
              STATE_DMG_MODIFIER_n_RESOLUTE: begin
                 oled_colour_player <= oled_bob_arm;
                 oled_colour_ai <=oled_biche_arm;
+             end
+             STATE_END: begin
+                if (winner) begin
+                    oled_colour_player <= oled_win;
+                    oled_colour_ai <=oled_lose;
+                end
+                else begin
+                    oled_colour_player <= oled_lose;
+                    oled_colour_ai <=oled_win;
+                end
              end
              endcase
          end

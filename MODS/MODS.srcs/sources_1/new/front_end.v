@@ -1926,4 +1926,111 @@ module rps_confirmation_screen(
         else oled_colour <= oled_colour_bg;
     end
 endmodule
+module win(input clk,
+    input [12:0] pixel_index,
+    input [6:0] sprite_x, 
+    input [5:0] sprite_y,
+    input flip,
+    output reg [15:0] oled_colour,
+    input [15:0] background_pixel);
+    
+    wire [6:0] x_coor = (pixel_index % 96);  // Flip the X coordinate
+    wire [5:0] y_coor = (flip)? 63 - (pixel_index / 96):pixel_index / 96;  
+   
+    wire inside_sprite = (x_coor >= sprite_x) && (x_coor < sprite_x + 16) &&
+                         (y_coor >= sprite_y) && (y_coor < sprite_y + 15);
+   // Calculate the index within the sprite bitmap
+    wire [6:0] sprite_x_idx = x_coor - sprite_x; 
+    wire [5:0] sprite_y_idx = y_coor - sprite_y;
+    
+    reg [15:0] bitmap [14:0][15:0];
+    initial begin
+    bitmap[0][0] = 16'hFFFF; bitmap[0][1] = 16'h07E0; bitmap[0][2] = 16'h07E0; bitmap[0][3] = 16'h07E0; bitmap[0][4] = 16'h07E0; bitmap[0][5] = 16'h07E0; bitmap[0][6] = 16'h07E0; bitmap[0][7] = 16'h07E0; bitmap[0][8] = 16'h07E0; bitmap[0][9] = 16'h07E0; bitmap[0][10] = 16'h07E0; bitmap[0][11] = 16'h07E0; bitmap[0][12] = 16'h07E0; bitmap[0][13] = 16'h07E0; bitmap[0][14] = 16'h07E0; bitmap[0][15] = 16'hFFFF; 
+    bitmap[1][0] = 16'h07E0; bitmap[1][1] = 16'h07E0; bitmap[1][2] = 16'h0000; bitmap[1][3] = 16'h0000; bitmap[1][4] = 16'h0000; bitmap[1][5] = 16'h07E0; bitmap[1][6] = 16'h07E0; bitmap[1][7] = 16'h0000; bitmap[1][8] = 16'h0000; bitmap[1][9] = 16'h07E0; bitmap[1][10] = 16'h07E0; bitmap[1][11] = 16'h0000; bitmap[1][12] = 16'h0000; bitmap[1][13] = 16'h0000; bitmap[1][14] = 16'h07E0; bitmap[1][15] = 16'h07E0; 
+    bitmap[2][0] = 16'h07E0; bitmap[2][1] = 16'h0000; bitmap[2][2] = 16'hFEC8; bitmap[2][3] = 16'hFEC8; bitmap[2][4] = 16'hFEC8; bitmap[2][5] = 16'h0000; bitmap[2][6] = 16'h0000; bitmap[2][7] = 16'hFEC8; bitmap[2][8] = 16'hFEC8; bitmap[2][9] = 16'h0000; bitmap[2][10] = 16'h0000; bitmap[2][11] = 16'hFEC8; bitmap[2][12] = 16'hFEC8; bitmap[2][13] = 16'hFEC8; bitmap[2][14] = 16'h0000; bitmap[2][15] = 16'h07E0; 
+    bitmap[3][0] = 16'h07E0; bitmap[3][1] = 16'h0000; bitmap[3][2] = 16'hFEC8; bitmap[3][3] = 16'hFEC8; bitmap[3][4] = 16'hFEC8; bitmap[3][5] = 16'hE142; bitmap[3][6] = 16'hE142; bitmap[3][7] = 16'hFEC8; bitmap[3][8] = 16'hFEC8; bitmap[3][9] = 16'hE142; bitmap[3][10] = 16'hE142; bitmap[3][11] = 16'hFEC8; bitmap[3][12] = 16'hFEC8; bitmap[3][13] = 16'hFEC8; bitmap[3][14] = 16'h0000; bitmap[3][15] = 16'h07E0; 
+    bitmap[4][0] = 16'h07E0; bitmap[4][1] = 16'h0000; bitmap[4][2] = 16'hFEC8; bitmap[4][3] = 16'hFEC8; bitmap[4][4] = 16'hFEC8; bitmap[4][5] = 16'hE142; bitmap[4][6] = 16'hE142; bitmap[4][7] = 16'hFEC8; bitmap[4][8] = 16'hFEC8; bitmap[4][9] = 16'hE142; bitmap[4][10] = 16'hE142; bitmap[4][11] = 16'hFEC8; bitmap[4][12] = 16'hFEC8; bitmap[4][13] = 16'hFEC8; bitmap[4][14] = 16'h0000; bitmap[4][15] = 16'h07E0; 
+    bitmap[5][0] = 16'h07E0; bitmap[5][1] = 16'h0000; bitmap[5][2] = 16'hFEC8; bitmap[5][3] = 16'hFEC8; bitmap[5][4] = 16'hFEC8; bitmap[5][5] = 16'hE142; bitmap[5][6] = 16'hE142; bitmap[5][7] = 16'hFEC8; bitmap[5][8] = 16'hFEC8; bitmap[5][9] = 16'hE142; bitmap[5][10] = 16'hE142; bitmap[5][11] = 16'hFEC8; bitmap[5][12] = 16'hFEC8; bitmap[5][13] = 16'hFEC8; bitmap[5][14] = 16'h0000; bitmap[5][15] = 16'h07E0; 
+    bitmap[6][0] = 16'h07E0; bitmap[6][1] = 16'h0000; bitmap[6][2] = 16'hFEC8; bitmap[6][3] = 16'hFEC8; bitmap[6][4] = 16'hFEC8; bitmap[6][5] = 16'hE142; bitmap[6][6] = 16'hE142; bitmap[6][7] = 16'hFEC8; bitmap[6][8] = 16'hFEC8; bitmap[6][9] = 16'hE142; bitmap[6][10] = 16'hE142; bitmap[6][11] = 16'hFEC8; bitmap[6][12] = 16'hFEC8; bitmap[6][13] = 16'hFEC8; bitmap[6][14] = 16'h0000; bitmap[6][15] = 16'h07E0; 
+    bitmap[7][0] = 16'h07E0; bitmap[7][1] = 16'h0000; bitmap[7][2] = 16'hFEC8; bitmap[7][3] = 16'hFEC8; bitmap[7][4] = 16'hFEC8; bitmap[7][5] = 16'hE142; bitmap[7][6] = 16'hE142; bitmap[7][7] = 16'hFEC8; bitmap[7][8] = 16'hFEC8; bitmap[7][9] = 16'hE142; bitmap[7][10] = 16'hE142; bitmap[7][11] = 16'hFEC8; bitmap[7][12] = 16'hFEC8; bitmap[7][13] = 16'hFEC8; bitmap[7][14] = 16'h0000; bitmap[7][15] = 16'h07E0; 
+    bitmap[8][0] = 16'h07E0; bitmap[8][1] = 16'h0000; bitmap[8][2] = 16'hFEC8; bitmap[8][3] = 16'hFEC8; bitmap[8][4] = 16'hFEC8; bitmap[8][5] = 16'hE142; bitmap[8][6] = 16'hE142; bitmap[8][7] = 16'hFEC8; bitmap[8][8] = 16'hFEC8; bitmap[8][9] = 16'hE142; bitmap[8][10] = 16'hE142; bitmap[8][11] = 16'hFEC8; bitmap[8][12] = 16'hFEC8; bitmap[8][13] = 16'hFEC8; bitmap[8][14] = 16'h0000; bitmap[8][15] = 16'h07E0; 
+    bitmap[9][0] = 16'h07E0; bitmap[9][1] = 16'h0000; bitmap[9][2] = 16'hFEC8; bitmap[9][3] = 16'hFEC8; bitmap[9][4] = 16'hFEC8; bitmap[9][5] = 16'hE142; bitmap[9][6] = 16'hE142; bitmap[9][7] = 16'hFEC8; bitmap[9][8] = 16'hFEC8; bitmap[9][9] = 16'hE142; bitmap[9][10] = 16'hE142; bitmap[9][11] = 16'hFEC8; bitmap[9][12] = 16'hFEC8; bitmap[9][13] = 16'hFEC8; bitmap[9][14] = 16'h0000; bitmap[9][15] = 16'h07E0;
+    bitmap[10][0] = 16'h07E0; bitmap[10][1] = 16'h0000; bitmap[10][2] = 16'hFEC8; bitmap[10][3] = 16'hFEC8; bitmap[10][4] = 16'hFEC8; bitmap[10][5] = 16'hFEC8; bitmap[10][6] = 16'hFEC8; bitmap[10][7] = 16'hFEC8; bitmap[10][8] = 16'hFEC8; bitmap[10][9] = 16'hFEC8; bitmap[10][10] = 16'hFEC8; bitmap[10][11] = 16'hFEC8; bitmap[10][12] = 16'hFEC8; bitmap[10][13] = 16'hFEC8; bitmap[10][14] = 16'h0000; bitmap[10][15] = 16'h07E0; 
+    bitmap[11][0] = 16'h07E0; bitmap[11][1] = 16'h0000; bitmap[11][2] = 16'hE142; bitmap[11][3] = 16'hE142; bitmap[11][4] = 16'hE142; bitmap[11][5] = 16'hFEC8; bitmap[11][6] = 16'hFEC8; bitmap[11][7] = 16'hFEC8; bitmap[11][8] = 16'hFEC8; bitmap[11][9] = 16'hFEC8; bitmap[11][10] = 16'hFEC8; bitmap[11][11] = 16'hE142; bitmap[11][12] = 16'hE142; bitmap[11][13] = 16'hE142; bitmap[11][14] = 16'h0000; bitmap[11][15] = 16'h07E0; 
+    bitmap[12][0] = 16'h07E0; bitmap[12][1] = 16'h07E0; bitmap[12][2] = 16'h0000; bitmap[12][3] = 16'hE142; bitmap[12][4] = 16'hE142; bitmap[12][5] = 16'hE142; bitmap[12][6] = 16'hE142; bitmap[12][7] = 16'hE142; bitmap[12][8] = 16'h0000; bitmap[12][9] = 16'hE142; bitmap[12][10] = 16'hE142; bitmap[12][11] = 16'hE142; bitmap[12][12] = 16'hE142; bitmap[12][13] = 16'h0000; bitmap[12][14] = 16'h07E0; bitmap[12][15] = 16'h07E0; 
+    bitmap[13][0] = 16'hFFFF; bitmap[13][1] = 16'h07E0; bitmap[13][2] = 16'h07E0; bitmap[13][3] = 16'h0000; bitmap[13][4] = 16'h0000; bitmap[13][5] = 16'h0000; bitmap[13][6] = 16'h0000; bitmap[13][7] = 16'h0000; bitmap[13][8] = 16'h07E0; bitmap[13][9] = 16'h0000; bitmap[13][10] = 16'h0000; bitmap[13][11] = 16'h0000; bitmap[13][12] = 16'h0000; bitmap[13][13] = 16'h07E0; bitmap[13][14] = 16'h07E0; bitmap[13][15] = 16'hFFFF; 
+    bitmap[14][0] = 16'hFFFF; bitmap[14][1] = 16'hFFFF; bitmap[14][2] = 16'h07E0; bitmap[14][3] = 16'h07E0; bitmap[14][4] = 16'h07E0; bitmap[14][5] = 16'h07E0; bitmap[14][6] = 16'h07E0; bitmap[14][7] = 16'h07E0; bitmap[14][8] = 16'h07E0; bitmap[14][9] = 16'h07E0; bitmap[14][10] = 16'h07E0; bitmap[14][11] = 16'h07E0; bitmap[14][12] = 16'h07E0; bitmap[14][13] = 16'h07E0; bitmap[14][14] = 16'hFFFF; bitmap[14][15] = 16'hFFFF;
 
+    end
+    always @(posedge clk) begin
+        if (inside_sprite) begin
+            if (bitmap[sprite_y_idx][sprite_x_idx]== 16'hFFFF)begin
+                oled_colour <= background_pixel;
+            end
+            else begin
+                // If the pixel is inside the sprite, use the sprite's pixel color (16-bit RGB)
+                oled_colour <= bitmap[sprite_y_idx][sprite_x_idx];              
+            end
+        end else begin
+            // Otherwise, use the background color
+            oled_colour <= background_pixel;
+        end
+    end
+    
+endmodule
+module lose(input clk,
+    input [12:0] pixel_index,
+    input [6:0] sprite_x, 
+    input [5:0] sprite_y,
+    input flip,
+    output reg [15:0] oled_colour,
+    input [15:0] background_pixel);
+    
+    wire [6:0] x_coor = (pixel_index % 96);  // Flip the X coordinate
+    wire [5:0] y_coor = (flip)? 63 - (pixel_index / 96):pixel_index / 96;  
+   
+    wire inside_sprite = (x_coor >= sprite_x) && (x_coor < sprite_x + 13) &&
+                         (y_coor >= sprite_y) && (y_coor < sprite_y + 18);
+   // Calculate the index within the sprite bitmap
+    wire [6:0] sprite_x_idx = x_coor - sprite_x; 
+    wire [5:0] sprite_y_idx = y_coor - sprite_y;
+    
+    reg [15:0] bitmap [17:0][12:0];
+    initial begin
+    
+    bitmap[0][0] = 16'hFFFF; bitmap[0][1] = 16'hFDFB; bitmap[0][2] = 16'hFDFB; bitmap[0][3] = 16'hFDFB; bitmap[0][4] = 16'hFDFB; bitmap[0][5] = 16'hFDFB; bitmap[0][6] = 16'hFDFB; bitmap[0][7] = 16'hFDFB; bitmap[0][8] = 16'hFFFF; bitmap[0][9] = 16'hFFFF; bitmap[0][10] = 16'hFFFF; bitmap[0][11] = 16'hFFFF; bitmap[0][12] = 16'hFFFF; 
+    bitmap[1][0] = 16'hFDFB; bitmap[1][1] = 16'hFDFB; bitmap[1][2] = 16'h0000; bitmap[1][3] = 16'h0000; bitmap[1][4] = 16'h0000; bitmap[1][5] = 16'h0000; bitmap[1][6] = 16'h0000; bitmap[1][7] = 16'hFDFB; bitmap[1][8] = 16'hFDFB; bitmap[1][9] = 16'hFFFF; bitmap[1][10] = 16'hFFFF; bitmap[1][11] = 16'hFFFF; bitmap[1][12] = 16'hFFFF; 
+    bitmap[2][0] = 16'hFDFB; bitmap[2][1] = 16'h0000; bitmap[2][2] = 16'hFEC8; bitmap[2][3] = 16'hFEC8; bitmap[2][4] = 16'hFEC8; bitmap[2][5] = 16'hFEC8; bitmap[2][6] = 16'hFEC8; bitmap[2][7] = 16'h0000; bitmap[2][8] = 16'hFDFB; bitmap[2][9] = 16'hFFFF; bitmap[2][10] = 16'hFFFF; bitmap[2][11] = 16'hFFFF; bitmap[2][12] = 16'hFFFF; 
+    bitmap[3][0] = 16'hFDFB; bitmap[3][1] = 16'h0000; bitmap[3][2] = 16'hFEC8; bitmap[3][3] = 16'hFEC8; bitmap[3][4] = 16'hFEC8; bitmap[3][5] = 16'hFEC8; bitmap[3][6] = 16'hFEC8; bitmap[3][7] = 16'h0000; bitmap[3][8] = 16'hFDFB; bitmap[3][9] = 16'hFFFF; bitmap[3][10] = 16'hFFFF; bitmap[3][11] = 16'hFFFF; bitmap[3][12] = 16'hFFFF; 
+    bitmap[4][0] = 16'hFDFB; bitmap[4][1] = 16'h0000; bitmap[4][2] = 16'hFEC8; bitmap[4][3] = 16'hFEC8; bitmap[4][4] = 16'hFEC8; bitmap[4][5] = 16'hFEC8; bitmap[4][6] = 16'hFEC8; bitmap[4][7] = 16'h0000; bitmap[4][8] = 16'hFDFB; bitmap[4][9] = 16'hFFFF; bitmap[4][10] = 16'hFFFF; bitmap[4][11] = 16'hFFFF; bitmap[4][12] = 16'hFFFF; 
+    bitmap[5][0] = 16'hFDFB; bitmap[5][1] = 16'h0000; bitmap[5][2] = 16'hFEC8; bitmap[5][3] = 16'hFEC8; bitmap[5][4] = 16'hFEC8; bitmap[5][5] = 16'hFEC8; bitmap[5][6] = 16'hFEC8; bitmap[5][7] = 16'h0000; bitmap[5][8] = 16'hFDFB; bitmap[5][9] = 16'hFFFF; bitmap[5][10] = 16'hFFFF; bitmap[5][11] = 16'hFFFF; bitmap[5][12] = 16'hFFFF; 
+    bitmap[6][0] = 16'hFDFB; bitmap[6][1] = 16'h0000; bitmap[6][2] = 16'hFEC8; bitmap[6][3] = 16'hFEC8; bitmap[6][4] = 16'hFEC8; bitmap[6][5] = 16'hFEC8; bitmap[6][6] = 16'hFEC8; bitmap[6][7] = 16'h0000; bitmap[6][8] = 16'hFDFB; bitmap[6][9] = 16'hFFFF; bitmap[6][10] = 16'hFFFF; bitmap[6][11] = 16'hFFFF; bitmap[6][12] = 16'hFFFF; 
+    bitmap[7][0] = 16'hFDFB; bitmap[7][1] = 16'h0000; bitmap[7][2] = 16'hFEC8; bitmap[7][3] = 16'hFEC8; bitmap[7][4] = 16'hFEC8; bitmap[7][5] = 16'hFEC8; bitmap[7][6] = 16'hFEC8; bitmap[7][7] = 16'h0000; bitmap[7][8] = 16'hFDFB; bitmap[7][9] = 16'hFFFF; bitmap[7][10] = 16'hFFFF; bitmap[7][11] = 16'hFFFF; bitmap[7][12] = 16'hFFFF; 
+    bitmap[8][0] = 16'hFDFB; bitmap[8][1] = 16'h0000; bitmap[8][2] = 16'hFEC8; bitmap[8][3] = 16'hFEC8; bitmap[8][4] = 16'hFEC8; bitmap[8][5] = 16'hFEC8; bitmap[8][6] = 16'hFEC8; bitmap[8][7] = 16'h0000; bitmap[8][8] = 16'hFDFB; bitmap[8][9] = 16'hFFFF; bitmap[8][10] = 16'hFFFF; bitmap[8][11] = 16'hFFFF; bitmap[8][12] = 16'hFFFF; 
+    bitmap[9][0] = 16'hFDFB; bitmap[9][1] = 16'h0000; bitmap[9][2] = 16'hFEC8; bitmap[9][3] = 16'hFEC8; bitmap[9][4] = 16'hFEC8; bitmap[9][5] = 16'hFEC8; bitmap[9][6] = 16'hFEC8; bitmap[9][7] = 16'h0000; bitmap[9][8] = 16'hFDFB; bitmap[9][9] = 16'hFDFB; bitmap[9][10] = 16'hFDFB; bitmap[9][11] = 16'hFDFB; bitmap[9][12] = 16'hFFFF; 
+    bitmap[10][0] = 16'hFDFB; bitmap[10][1] = 16'h0000; bitmap[10][2] = 16'hFEC8; bitmap[10][3] = 16'hFEC8; bitmap[10][4] = 16'hFEC8; bitmap[10][5] = 16'hFEC8; bitmap[10][6] = 16'hFEC8; bitmap[10][7] = 16'h0000; bitmap[10][8] = 16'h0000; bitmap[10][9] = 16'h0000; bitmap[10][10] = 16'h0000; bitmap[10][11] = 16'hFDFB; bitmap[10][12] = 16'hFDFB; 
+    bitmap[11][0] = 16'hFDFB; bitmap[11][1] = 16'h0000; bitmap[11][2] = 16'hFEC8; bitmap[11][3] = 16'hFEC8; bitmap[11][4] = 16'hFEC8; bitmap[11][5] = 16'hFEC8; bitmap[11][6] = 16'hFEC8; bitmap[11][7] = 16'hFEC8; bitmap[11][8] = 16'hFEC8; bitmap[11][9] = 16'hFEC8; bitmap[11][10] = 16'hFEC8; bitmap[11][11] = 16'h0000; bitmap[11][12] = 16'hFDFB; 
+    bitmap[12][0] = 16'hFDFB; bitmap[12][1] = 16'h0000; bitmap[12][2] = 16'hFEC8; bitmap[12][3] = 16'hFEC8; bitmap[12][4] = 16'hFEC8; bitmap[12][5] = 16'hFEC8; bitmap[12][6] = 16'hFEC8; bitmap[12][7] = 16'hFEC8; bitmap[12][8] = 16'hFEC8; bitmap[12][9] = 16'hFEC8; bitmap[12][10] = 16'hFEC8; bitmap[12][11] = 16'h0000; bitmap[12][12] = 16'hFDFB; 
+    bitmap[13][0] = 16'hFDFB; bitmap[13][1] = 16'h0000; bitmap[13][2] = 16'hFEC8; bitmap[13][3] = 16'hFEC8; bitmap[13][4] = 16'hFEC8; bitmap[13][5] = 16'hFEC8; bitmap[13][6] = 16'hFEC8; bitmap[13][7] = 16'hFEC8; bitmap[13][8] = 16'hFEC8; bitmap[13][9] = 16'hFEC8; bitmap[13][10] = 16'hFEC8; bitmap[13][11] = 16'h0000; bitmap[13][12] = 16'hFDFB; 
+    bitmap[14][0] = 16'hFDFB; bitmap[14][1] = 16'h0000; bitmap[14][2] = 16'hE142; bitmap[14][3] = 16'hE142; bitmap[14][4] = 16'hFEC8; bitmap[14][5] = 16'hFEC8; bitmap[14][6] = 16'hFEC8; bitmap[14][7] = 16'hFEC8; bitmap[14][8] = 16'hFEC8; bitmap[14][9] = 16'hE142; bitmap[14][10] = 16'hE142; bitmap[14][11] = 16'h0000; bitmap[14][12] = 16'hFDFB; 
+    bitmap[15][0] = 16'hFDFB; bitmap[15][1] = 16'h0000; bitmap[15][2] = 16'hE142; bitmap[15][3] = 16'hE142; bitmap[15][4] = 16'hE142; bitmap[15][5] = 16'hE142; bitmap[15][6] = 16'hE142; bitmap[15][7] = 16'hE142; bitmap[15][8] = 16'hE142; bitmap[15][9] = 16'hE142; bitmap[15][10] = 16'hE142; bitmap[15][11] = 16'h0000; bitmap[15][12] = 16'hFDFB; 
+    bitmap[16][0] = 16'hFDFB; bitmap[16][1] = 16'hFDFB; bitmap[16][2] = 16'h0000; bitmap[16][3] = 16'h0000; bitmap[16][4] = 16'h0000; bitmap[16][5] = 16'h0000; bitmap[16][6] = 16'h0000; bitmap[16][7] = 16'h0000; bitmap[16][8] = 16'h0000; bitmap[16][9] = 16'h0000; bitmap[16][10] = 16'h0000; bitmap[16][11] = 16'hFDFB; bitmap[16][12] = 16'hFDFB; 
+    bitmap[17][0] = 16'hFFFF; bitmap[17][1] = 16'hFDFB; bitmap[17][2] = 16'hFDFB; bitmap[17][3] = 16'hFDFB; bitmap[17][4] = 16'hFDFB; bitmap[17][5] = 16'hFDFB; bitmap[17][6] = 16'hFDFB; bitmap[17][7] = 16'hFDFB; bitmap[17][8] = 16'hFDFB; bitmap[17][9] = 16'hFDFB; bitmap[17][10] = 16'hFDFB; bitmap[17][11] = 16'hFDFB; bitmap[17][12] = 16'hFFFF; 
+
+    end
+    always @(posedge clk) begin
+        if (inside_sprite) begin
+            if (bitmap[sprite_y_idx][sprite_x_idx]== 16'hFFFF)begin
+                oled_colour <= background_pixel;
+            end
+            else begin
+                // If the pixel is inside the sprite, use the sprite's pixel color (16-bit RGB)
+                oled_colour <= bitmap[sprite_y_idx][sprite_x_idx];              
+            end
+        end else begin
+            // Otherwise, use the background color
+            oled_colour <= background_pixel;
+        end
+    end
+    
+endmodule

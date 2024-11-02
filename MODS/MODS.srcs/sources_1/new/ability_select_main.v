@@ -93,12 +93,14 @@ module abil_sel_ai(
     parameter TOTAL = 16'd65535;
     parameter ROCK = 2'b00, PAPER = 2'b01, SCISSORS = 2'b10;
 
-    reg [15:0] random_value = 16'd32767; // To hold the random number
+//    reg [15:0] random_value = 16'd32767; // To hold the random number
+    
+    reg [15:0] random_value = 1'b0; // To hold the random number
 
     // Random number generation (simple linear feedback shift register)
     always @(posedge clk) begin
         // Linear Feedback Shift Register (LFSR) for pseudo-random numbers
-        random_value <= {random_value[14:0], random_value[15] ^ random_value[13] ^ random_value[12] ^ random_value[10]};
+        random_value <= ~random_value;
     end
     always @(posedge clk) begin
     if (success ==2'b00 && turned_on && ai_turn) begin
@@ -115,15 +117,15 @@ module abil_sel_ai(
 //            selected <= 1'b1;
 //        end
         if (P1_SEL==ROCK) begin //edited output logic
-            success <= (random_value[0]) ? PAPER : SCISSORS;
+            success <= (random_value) ? PAPER : SCISSORS;
             selected <= 1'b1;
         end
         else if (P1_SEL==PAPER) begin
-            success <= (random_value[0]) ? SCISSORS : ROCK;
+            success <= (random_value) ? SCISSORS : ROCK;
             selected <= 1'b1;
         end
         else begin
-            success <= (random_value[0]) ? ROCK : PAPER;
+            success <= (random_value) ? ROCK : PAPER;
             selected <= 1'b1;
         end
     end 
@@ -137,6 +139,7 @@ module abil_sel_ai(
     end
 end
 endmodule
+
 
 
 module countdown_timer_flexi(

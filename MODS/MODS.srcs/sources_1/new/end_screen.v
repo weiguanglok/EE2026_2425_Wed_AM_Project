@@ -34,7 +34,6 @@ module victory_screen_main(
     
     player_disp player (.clk(clk),.turned_on(turned_on),.seg(seg_player),.an(an_player));
     bot_disp bot (.clk(clk),.turned_on(turned_on),.seg(seg_bot),.an(an_bot));
-    
     seven_seg_mux(.clk(clk),.led(led),.turned_on(turned_on),.seg_player(seg_player),.seg_bot(seg_bot),.an_player(an_player),.an_bot(an_bot),.seg(seg),.an(an));
 
     
