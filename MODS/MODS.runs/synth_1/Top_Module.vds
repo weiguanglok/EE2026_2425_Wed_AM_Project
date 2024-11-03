@@ -2,12 +2,12 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Nov  2 20:22:03 2024
-# Process ID: 42128
-# Current directory: C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1
+# Start of session at: Sun Nov  3 10:15:14 2024
+# Process ID: 23088
+# Current directory: C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/synth_1
 # Command line: vivado.exe -log Top_Module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
-# Log file: C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/Top_Module.vds
-# Journal file: C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1\vivado.jou
+# Log file: C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/synth_1/Top_Module.vds
+# Journal file: C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Top_Module.tcl -notrace
 Command: synth_design -top Top_Module -part xc7a35tcpg236-1
@@ -15,11 +15,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 45116 
+INFO: Helper process launched with PID 20868 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 411.332 ; gain = 124.594
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 411.469 ; gain = 124.648
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top_Module' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Top_Module' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:23]
 	Parameter STATE_START bound to: 0 - type: integer 
 	Parameter STATE_IDLE bound to: 1 - type: integer 
 	Parameter STATE_SELECT bound to: 2 - type: integer 
@@ -30,85 +30,85 @@ INFO: [Synth 8-6157] synthesizing module 'Top_Module' [C:/Users/stamp/Downloads/
 	Parameter STATE_RESOLVE_P_W bound to: 7 - type: integer 
 	Parameter STATE_DMG_MODIFIER_n_RESOLUTE bound to: 8 - type: integer 
 	Parameter STATE_END bound to: 9 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'flexi_clk' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'flexi_clk' (1#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:23]
-INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:39]
+INFO: [Synth 8-6157] synthesizing module 'flexi_clk' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/sub_modules.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'flexi_clk' (1#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/sub_modules.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/sub_modules.v:39]
 	Parameter DEBOUNCE_TIME bound to: 20000000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:39]
-INFO: [Synth 8-6157] synthesizing module 'button_sync' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'button_sync' (3#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:74]
-INFO: [Synth 8-6157] synthesizing module 'Top_Home_Screen' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Student.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/sub_modules.v:39]
+INFO: [Synth 8-6157] synthesizing module 'button_sync' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/sub_modules.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'button_sync' (3#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/sub_modules.v:74]
+INFO: [Synth 8-6157] synthesizing module 'Top_Home_Screen' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Student.v:13]
 	Parameter STATE_MAINSCREEN bound to: 2'b00 
 	Parameter STATE_STARTPAGE bound to: 2'b01 
 	Parameter STATE_GUIDEPAGE bound to: 2'b10 
 	Parameter STATE_DEFAULT bound to: 2'b11 
 	Parameter STATE_END bound to: 9 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'mainscreen_page_render' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/mainscreen_page.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mainscreen_page_render' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/mainscreen_page.v:22]
 	Parameter STATE_MS_START bound to: 0 - type: integer 
 	Parameter STATE_MS_GUIDE bound to: 1 - type: integer 
 	Parameter STATE_MS_START_LOC_X bound to: 22 - type: integer 
 	Parameter STATE_MS_START_LOC_Y bound to: 42 - type: integer 
 	Parameter STATE_MS_GUIDE_LOC_X bound to: 25 - type: integer 
 	Parameter STATE_MS_GUIDE_LOC_Y bound to: 53 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'mainscreen_background' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:22]
-INFO: [Synth 8-6157] synthesizing module 'homescreen_background' [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/realtime/homescreen_background_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'homescreen_background' (4#1) [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/realtime/homescreen_background_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mainscreen_background' (5#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:22]
-INFO: [Synth 8-6157] synthesizing module 'homepage_title' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'homepage_title' (6#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:40]
-INFO: [Synth 8-6157] synthesizing module 'main_screen_selector' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:303]
-INFO: [Synth 8-6155] done synthesizing module 'main_screen_selector' (7#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:303]
-INFO: [Synth 8-6157] synthesizing module 'main_screen_selector_arrow' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:363]
-INFO: [Synth 8-6155] done synthesizing module 'main_screen_selector_arrow' (8#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:363]
-WARNING: [Synth 8-689] width (6) of port connection 'sprite_x' does not match port width (7) of module 'main_screen_selector_arrow' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/mainscreen_page.v:84]
-INFO: [Synth 8-6155] done synthesizing module 'mainscreen_page_render' (9#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/mainscreen_page.v:22]
-INFO: [Synth 8-6157] synthesizing module 'guide_page_render' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/guide_page_render.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mainscreen_background' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:22]
+INFO: [Synth 8-6157] synthesizing module 'homescreen_background' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/synth_1/.Xil/Vivado-23088-E-laptop/realtime/homescreen_background_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'homescreen_background' (4#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/synth_1/.Xil/Vivado-23088-E-laptop/realtime/homescreen_background_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mainscreen_background' (5#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:22]
+INFO: [Synth 8-6157] synthesizing module 'homepage_title' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'homepage_title' (6#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:40]
+INFO: [Synth 8-6157] synthesizing module 'main_screen_selector' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:303]
+INFO: [Synth 8-6155] done synthesizing module 'main_screen_selector' (7#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:303]
+INFO: [Synth 8-6157] synthesizing module 'main_screen_selector_arrow' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:363]
+INFO: [Synth 8-6155] done synthesizing module 'main_screen_selector_arrow' (8#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:363]
+WARNING: [Synth 8-689] width (6) of port connection 'sprite_x' does not match port width (7) of module 'main_screen_selector_arrow' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/mainscreen_page.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'mainscreen_page_render' (9#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/mainscreen_page.v:22]
+INFO: [Synth 8-6157] synthesizing module 'guide_page_render' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/guide_page_render.v:22]
 	Parameter STATE_PAGE_ONE bound to: 1'b0 
 	Parameter STATE_PAGE_TWO bound to: 1'b1 
-INFO: [Synth 8-6157] synthesizing module 'guide_page_one' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:112]
-INFO: [Synth 8-6155] done synthesizing module 'guide_page_one' (10#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:112]
-INFO: [Synth 8-6157] synthesizing module 'guide_page_two' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:207]
-INFO: [Synth 8-6155] done synthesizing module 'guide_page_two' (11#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:207]
-INFO: [Synth 8-6155] done synthesizing module 'guide_page_render' (12#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/guide_page_render.v:22]
-INFO: [Synth 8-6157] synthesizing module 'blue_screen' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:412]
-INFO: [Synth 8-6155] done synthesizing module 'blue_screen' (13#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:412]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Home_Screen' (14#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Student.v:13]
-INFO: [Synth 8-6157] synthesizing module 'ability_select_main' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'guide_page_one' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'guide_page_one' (10#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:112]
+INFO: [Synth 8-6157] synthesizing module 'guide_page_two' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:207]
+INFO: [Synth 8-6155] done synthesizing module 'guide_page_two' (11#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:207]
+INFO: [Synth 8-6155] done synthesizing module 'guide_page_render' (12#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/guide_page_render.v:22]
+INFO: [Synth 8-6157] synthesizing module 'blue_screen' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:412]
+INFO: [Synth 8-6155] done synthesizing module 'blue_screen' (13#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:412]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Home_Screen' (14#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Student.v:13]
+INFO: [Synth 8-6157] synthesizing module 'ability_select_main' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:23]
 	Parameter STATE_DEFAULT bound to: 0 - type: integer 
 	Parameter STATE_SELECTION bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'ability_select_screen' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:358]
+INFO: [Synth 8-6157] synthesizing module 'ability_select_screen' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:340]
 	Parameter ROCK bound to: 2'b00 
 	Parameter PAPER bound to: 2'b01 
 	Parameter SCISSORS bound to: 2'b10 
 	Parameter ROCK_X_COOR bound to: 4 - type: integer 
 	Parameter PAPER_X_COOR bound to: 34 - type: integer 
 	Parameter SCISSORS_X_COOR bound to: 64 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'skillscreen_selection_background' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1804]
-INFO: [Synth 8-6155] done synthesizing module 'skillscreen_selection_background' (15#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1804]
-INFO: [Synth 8-6157] synthesizing module 'skillscreen_icon_rock' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1463]
-INFO: [Synth 8-6155] done synthesizing module 'skillscreen_icon_rock' (16#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1463]
-INFO: [Synth 8-6157] synthesizing module 'skillscreen_icon_paper' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1525]
-INFO: [Synth 8-6155] done synthesizing module 'skillscreen_icon_paper' (17#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1525]
-INFO: [Synth 8-6157] synthesizing module 'skillscreen_icon_scissors' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1587]
-INFO: [Synth 8-6155] done synthesizing module 'skillscreen_icon_scissors' (18#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1587]
-INFO: [Synth 8-6157] synthesizing module 'skillscreen_selector' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1649]
-INFO: [Synth 8-6155] done synthesizing module 'skillscreen_selector' (19#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1649]
-INFO: [Synth 8-6157] synthesizing module 'rps_confirmation_screen' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1890]
+INFO: [Synth 8-6157] synthesizing module 'skillscreen_selection_background' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1804]
+INFO: [Synth 8-6155] done synthesizing module 'skillscreen_selection_background' (15#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1804]
+INFO: [Synth 8-6157] synthesizing module 'skillscreen_icon_rock' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1463]
+INFO: [Synth 8-6155] done synthesizing module 'skillscreen_icon_rock' (16#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1463]
+INFO: [Synth 8-6157] synthesizing module 'skillscreen_icon_paper' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1525]
+INFO: [Synth 8-6155] done synthesizing module 'skillscreen_icon_paper' (17#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1525]
+INFO: [Synth 8-6157] synthesizing module 'skillscreen_icon_scissors' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1587]
+INFO: [Synth 8-6155] done synthesizing module 'skillscreen_icon_scissors' (18#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1587]
+INFO: [Synth 8-6157] synthesizing module 'skillscreen_selector' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1649]
+INFO: [Synth 8-6155] done synthesizing module 'skillscreen_selector' (19#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1649]
+INFO: [Synth 8-6157] synthesizing module 'rps_confirmation_screen' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1890]
 	Parameter ROCK bound to: 2'b00 
 	Parameter PAPER bound to: 2'b01 
 	Parameter SCISSORS bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'skillscreen_confirmation_background' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1717]
-INFO: [Synth 8-6155] done synthesizing module 'skillscreen_confirmation_background' (20#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1717]
-INFO: [Synth 8-6155] done synthesizing module 'rps_confirmation_screen' (21#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1890]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:468]
-INFO: [Synth 8-6155] done synthesizing module 'ability_select_screen' (22#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:358]
-INFO: [Synth 8-6157] synthesizing module 'abil_sel_ai' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:85]
+INFO: [Synth 8-6157] synthesizing module 'skillscreen_confirmation_background' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1717]
+INFO: [Synth 8-6155] done synthesizing module 'skillscreen_confirmation_background' (20#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1717]
+INFO: [Synth 8-6155] done synthesizing module 'rps_confirmation_screen' (21#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1890]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:450]
+INFO: [Synth 8-6155] done synthesizing module 'ability_select_screen' (22#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:340]
+INFO: [Synth 8-6157] synthesizing module 'abil_sel_ai' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:85]
 	Parameter TOTAL bound to: 16'b1111111111111111 
 	Parameter ROCK bound to: 2'b00 
 	Parameter PAPER bound to: 2'b01 
 	Parameter SCISSORS bound to: 2'b10 
-INFO: [Synth 8-6155] done synthesizing module 'abil_sel_ai' (23#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:85]
-INFO: [Synth 8-6157] synthesizing module 'countdown_timer_flexi' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:159]
+INFO: [Synth 8-6155] done synthesizing module 'abil_sel_ai' (23#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:85]
+INFO: [Synth 8-6157] synthesizing module 'countdown_timer_flexi' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:141]
 	Parameter DIGIT1 bound to: 7'b1001111 
 	Parameter DIGIT2 bound to: 7'b0010010 
 	Parameter DIGIT3 bound to: 7'b0000110 
@@ -120,17 +120,17 @@ INFO: [Synth 8-6157] synthesizing module 'countdown_timer_flexi' [C:/Users/stamp
 	Parameter DIGIT9 bound to: 7'b0001100 
 	Parameter DIGIT0 bound to: 7'b0000001 
 	Parameter BLANK bound to: 7'b1111111 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:245]
-INFO: [Synth 8-6155] done synthesizing module 'countdown_timer_flexi' (24#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:159]
-INFO: [Synth 8-6157] synthesizing module 'ability_resolution' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:295]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'countdown_timer_flexi' (24#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:141]
+INFO: [Synth 8-6157] synthesizing module 'ability_resolution' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:277]
 	Parameter ROCK bound to: 2'b00 
 	Parameter PAPER bound to: 2'b01 
 	Parameter SCISSORS bound to: 2'b10 
-INFO: [Synth 8-6155] done synthesizing module 'ability_resolution' (25#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:295]
-INFO: [Synth 8-6155] done synthesizing module 'ability_select_main' (26#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/ability_select_main.v:23]
-WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'ability_select_main' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:205]
-WARNING: [Synth 8-350] instance 'run_ability_select_main' of module 'ability_select_main' requires 16 connections, but only 14 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:199]
-INFO: [Synth 8-6157] synthesizing module 'battle_animation' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ability_resolution' (25#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:277]
+INFO: [Synth 8-6155] done synthesizing module 'ability_select_main' (26#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/ability_select_main.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'ability_select_main' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:206]
+WARNING: [Synth 8-350] instance 'run_ability_select_main' of module 'ability_select_main' requires 16 connections, but only 14 given [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:200]
+INFO: [Synth 8-6157] synthesizing module 'battle_animation' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:23]
 	Parameter STATE_IDLE bound to: 1 - type: integer 
 	Parameter STATE_SELECT bound to: 2 - type: integer 
 	Parameter STATE_WHO_WIN bound to: 3 - type: integer 
@@ -146,57 +146,57 @@ INFO: [Synth 8-6157] synthesizing module 'battle_animation' [C:/Users/stamp/Down
 	Parameter biche_y bound to: 6'b001000 
 	Parameter pause_x bound to: 7'b0000011 
 	Parameter pause_y bound to: 6'b000101 
-INFO: [Synth 8-6157] synthesizing module 'battlescreen_background' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1442]
-INFO: [Synth 8-6157] synthesizing module 'battleground_background' [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/realtime/battleground_background_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'battleground_background' (27#1) [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/realtime/battleground_background_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'battlescreen_background' (28#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1442]
-WARNING: [Synth 8-350] instance 'battlescreen1' of module 'battlescreen_background' requires 6 connections, but only 4 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:165]
-WARNING: [Synth 8-350] instance 'battlescreen2' of module 'battlescreen_background' requires 6 connections, but only 4 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:170]
-INFO: [Synth 8-6157] synthesizing module 'biche_head_n_body' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:474]
-INFO: [Synth 8-6155] done synthesizing module 'biche_head_n_body' (29#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:474]
-INFO: [Synth 8-6157] synthesizing module 'biche_arm' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:422]
-INFO: [Synth 8-6155] done synthesizing module 'biche_arm' (30#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:422]
-WARNING: [Synth 8-689] width (32) of port connection 'sprite_y' does not match port width (6) of module 'biche_arm' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:189]
-INFO: [Synth 8-6157] synthesizing module 'biche_arm_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:559]
-INFO: [Synth 8-6155] done synthesizing module 'biche_arm_attack' (31#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:559]
-INFO: [Synth 8-6157] synthesizing module 'bob_head_n_body' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:617]
-INFO: [Synth 8-6155] done synthesizing module 'bob_head_n_body' (32#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:617]
-INFO: [Synth 8-6157] synthesizing module 'bob_arm' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:706]
-INFO: [Synth 8-6155] done synthesizing module 'bob_arm' (33#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:706]
-INFO: [Synth 8-6157] synthesizing module 'bob_arm_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:755]
-INFO: [Synth 8-6155] done synthesizing module 'bob_arm_attack' (34#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:755]
-INFO: [Synth 8-6157] synthesizing module 'rock_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:810]
-INFO: [Synth 8-226] default block is never used [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:837]
-WARNING: [Synth 8-3936] Found unconnected internal register 'sprite_y_idx_reg' and it is trimmed from '6' to '5' bits. [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:840]
-WARNING: [Synth 8-3936] Found unconnected internal register 'sprite_x_idx_reg' and it is trimmed from '7' to '5' bits. [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:839]
-INFO: [Synth 8-6155] done synthesizing module 'rock_attack' (35#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:810]
-INFO: [Synth 8-6157] synthesizing module 'paper_airplane_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:914]
-INFO: [Synth 8-6155] done synthesizing module 'paper_airplane_attack' (36#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:914]
-INFO: [Synth 8-6157] synthesizing module 'paper_clip_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:966]
-INFO: [Synth 8-6155] done synthesizing module 'paper_clip_attack' (37#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:966]
-INFO: [Synth 8-6157] synthesizing module 'paper_tack_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1025]
-INFO: [Synth 8-6155] done synthesizing module 'paper_tack_attack' (38#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1025]
-INFO: [Synth 8-6157] synthesizing module 'scissor_close_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1083]
-INFO: [Synth 8-6155] done synthesizing module 'scissor_close_attack' (39#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1083]
-INFO: [Synth 8-6157] synthesizing module 'scissor_open_attack' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1143]
-INFO: [Synth 8-6155] done synthesizing module 'scissor_open_attack' (40#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1143]
-INFO: [Synth 8-6157] synthesizing module 'parry_shield' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1204]
-INFO: [Synth 8-6155] done synthesizing module 'parry_shield' (41#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1204]
-WARNING: [Synth 8-350] instance 'run_parry_shield' of module 'parry_shield' requires 7 connections, but only 6 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:284]
-INFO: [Synth 8-6157] synthesizing module 'dmg_taken' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1362]
-INFO: [Synth 8-6155] done synthesizing module 'dmg_taken' (42#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1362]
-INFO: [Synth 8-6157] synthesizing module 'lose' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1981]
-INFO: [Synth 8-6155] done synthesizing module 'lose' (43#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1981]
-WARNING: [Synth 8-689] width (32) of port connection 'flip' does not match port width (1) of module 'lose' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:308]
-INFO: [Synth 8-6157] synthesizing module 'win' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1929]
-INFO: [Synth 8-6155] done synthesizing module 'win' (44#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/front_end.v:1929]
-WARNING: [Synth 8-689] width (32) of port connection 'flip' does not match port width (1) of module 'win' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:315]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:331]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:320]
-WARNING: [Synth 8-6014] Unused sequential element oled_charac_arm_reg was removed.  [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:339]
-INFO: [Synth 8-6155] done synthesizing module 'battle_animation' (45#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:23]
-WARNING: [Synth 8-350] instance 'animation_instantiate' of module 'battle_animation' requires 11 connections, but only 9 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:209]
-INFO: [Synth 8-6157] synthesizing module 'ddr_parry' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/parry.v:23]
+INFO: [Synth 8-6157] synthesizing module 'battlescreen_background' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1442]
+INFO: [Synth 8-6157] synthesizing module 'battleground_background' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/synth_1/.Xil/Vivado-23088-E-laptop/realtime/battleground_background_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'battleground_background' (27#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/synth_1/.Xil/Vivado-23088-E-laptop/realtime/battleground_background_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'battlescreen_background' (28#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1442]
+WARNING: [Synth 8-350] instance 'battlescreen1' of module 'battlescreen_background' requires 6 connections, but only 4 given [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:165]
+WARNING: [Synth 8-350] instance 'battlescreen2' of module 'battlescreen_background' requires 6 connections, but only 4 given [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:170]
+INFO: [Synth 8-6157] synthesizing module 'biche_head_n_body' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'biche_head_n_body' (29#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:474]
+INFO: [Synth 8-6157] synthesizing module 'biche_arm' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:422]
+INFO: [Synth 8-6155] done synthesizing module 'biche_arm' (30#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:422]
+WARNING: [Synth 8-689] width (32) of port connection 'sprite_y' does not match port width (6) of module 'biche_arm' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:189]
+INFO: [Synth 8-6157] synthesizing module 'biche_arm_attack' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:559]
+INFO: [Synth 8-6155] done synthesizing module 'biche_arm_attack' (31#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:559]
+INFO: [Synth 8-6157] synthesizing module 'bob_head_n_body' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:617]
+INFO: [Synth 8-6155] done synthesizing module 'bob_head_n_body' (32#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:617]
+INFO: [Synth 8-6157] synthesizing module 'bob_arm' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:706]
+INFO: [Synth 8-6155] done synthesizing module 'bob_arm' (33#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:706]
+INFO: [Synth 8-6157] synthesizing module 'bob_arm_attack' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:755]
+INFO: [Synth 8-6155] done synthesizing module 'bob_arm_attack' (34#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:755]
+INFO: [Synth 8-6157] synthesizing module 'rock_attack' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:810]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:837]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sprite_y_idx_reg' and it is trimmed from '6' to '5' bits. [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:840]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sprite_x_idx_reg' and it is trimmed from '7' to '5' bits. [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:839]
+INFO: [Synth 8-6155] done synthesizing module 'rock_attack' (35#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:810]
+INFO: [Synth 8-6157] synthesizing module 'paper_airplane_attack' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:914]
+INFO: [Synth 8-6155] done synthesizing module 'paper_airplane_attack' (36#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:914]
+INFO: [Synth 8-6157] synthesizing module 'paper_clip_attack' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:966]
+INFO: [Synth 8-6155] done synthesizing module 'paper_clip_attack' (37#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:966]
+INFO: [Synth 8-6157] synthesizing module 'paper_tack_attack' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1025]
+INFO: [Synth 8-6155] done synthesizing module 'paper_tack_attack' (38#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1025]
+INFO: [Synth 8-6157] synthesizing module 'scissor_close_attack' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'scissor_close_attack' (39#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'scissor_open_attack' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1143]
+INFO: [Synth 8-6155] done synthesizing module 'scissor_open_attack' (40#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1143]
+INFO: [Synth 8-6157] synthesizing module 'parry_shield' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1204]
+INFO: [Synth 8-6155] done synthesizing module 'parry_shield' (41#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1204]
+WARNING: [Synth 8-350] instance 'run_parry_shield' of module 'parry_shield' requires 7 connections, but only 6 given [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:284]
+INFO: [Synth 8-6157] synthesizing module 'dmg_taken' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1362]
+INFO: [Synth 8-6155] done synthesizing module 'dmg_taken' (42#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1362]
+INFO: [Synth 8-6157] synthesizing module 'lose' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1981]
+INFO: [Synth 8-6155] done synthesizing module 'lose' (43#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1981]
+WARNING: [Synth 8-689] width (32) of port connection 'flip' does not match port width (1) of module 'lose' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:308]
+INFO: [Synth 8-6157] synthesizing module 'win' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1929]
+INFO: [Synth 8-6155] done synthesizing module 'win' (44#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/front_end.v:1929]
+WARNING: [Synth 8-689] width (32) of port connection 'flip' does not match port width (1) of module 'win' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:315]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:331]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:320]
+WARNING: [Synth 8-6014] Unused sequential element oled_charac_arm_reg was removed.  [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:339]
+INFO: [Synth 8-6155] done synthesizing module 'battle_animation' (45#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:23]
+WARNING: [Synth 8-350] instance 'animation_instantiate' of module 'battle_animation' requires 11 connections, but only 9 given [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:210]
+INFO: [Synth 8-6157] synthesizing module 'ddr_parry' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/parry.v:23]
 	Parameter PARRY_ZONE_Y bound to: 7'b0010100 
 	Parameter LEFT_X bound to: 7'b0010111 
 	Parameter DOWN_X bound to: 7'b0111010 
@@ -215,23 +215,89 @@ INFO: [Synth 8-6157] synthesizing module 'ddr_parry' [C:/Users/stamp/Downloads/M
 	Parameter DIGIT9 bound to: 7'b0001100 
 	Parameter DIGIT0 bound to: 7'b0000001 
 	Parameter BLANK bound to: 7'b1111111 
-INFO: [Synth 8-6157] synthesizing module 'delay_counter' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/delay_counter.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'delay_counter' (46#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/delay_counter.v:23]
-INFO: [Synth 8-6157] synthesizing module 'ind_to_coor' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:34]
-INFO: [Synth 8-6155] done synthesizing module 'ind_to_coor' (47#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/sub_modules.v:34]
-WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (6) of module 'ind_to_coor' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/parry.v:81]
-WARNING: [Synth 8-350] instance 'mainscreen_background' of module 'battlescreen_background' requires 6 connections, but only 4 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/parry.v:88]
-INFO: [Synth 8-6157] synthesizing module 'parry_background' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/background.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'parry_background' (48#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/background.v:23]
-INFO: [Synth 8-6157] synthesizing module 'parry_colour' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/background.v:115]
-INFO: [Synth 8-6155] done synthesizing module 'parry_colour' (49#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/background.v:115]
-INFO: [Synth 8-6157] synthesizing module 'miss_colour' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/background.v:165]
-INFO: [Synth 8-6155] done synthesizing module 'miss_colour' (50#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/background.v:165]
-WARNING: [Synth 8-3848] Net led in module/entity ddr_parry does not have driver. [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/parry.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'ddr_parry' (51#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/parry.v:23]
-WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'ddr_parry' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:226]
-WARNING: [Synth 8-350] instance 'parry' of module 'ddr_parry' requires 13 connections, but only 12 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:218]
-INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'delay_counter' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/delay_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'delay_counter' (46#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/delay_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ind_to_coor' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/sub_modules.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'ind_to_coor' (47#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/sub_modules.v:34]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (6) of module 'ind_to_coor' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/parry.v:81]
+WARNING: [Synth 8-350] instance 'mainscreen_background' of module 'battlescreen_background' requires 6 connections, but only 4 given [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/parry.v:88]
+INFO: [Synth 8-6157] synthesizing module 'parry_background' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/background.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'parry_background' (48#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/background.v:23]
+INFO: [Synth 8-6157] synthesizing module 'parry_colour' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/background.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'parry_colour' (49#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/background.v:115]
+INFO: [Synth 8-6157] synthesizing module 'miss_colour' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/background.v:165]
+INFO: [Synth 8-6155] done synthesizing module 'miss_colour' (50#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/background.v:165]
+WARNING: [Synth 8-3848] Net led in module/entity ddr_parry does not have driver. [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/parry.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ddr_parry' (51#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/parry.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'ddr_parry' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:227]
+WARNING: [Synth 8-350] instance 'parry' of module 'ddr_parry' requires 13 connections, but only 12 given [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:219]
+INFO: [Synth 8-6157] synthesizing module 'led_resolute' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/led_resolute.v:23]
+	Parameter STATE_START bound to: 0 - type: integer 
+	Parameter STATE_IDLE bound to: 1 - type: integer 
+	Parameter STATE_SELECT bound to: 2 - type: integer 
+	Parameter STATE_WHO_WIN bound to: 3 - type: integer 
+	Parameter STATE_RESOLVE_W bound to: 4 - type: integer 
+	Parameter STATE_RESOLVE_P bound to: 5 - type: integer 
+	Parameter STATE_RESOLVE_P_L bound to: 6 - type: integer 
+	Parameter STATE_RESOLVE_P_W bound to: 7 - type: integer 
+	Parameter STATE_DMG_MODIFIER_n_RESOLUTE bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'led_resolute' (52#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/led_resolute.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'state' does not match port width (5) of module 'led_resolute' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:229]
+INFO: [Synth 8-6157] synthesizing module 'victory_screen_main' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/end_screen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'player_disp' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/end_screen.v:42]
+	Parameter BLANK bound to: 7'b1111111 
+	Parameter LETTERc bound to: 7'b0110001 
+	Parameter LETTERh bound to: 7'b1001000 
+	Parameter LETTERo bound to: 7'b0000001 
+	Parameter LETTERs bound to: 7'b0100100 
+	Parameter LETTERe bound to: 7'b0110000 
+	Parameter LETTERm bound to: 7'b0101011 
+	Parameter LETTERd bound to: 7'b1000010 
+	Parameter LETTERf bound to: 7'b0111000 
+	Parameter LETTERr bound to: 7'b1111010 
+	Parameter LETTERa bound to: 7'b0001000 
+	Parameter LETTERp bound to: 7'b0011000 
+	Parameter LETTERw bound to: 7'b1010101 
+	Parameter LETTERn bound to: 7'b1101010 
+	Parameter LETTERb bound to: 7'b1100000 
+	Parameter LETTERu bound to: 7'b1100011 
+	Parameter LETTERg bound to: 7'b0100001 
+	Parameter LETTERy bound to: 7'b1000100 
+	Parameter LETTERi bound to: 7'b1001111 
+	Parameter LETTERl bound to: 7'b1110001 
+	Parameter DIGIT2 bound to: 7'b0010010 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/end_screen.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'player_disp' (53#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/end_screen.v:42]
+INFO: [Synth 8-6157] synthesizing module 'bot_disp' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/end_screen.v:190]
+	Parameter BLANK bound to: 7'b1111111 
+	Parameter LETTERc bound to: 7'b0110001 
+	Parameter LETTERh bound to: 7'b1001000 
+	Parameter LETTERo bound to: 7'b0000001 
+	Parameter LETTERs bound to: 7'b0100100 
+	Parameter LETTERe bound to: 7'b0110000 
+	Parameter LETTERm bound to: 7'b0101011 
+	Parameter LETTERd bound to: 7'b1000010 
+	Parameter LETTERf bound to: 7'b0111000 
+	Parameter LETTERr bound to: 7'b1111010 
+	Parameter LETTERa bound to: 7'b0001000 
+	Parameter LETTERp bound to: 7'b0011000 
+	Parameter LETTERw bound to: 7'b1010101 
+	Parameter LETTERn bound to: 7'b1101010 
+	Parameter LETTERb bound to: 7'b1100000 
+	Parameter LETTERu bound to: 7'b1100011 
+	Parameter LETTERg bound to: 7'b0100001 
+	Parameter LETTERy bound to: 7'b1000100 
+	Parameter LETTERi bound to: 7'b1001111 
+	Parameter LETTERl bound to: 7'b1110001 
+	Parameter LETTERt bound to: 7'b1110000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/end_screen.v:226]
+INFO: [Synth 8-6155] done synthesizing module 'bot_disp' (54#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/end_screen.v:190]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_mux' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/end_screen.v:320]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_mux' (55#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/end_screen.v:320]
+INFO: [Synth 8-6155] done synthesizing module 'victory_screen_main' (56#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/end_screen.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'victory_screen_main' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:241]
+WARNING: [Synth 8-350] instance 'victory' of module 'victory_screen_main' requires 6 connections, but only 5 given [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:237]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
 	Parameter Width bound to: 96 - type: integer 
 	Parameter Height bound to: 64 - type: integer 
 	Parameter PixelCount bound to: 6144 - type: integer 
@@ -282,77 +348,11 @@ INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/stamp/Download
 	Parameter SendPixel bound to: 5'b10000 
 	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
 	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:123]
-INFO: [Synth 8-226] default block is never used [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
-WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
-INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (52#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
-INFO: [Synth 8-6157] synthesizing module 'led_resolute' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/led_resolute.v:23]
-	Parameter STATE_START bound to: 0 - type: integer 
-	Parameter STATE_IDLE bound to: 1 - type: integer 
-	Parameter STATE_SELECT bound to: 2 - type: integer 
-	Parameter STATE_WHO_WIN bound to: 3 - type: integer 
-	Parameter STATE_RESOLVE_W bound to: 4 - type: integer 
-	Parameter STATE_RESOLVE_P bound to: 5 - type: integer 
-	Parameter STATE_RESOLVE_P_L bound to: 6 - type: integer 
-	Parameter STATE_RESOLVE_P_W bound to: 7 - type: integer 
-	Parameter STATE_DMG_MODIFIER_n_RESOLUTE bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'led_resolute' (53#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/led_resolute.v:23]
-WARNING: [Synth 8-689] width (4) of port connection 'state' does not match port width (5) of module 'led_resolute' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:268]
-INFO: [Synth 8-6157] synthesizing module 'victory_screen_main' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:23]
-INFO: [Synth 8-6157] synthesizing module 'player_disp' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:42]
-	Parameter BLANK bound to: 7'b1111111 
-	Parameter LETTERc bound to: 7'b0110001 
-	Parameter LETTERh bound to: 7'b1001000 
-	Parameter LETTERo bound to: 7'b0000001 
-	Parameter LETTERs bound to: 7'b0100100 
-	Parameter LETTERe bound to: 7'b0110000 
-	Parameter LETTERm bound to: 7'b0101011 
-	Parameter LETTERd bound to: 7'b1000010 
-	Parameter LETTERf bound to: 7'b0111000 
-	Parameter LETTERr bound to: 7'b1111010 
-	Parameter LETTERa bound to: 7'b0001000 
-	Parameter LETTERp bound to: 7'b0011000 
-	Parameter LETTERw bound to: 7'b1010101 
-	Parameter LETTERn bound to: 7'b1101010 
-	Parameter LETTERb bound to: 7'b1100000 
-	Parameter LETTERu bound to: 7'b1100011 
-	Parameter LETTERg bound to: 7'b0100001 
-	Parameter LETTERy bound to: 7'b1000100 
-	Parameter LETTERi bound to: 7'b1001111 
-	Parameter LETTERl bound to: 7'b1110001 
-	Parameter DIGIT2 bound to: 7'b0010010 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:78]
-INFO: [Synth 8-6155] done synthesizing module 'player_disp' (54#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:42]
-INFO: [Synth 8-6157] synthesizing module 'bot_disp' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:190]
-	Parameter BLANK bound to: 7'b1111111 
-	Parameter LETTERc bound to: 7'b0110001 
-	Parameter LETTERh bound to: 7'b1001000 
-	Parameter LETTERo bound to: 7'b0000001 
-	Parameter LETTERs bound to: 7'b0100100 
-	Parameter LETTERe bound to: 7'b0110000 
-	Parameter LETTERm bound to: 7'b0101011 
-	Parameter LETTERd bound to: 7'b1000010 
-	Parameter LETTERf bound to: 7'b0111000 
-	Parameter LETTERr bound to: 7'b1111010 
-	Parameter LETTERa bound to: 7'b0001000 
-	Parameter LETTERp bound to: 7'b0011000 
-	Parameter LETTERw bound to: 7'b1010101 
-	Parameter LETTERn bound to: 7'b1101010 
-	Parameter LETTERb bound to: 7'b1100000 
-	Parameter LETTERu bound to: 7'b1100011 
-	Parameter LETTERg bound to: 7'b0100001 
-	Parameter LETTERy bound to: 7'b1000100 
-	Parameter LETTERi bound to: 7'b1001111 
-	Parameter LETTERl bound to: 7'b1110001 
-	Parameter LETTERt bound to: 7'b1110000 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:226]
-INFO: [Synth 8-6155] done synthesizing module 'bot_disp' (55#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:190]
-INFO: [Synth 8-6157] synthesizing module 'seven_seg_mux' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:320]
-INFO: [Synth 8-6155] done synthesizing module 'seven_seg_mux' (56#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:320]
-INFO: [Synth 8-6155] done synthesizing module 'victory_screen_main' (57#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/end_screen.v:23]
-WARNING: [Synth 8-689] width (8) of port connection 'seg' does not match port width (7) of module 'victory_screen_main' [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:280]
-WARNING: [Synth 8-350] instance 'victory' of module 'victory_screen_main' requires 6 connections, but only 5 given [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:276]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Module' (58#1) [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:123]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (57#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Module' (58#1) [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:23]
 WARNING: [Synth 8-3917] design Top_Module has port dp driven by constant 1
 WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[14]
 WARNING: [Synth 8-3331] design seven_seg_mux has unconnected port led[13]
@@ -411,7 +411,7 @@ WARNING: [Synth 8-3331] design ability_select_main has unconnected port ai_turne
 WARNING: [Synth 8-3331] design Top_Module has unconnected port JC[2]
 WARNING: [Synth 8-3331] design Top_Module has unconnected port JX[2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 577.402 ; gain = 290.664
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 577.672 ; gain = 290.852
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -420,52 +420,52 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin run_parry_shield:flip to constant 0 [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:284]
-WARNING: [Synth 8-3295] tying undriven pin oled_display_instance_R:reset to constant 0 [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:235]
-WARNING: [Synth 8-3295] tying undriven pin oled_display_instance_L:reset to constant 0 [C:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/new/Top_Module.v:251]
+WARNING: [Synth 8-3295] tying undriven pin run_parry_shield:flip to constant 0 [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Battle_idle_state.v:284]
+WARNING: [Synth 8-3295] tying undriven pin oled_display_instance_R:reset to constant 0 [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:250]
+WARNING: [Synth 8-3295] tying undriven pin oled_display_instance_L:reset to constant 0 [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/new/Top_Module.v:266]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 577.402 ; gain = 290.664
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 577.672 ; gain = 290.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 577.402 ; gain = 290.664
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 577.672 ; gain = 290.852
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'animation_instantiate/battlescreen1/run_battleground_background'
-Finished Parsing XDC File [c:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'animation_instantiate/battlescreen1/run_battleground_background'
-Parsing XDC File [c:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'animation_instantiate/battlescreen2/run_battleground_background'
-Finished Parsing XDC File [c:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'animation_instantiate/battlescreen2/run_battleground_background'
-Parsing XDC File [c:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'parry/mainscreen_background/run_battleground_background'
-Finished Parsing XDC File [c:/Users/stamp/Downloads/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'parry/mainscreen_background/run_battleground_background'
-Parsing XDC File [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/mainscreen/mainscreen/run_homescreen_background'
-Finished Parsing XDC File [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/mainscreen/mainscreen/run_homescreen_background'
-Parsing XDC File [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/guidepage/mainscreen/run_homescreen_background'
-Finished Parsing XDC File [C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/.Xil/Vivado-42128-ASUS_Zenbook_WG/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/guidepage/mainscreen/run_homescreen_background'
-Parsing XDC File [C:/Users/stamp/Downloads/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]
-Finished Parsing XDC File [C:/Users/stamp/Downloads/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/stamp/Downloads/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
+Parsing XDC File [c:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'animation_instantiate/battlescreen1/run_battleground_background'
+Finished Parsing XDC File [c:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'animation_instantiate/battlescreen1/run_battleground_background'
+Parsing XDC File [c:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'animation_instantiate/battlescreen2/run_battleground_background'
+Finished Parsing XDC File [c:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'animation_instantiate/battlescreen2/run_battleground_background'
+Parsing XDC File [c:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'parry/mainscreen_background/run_battleground_background'
+Finished Parsing XDC File [c:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background/battleground_background_in_context.xdc] for cell 'parry/mainscreen_background/run_battleground_background'
+Parsing XDC File [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/synth_1/.Xil/Vivado-23088-E-laptop/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/mainscreen/mainscreen/run_homescreen_background'
+Finished Parsing XDC File [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/synth_1/.Xil/Vivado-23088-E-laptop/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/mainscreen/mainscreen/run_homescreen_background'
+Parsing XDC File [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/synth_1/.Xil/Vivado-23088-E-laptop/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/guidepage/mainscreen/run_homescreen_background'
+Finished Parsing XDC File [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/synth_1/.Xil/Vivado-23088-E-laptop/homescreen_background/homescreen_background/homescreen_background_in_context.xdc] for cell 'top_screen_render/guidepage/mainscreen/run_homescreen_background'
+Parsing XDC File [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]
+Finished Parsing XDC File [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.srcs/constrs_1/new/my_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 889.922 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 888.344 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 889.969 ; gain = 603.230
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 888.344 ; gain = 601.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 889.969 ; gain = 603.230
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 888.344 ; gain = 601.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -476,7 +476,7 @@ Applied set_property DONT_TOUCH = true for parry/mainscreen_background/run_battl
 Applied set_property DONT_TOUCH = true for top_screen_render/mainscreen/mainscreen/run_homescreen_background. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for top_screen_render/guidepage/mainscreen/run_homescreen_background. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 889.969 ; gain = 603.230
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 888.344 ; gain = 601.523
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Top_Home_Screen'
@@ -494,7 +494,6 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -561,17 +560,17 @@ INFO: [Synth 8-3354] encoded FSM with state register 'count_2_four_reg' using en
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 889.969 ; gain = 603.230
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 888.344 ; gain = 601.523
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+----------------------+------------+----------+
 |      |RTL Partition         |Replication |Instances |
 +------+----------------------+------------+----------+
-|1     |battle_animation__GB0 |           1|     34103|
+|1     |battle_animation__GB0 |           1|     34107|
 |2     |battle_animation__GB1 |           1|     12192|
-|3     |Top_Module__GCB0      |           1|     33488|
-|4     |Top_Module__GCB1      |           1|     15298|
+|3     |Top_Module__GCB0      |           1|     33450|
+|4     |Top_Module__GCB1      |           1|     15417|
 |5     |Top_Module__GCB2      |           1|     23471|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -595,15 +594,15 @@ Detailed RTL Component Info :
 	   3 Input      3 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 4     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
 	               40 Bit    Registers := 2     
 	               32 Bit    Registers := 2     
 	               17 Bit    Registers := 2     
-	               16 Bit    Registers := 45    
+	               16 Bit    Registers := 44    
 	                7 Bit    Registers := 23    
 	                6 Bit    Registers := 3     
-	                4 Bit    Registers := 13    
+	                4 Bit    Registers := 15    
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 8     
 	                1 Bit    Registers := 65    
@@ -615,7 +614,7 @@ Detailed RTL Component Info :
 	  32 Input     20 Bit        Muxes := 2     
 	   2 Input     17 Bit        Muxes := 2     
 	  48 Input     16 Bit        Muxes := 9     
-	   2 Input     16 Bit        Muxes := 89    
+	   2 Input     16 Bit        Muxes := 92    
 	  14 Input     16 Bit        Muxes := 31    
 	  15 Input     16 Bit        Muxes := 25    
 	  19 Input     16 Bit        Muxes := 20    
@@ -664,11 +663,12 @@ Detailed RTL Component Info :
 	  10 Input      3 Bit        Muxes := 2     
 	  64 Input      3 Bit        Muxes := 13    
 	  53 Input      3 Bit        Muxes := 7     
-	   4 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 6     
+	   5 Input      2 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
 	   6 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 46    
+	   2 Input      1 Bit        Muxes := 47    
 	  13 Input      1 Bit        Muxes := 2     
 	  10 Input      1 Bit        Muxes := 2     
 	   3 Input      1 Bit        Muxes := 5     
@@ -1145,14 +1145,16 @@ Detailed RTL Component Info :
 	   3 Input      1 Bit        Muxes := 3     
 Module abil_sel_ai 
 Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      2 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 Module flexi_clk__6 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1298,8 +1300,8 @@ Detailed RTL Component Info :
 +---Registers : 
 	               16 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
 Module flexi_clk__11 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1676,7 +1678,7 @@ WARNING: [Synth 8-3332] Sequential element (an_reg[2]) is unused and will be rem
 INFO: [Synth 8-5545] ROM "top_screen_render/clk6p25m_instantiate/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk6p25m_instantiate/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:01:08 . Memory (MB): peak = 889.969 ; gain = 603.230
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:02:41 . Memory (MB): peak = 888.344 ; gain = 601.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1941,38 +1943,38 @@ Report RTL Partitions:
 +------+----------------------+------------+----------+
 |      |RTL Partition         |Replication |Instances |
 +------+----------------------+------------+----------+
-|1     |battle_animation__GB0 |           1|     14392|
+|1     |battle_animation__GB0 |           1|     14407|
 |2     |battle_animation__GB1 |           1|      3559|
-|3     |Top_Module__GCB0      |           1|     15360|
-|4     |Top_Module__GCB1      |           1|      5803|
+|3     |Top_Module__GCB0      |           1|     15334|
+|4     |Top_Module__GCB1      |           1|      5872|
 |5     |Top_Module__GCB2      |           1|     10229|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:01:14 . Memory (MB): peak = 889.969 ; gain = 603.230
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:02:52 . Memory (MB): peak = 888.344 ; gain = 601.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:01:20 . Memory (MB): peak = 929.289 ; gain = 642.551
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:03:05 . Memory (MB): peak = 918.938 ; gain = 632.117
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+----------------------+------------+----------+
 |      |RTL Partition         |Replication |Instances |
 +------+----------------------+------------+----------+
-|1     |battle_animation__GB0 |           1|     14392|
+|1     |battle_animation__GB0 |           1|     14407|
 |2     |battle_animation__GB1 |           1|      3528|
-|3     |Top_Module_GT0        |           1|     31309|
+|3     |Top_Module_GT0        |           1|     31202|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:01:32 . Memory (MB): peak = 929.289 ; gain = 642.551
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:03:15 . Memory (MB): peak = 918.938 ; gain = 632.117
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1981,7 +1983,7 @@ Report RTL Partitions:
 +------+----------------------+------------+----------+
 |1     |battle_animation__GB0 |           1|      5927|
 |2     |battle_animation__GB1 |           1|      1251|
-|3     |Top_Module_GT0        |           1|     12373|
+|3     |Top_Module_GT0        |           1|     12350|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1999,7 +2001,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:01:34 . Memory (MB): peak = 929.289 ; gain = 642.551
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:03:20 . Memory (MB): peak = 918.938 ; gain = 632.117
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2012,7 +2014,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:01:34 . Memory (MB): peak = 929.289 ; gain = 642.551
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:03:20 . Memory (MB): peak = 918.938 ; gain = 632.117
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2024,25 +2026,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:01:35 . Memory (MB): peak = 929.289 ; gain = 642.551
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:03:22 . Memory (MB): peak = 918.938 ; gain = 632.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:01:35 . Memory (MB): peak = 929.289 ; gain = 642.551
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:03:23 . Memory (MB): peak = 918.938 ; gain = 632.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:01:36 . Memory (MB): peak = 929.289 ; gain = 642.551
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:03:23 . Memory (MB): peak = 918.938 ; gain = 632.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:01:36 . Memory (MB): peak = 929.289 ; gain = 642.551
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:03:23 . Memory (MB): peak = 918.938 ; gain = 632.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2057,6 +2059,7 @@ Static Shift Register Report:
 |Top_Module  | top_screen_render/guidepage/run_button_sync_L/button_sync_reg  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
 |Top_Module  | top_screen_render/guidepage/run_button_sync_R/button_sync_reg  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
 |Top_Module  | button_Up/button_sync_reg                                      | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Top_Module  | run_ability_select_main/ai_immediate_selection/lfsr_reg[2]     | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
 +------------+----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
@@ -2085,20 +2088,20 @@ Report Cell Usage:
 |5     |homescreen_background__2   |     1|
 |6     |BUFG                       |     8|
 |7     |CARRY4                     |  1117|
-|8     |LUT1                       |   390|
-|9     |LUT2                       |  2095|
-|10    |LUT3                       |   922|
-|11    |LUT4                       |  1291|
-|12    |LUT5                       |  3426|
-|13    |LUT6                       |  6879|
-|14    |MUXF7                      |  1396|
+|8     |LUT1                       |   373|
+|9     |LUT2                       |  2091|
+|10    |LUT3                       |   908|
+|11    |LUT4                       |  1294|
+|12    |LUT5                       |  3414|
+|13    |LUT6                       |  6897|
+|14    |MUXF7                      |  1409|
 |15    |MUXF8                      |   329|
-|16    |SRL16E                     |     5|
+|16    |SRL16E                     |     6|
 |17    |FDCE                       |    14|
 |18    |FDE_1                      |    64|
-|19    |FDRE                       |  1905|
-|20    |FDSE                       |    41|
-|21    |IBUF                       |     6|
+|19    |FDRE                       |  1888|
+|20    |FDSE                       |    45|
+|21    |IBUF                       |     8|
 |22    |OBUF                       |    42|
 |23    |OBUFT                      |     2|
 +------+---------------------------+------+
@@ -2107,8 +2110,8 @@ Report Instance Areas:
 +------+------------------------------------+------------------------------------+------+
 |      |Instance                            |Module                              |Cells |
 +------+------------------------------------+------------------------------------+------+
-|1     |top                                 |                                    | 20012|
-|2     |  animation_instantiate             |battle_animation                    |  3416|
+|1     |top                                 |                                    | 19989|
+|2     |  animation_instantiate             |battle_animation                    |  3428|
 |3     |    battlescreen1                   |battlescreen_background__xdcDup__1  |    71|
 |4     |    battlescreen2                   |battlescreen_background__xdcDup__2  |    19|
 |5     |    clk6p25m                        |flexi_clk_24                        |    51|
@@ -2126,7 +2129,7 @@ Report Instance Areas:
 |17    |    run_clk35fps                    |flexi_clk_30                        |    55|
 |18    |    run_dmg_taken                   |dmg_taken                           |   372|
 |19    |    run_fourfps                     |flexi_clk_31                        |    55|
-|20    |    run_lose                        |lose                                |    23|
+|20    |    run_lose                        |lose                                |    24|
 |21    |    run_paper_airplane_attack       |paper_airplane_attack               |    53|
 |22    |    run_paper_clip_attack           |paper_clip_attack                   |    60|
 |23    |    run_paper_tack_attack           |paper_tack_attack                   |    81|
@@ -2134,7 +2137,7 @@ Report Instance Areas:
 |25    |    run_rock_attack                 |rock_attack                         |   206|
 |26    |    run_scissor_close_attack        |scissor_close_attack                |   293|
 |27    |    run_scissor_open_attack         |scissor_open_attack                 |   301|
-|28    |    run_win                         |win                                 |    45|
+|28    |    run_win                         |win                                 |    43|
 |29    |  button_Up                         |button_sync                         |     5|
 |30    |  clk6p25m_instantiate              |flexi_clk                           |    52|
 |31    |  debounce_btnC                     |debounce                            |    57|
@@ -2142,10 +2145,10 @@ Report Instance Areas:
 |33    |  debounce_btnL                     |debounce_1                          |    56|
 |34    |  debounce_btnR                     |debounce_2                          |    56|
 |35    |  debounce_btnU                     |debounce_3                          |    58|
-|36    |  nolabel_line268                   |led_resolute                        |    41|
+|36    |  nolabel_line229                   |led_resolute                        |    30|
 |37    |  oled_display_instance_L           |Oled_Display                        |   309|
-|38    |  oled_display_instance_R           |Oled_Display_4                      | 11491|
-|39    |  parry                             |ddr_parry                           |   968|
+|38    |  oled_display_instance_R           |Oled_Display_4                      | 11493|
+|39    |  parry                             |ddr_parry                           |   962|
 |40    |    arrow_clock                     |flexi_clk_22                        |    54|
 |41    |    led_clock                       |flexi_clk_23                        |    51|
 |42    |    mainscreen_background           |battlescreen_background             |    32|
@@ -2153,30 +2156,30 @@ Report Instance Areas:
 |44    |    parry_background_inst           |parry_background                    |   304|
 |45    |    parry_colour_inst               |parry_colour                        |    73|
 |46    |    run_delay_counter               |delay_counter                       |    30|
-|47    |  run_ability_select_main           |ability_select_main                 |   941|
-|48    |    ability_resolution              |ability_resolution                  |    49|
-|49    |    ai_immediate_selection          |abil_sel_ai                         |    48|
-|50    |    countdown                       |countdown_timer_flexi               |   169|
+|47    |  run_ability_select_main           |ability_select_main                 |   909|
+|48    |    ability_resolution              |ability_resolution                  |    59|
+|49    |    ai_immediate_selection          |abil_sel_ai                         |    16|
+|50    |    countdown                       |countdown_timer_flexi               |   172|
 |51    |      clk_1hz                       |flexi_clk_20                        |    57|
 |52    |      clk_200hz                     |flexi_clk_21                        |    55|
-|53    |    select_screen_render            |ability_select_screen               |   674|
+|53    |    select_screen_render            |ability_select_screen               |   661|
 |54    |      background_selection_render   |skillscreen_selection_background    |    23|
 |55    |      clk6p25m_instantiate          |flexi_clk_14                        |    51|
 |56    |      icon_paper_render             |skillscreen_icon_paper              |    41|
 |57    |      icon_rock_render              |skillscreen_icon_rock               |    57|
 |58    |      icon_scissors_render          |skillscreen_icon_scissors           |    71|
 |59    |      icon_selector_render          |skillscreen_selector                |    66|
-|60    |      player_select                 |rps_confirmation_screen             |   284|
-|61    |        background_selection_render |skillscreen_confirmation_background |    20|
+|60    |      player_select                 |rps_confirmation_screen             |   271|
+|61    |        background_selection_render |skillscreen_confirmation_background |    33|
 |62    |        clk6p25m_instantiate        |flexi_clk_16                        |    63|
-|63    |        icon_paper_render           |skillscreen_icon_paper_17           |    67|
+|63    |        icon_paper_render           |skillscreen_icon_paper_17           |    41|
 |64    |        icon_rock_render            |skillscreen_icon_rock_18            |    60|
 |65    |        icon_scissors_render        |skillscreen_icon_scissors_19        |    58|
 |66    |      run_fourfps                   |flexi_clk_15                        |    55|
-|67    |  top_screen_render                 |Top_Home_Screen                     |  1669|
+|67    |  top_screen_render                 |Top_Home_Screen                     |  1682|
 |68    |    clk6p25m_instantiate            |flexi_clk_9                         |    52|
-|69    |    guidepage                       |guide_page_render                   |  1413|
-|70    |      guide_page_one_render         |guide_page_one                      |   706|
+|69    |    guidepage                       |guide_page_render                   |  1426|
+|70    |      guide_page_one_render         |guide_page_one                      |   719|
 |71    |      guide_page_two_render         |guide_page_two                      |   644|
 |72    |      mainscreen                    |mainscreen_background               |    57|
 |73    |      run_button_sync_L             |button_sync_12                      |     3|
@@ -2188,24 +2191,24 @@ Report Instance Areas:
 |79    |      selector_arrow_render         |main_screen_selector_arrow          |    86|
 |80    |      selector_render               |main_screen_selector                |    56|
 |81    |      title                         |homepage_title                      |    33|
-|82    |  victory                           |victory_screen_main                 |   433|
+|82    |  victory                           |victory_screen_main                 |   431|
 |83    |    bot                             |bot_disp                            |   199|
 |84    |      clk_200hz                     |flexi_clk_7                         |    55|
 |85    |      clk_3p75hz                    |flexi_clk_8                         |    56|
-|86    |    nolabel_line37                  |seven_seg_mux                       |    23|
-|87    |    player                          |player_disp                         |   211|
+|86    |    nolabel_line37                  |seven_seg_mux                       |    12|
+|87    |    player                          |player_disp                         |   220|
 |88    |      clk_200hz                     |flexi_clk_5                         |    55|
 |89    |      clk_3p75hz                    |flexi_clk_6                         |    56|
 +------+------------------------------------+------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:01:36 . Memory (MB): peak = 929.289 ; gain = 642.551
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:03:23 . Memory (MB): peak = 918.938 ; gain = 632.117
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:01:30 . Memory (MB): peak = 929.289 ; gain = 329.984
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:01:36 . Memory (MB): peak = 929.289 ; gain = 642.551
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:03:13 . Memory (MB): peak = 918.938 ; gain = 321.445
+Synthesis Optimization Complete : Time (s): cpu = 00:01:06 ; elapsed = 00:03:24 . Memory (MB): peak = 918.938 ; gain = 632.117
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 2912 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-17] Analyzing 2927 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -2213,11 +2216,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDE_1 => FDRE (inverted pins: C): 64 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-257 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+256 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:01:40 . Memory (MB): peak = 929.289 ; gain = 654.066
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:03:31 . Memory (MB): peak = 918.938 ; gain = 643.625
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/stamp/Downloads/MODS/MODS.runs/synth_1/Top_Module.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/synth_1/Top_Module.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 929.289 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Nov  2 20:23:48 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 918.938 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  3 10:18:55 2024...

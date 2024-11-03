@@ -1,0 +1,165 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 23024
+License: Customer
+
+Current time: 	Sun Nov 03 09:51:19 SGT 2024
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 226 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	user
+User home directory: C:/Users/user
+User working directory: C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/modifier_main
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/user/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/user/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/user/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/modifier_main/vivado.log
+Vivado journal file location: 	C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/modifier_main/vivado.jou
+Engine tmp dir: 	C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/modifier_main/.Xil/Vivado-23024-E-laptop
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	206 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 511 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\user\OneDrive - National University of Singapore\Documents\GitHub\EE2026_2425_Wed_AM_Team_13_Project\modifier_main\modifier_main.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 63 MB (+63395kb) [00:00:10]
+// [Engine Memory]: 485 MB (+357292kb) [00:00:10]
+// Tcl Message: open_project {C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/modifier_main/modifier_main.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/modifier_main' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/modifier_main/modifier_main.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/modifier_main' INFO: [Project 1-313] Project file moved from 'C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/modifier_main' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 575 MB (+68427kb) [00:00:13]
+// [GUI Memory]: 78 MB (+12352kb) [00:00:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 611 MB. GUI used memory: 41 MB. Current time: 11/3/24 9:51:24 AM SGT
+// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 896.062 ; gain = 161.273 
+// [Engine Memory]: 616 MB (+12672kb) [00:00:17]
+// Project name: modifier_main; location: C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/modifier_main; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (main.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), modif_start : modifier_start (modifier_start.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), abc_modif : abc_modifier (abc_modifier.v)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), abc_modif : abc_modifier (abc_modifier.v), mux : clk_mux (clk_mux.v)]", 4, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), modif_start : modifier_start (modifier_start.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), modif_start : modifier_start (modifier_start.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [Engine Memory]: 647 MB (+721kb) [00:00:37]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "abc_modifier.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.v", 1); // k (j, ck)
+// [GUI Memory]: 82 MB (+312kb) [00:01:36]
+// Elapsed time: 146 seconds
+selectCodeEditor("main.v", 24, 158); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("main.v", 15, 201); // ce (w, ck)
+selectCodeEditor("main.v", 20, 190); // ce (w, ck)
+selectCodeEditor("main.v", 103, 178); // ce (w, ck)
+selectCodeEditor("main.v", 156, 158); // ce (w, ck)
+selectCodeEditor("main.v", 48, 145); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), effects : modifier_effects (modifier_effects.v)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), effects : modifier_effects (modifier_effects.v)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), effects : modifier_effects (modifier_effects.v)]", 11, false); // B (D, ck)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modifier_start.v", 3); // k (j, ck)
+// [GUI Memory]: 87 MB (+1454kb) [00:04:19]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "abc_modifier.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.v", 1); // k (j, ck)
+selectCodeEditor("main.v", 570, 126); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("main.v", 200, 152); // ce (w, ck)
+selectCodeEditor("main.v", 253, 127); // ce (w, ck)
+selectCodeEditor("main.v", 23, 192); // ce (w, ck)
+selectCodeEditor("main.v", 17, 174); // ce (w, ck)
+selectCodeEditor("main.v", 784, 218); // ce (w, ck)
+selectCodeEditor("main.v", 767, 232); // ce (w, ck)
+selectCodeEditor("main.v", 27, 139); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "abc_modifier.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modifier_start.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modifier_effects.v", 4); // k (j, ck)
+// Elapsed time: 36 seconds
+selectCodeEditor("modifier_effects.v", 239, 177); // ce (w, ck)
+selectCodeEditor("modifier_effects.v", 268, 148); // ce (w, ck)
+// Run Command: RDIResourceCommand.RDICommands_UNSELECT_ALL
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modifier_start.v", 3); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modifier_effects.v", 4); // k (j, ck)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "abc_modifier.v", 2); // k (j, ck)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.v", 1); // k (j, ck)
+selectCodeEditor("main.v", 87, 173); // ce (w, ck)
+selectCodeEditor("main.v", 143, 156); // ce (w, ck)
+selectCodeEditor("main.v", 143, 156); // ce (w, ck)
+selectCodeEditor("main.v", 143, 156, false, false, false, false, true); // ce (w, ck) - Double Click
+// [GUI Memory]: 95 MB (+3495kb) [00:10:16]
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1040 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1223 ms. Increasing delay to 3000 ms.
+// [GUI Memory]: 102 MB (+2423kb) [00:23:40]
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 44 MB. Current time: 11/3/24 10:21:27 AM SGT

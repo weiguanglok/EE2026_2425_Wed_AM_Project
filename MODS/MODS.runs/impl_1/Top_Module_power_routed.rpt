@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Sat Nov  2 20:25:21 2024
-| Host             : ASUS_Zenbook_WG running 64-bit major release  (build 9200)
+| Date             : Sun Nov  3 10:22:05 2024
+| Host             : E-laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Module_power_routed.rpt -pb Top_Module_power_summary_routed.pb -rpx Top_Module_power_routed.rpx
 | Design           : Top_Module
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.104        |
+| Total On-Chip Power (W)  | 0.101        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.031        |
+| Dynamic (W)              | 0.029        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.007 |        3 |       --- |             --- |
-| Slice Logic             |     0.006 |    20076 |       --- |             --- |
-|   LUT as Logic          |     0.005 |    12952 |     20800 |           62.27 |
+| Slice Logic             |     0.004 |    20052 |       --- |             --- |
+|   LUT as Logic          |     0.003 |    12932 |     20800 |           62.17 |
 |   CARRY4                |    <0.001 |     1117 |      8150 |           13.71 |
-|   Register              |    <0.001 |     2044 |     41600 |            4.91 |
-|   F7/F8 Muxes           |    <0.001 |     1587 |     32600 |            4.87 |
-|   LUT as Shift Register |    <0.001 |        5 |      9600 |            0.05 |
-|   Others                |     0.000 |      205 |       --- |             --- |
+|   Register              |    <0.001 |     2031 |     41600 |            4.88 |
+|   F7/F8 Muxes           |    <0.001 |     1600 |     32600 |            4.91 |
+|   LUT as Shift Register |    <0.001 |        6 |      9600 |            0.06 |
+|   Others                |     0.000 |      206 |       --- |             --- |
 |   BUFG                  |     0.000 |        7 |        32 |           21.88 |
-| Signals                 |     0.006 |    12790 |       --- |             --- |
+| Signals                 |     0.004 |    12754 |       --- |             --- |
 | Block RAM               |     0.000 |       15 |        50 |           30.00 |
-| I/O                     |     0.013 |       50 |       106 |           47.17 |
+| I/O                     |     0.014 |       52 |       106 |           49.06 |
 | Static Power            |     0.072 |          |           |                 |
-| Total                   |     0.104 |          |           |                 |
+| Total                   |     0.101 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.028 |       0.018 |      0.010 |
+| Vccint    |       1.000 |     0.025 |       0.015 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -144,8 +144,8 @@ Table of Contents
 +----------------------------------------------------+-----------+
 | Name                                               | Power (W) |
 +----------------------------------------------------+-----------+
-| Top_Module                                         |     0.031 |
-|   animation_instantiate                            |     0.006 |
+| Top_Module                                         |     0.029 |
+|   animation_instantiate                            |     0.004 |
 |     battlescreen1                                  |    <0.001 |
 |       run_battleground_background                  |     0.000 |
 |         U0                                         |     0.000 |
@@ -194,7 +194,7 @@ Table of Contents
 |     run_paper_clip_attack                          |    <0.001 |
 |     run_paper_tack_attack                          |    <0.001 |
 |     run_parry_shield                               |     0.000 |
-|     run_rock_attack                                |     0.002 |
+|     run_rock_attack                                |     0.001 |
 |     run_scissor_close_attack                       |    <0.001 |
 |     run_scissor_open_attack                        |     0.000 |
 |     run_win                                        |    <0.001 |
@@ -205,10 +205,10 @@ Table of Contents
 |   debounce_btnL                                    |    <0.001 |
 |   debounce_btnR                                    |    <0.001 |
 |   debounce_btnU                                    |    <0.001 |
-|   nolabel_line268                                  |    <0.001 |
+|   nolabel_line229                                  |    <0.001 |
 |   oled_display_instance_L                          |    <0.001 |
 |   oled_display_instance_R                          |    <0.001 |
-|   parry                                            |     0.001 |
+|   parry                                            |    <0.001 |
 |     arrow_clock                                    |    <0.001 |
 |     led_clock                                      |    <0.001 |
 |     mainscreen_background                          |     0.000 |
@@ -235,7 +235,7 @@ Table of Contents
 |     countdown                                      |     0.001 |
 |       clk_1hz                                      |    <0.001 |
 |       clk_200hz                                    |    <0.001 |
-|     select_screen_render                           |     0.002 |
+|     select_screen_render                           |     0.001 |
 |       background_selection_render                  |     0.000 |
 |       clk6p25m_instantiate                         |    <0.001 |
 |       icon_paper_render                            |     0.000 |
@@ -245,7 +245,7 @@ Table of Contents
 |       player_select                                |    <0.001 |
 |         background_selection_render                |    <0.001 |
 |         clk6p25m_instantiate                       |    <0.001 |
-|         icon_paper_render                          |    <0.001 |
+|         icon_paper_render                          |     0.000 |
 |         icon_rock_render                           |     0.000 |
 |         icon_scissors_render                       |     0.000 |
 |       run_fourfps                                  |    <0.001 |

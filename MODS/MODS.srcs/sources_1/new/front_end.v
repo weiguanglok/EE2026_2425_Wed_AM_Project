@@ -1934,7 +1934,7 @@ module win(input clk,
     output reg [15:0] oled_colour,
     input [15:0] background_pixel);
     
-    wire [6:0] x_coor = (flip)? 63 - (pixel_index % 96):pixel_index % 96; // Flip the X coordinate
+    wire [6:0] x_coor = (flip)? 95 - (pixel_index % 96):pixel_index % 96; // Flip the X coordinate
     wire [5:0] y_coor = (flip)? 63 - (pixel_index / 96):pixel_index / 96;  
    
     wire inside_sprite = (x_coor >= sprite_x) && (x_coor < sprite_x + 16) &&
@@ -1986,7 +1986,7 @@ module lose(input clk,
     output reg [15:0] oled_colour,
     input [15:0] background_pixel);
     
-    wire [6:0] x_coor = (flip)? 63 - (pixel_index % 96):pixel_index % 96; // Flip the X coordinate
+    wire [6:0] x_coor = (flip)? 95 - (pixel_index % 96):pixel_index % 96; // Flip the X coordinate
     wire [5:0] y_coor = (flip)? 63 - (pixel_index / 96):pixel_index / 96;   
    
     wire inside_sprite = (x_coor >= sprite_x) && (x_coor < sprite_x + 13) &&

@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Sat Nov  2 11:25:08 2024
+// Date        : Sat Nov  2 11:25:07 2024
 // Host        : ASUS_Zenbook_WG running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top battleground_background -prefix
+//               battleground_background_ battleground_background_stub.v
 // Design      : battleground_background
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1

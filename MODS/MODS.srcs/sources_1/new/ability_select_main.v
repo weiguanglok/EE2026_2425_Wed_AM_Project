@@ -94,54 +94,36 @@ module abil_sel_ai(
     parameter ROCK = 2'b00, PAPER = 2'b01, SCISSORS = 2'b10;
 
 //    reg [15:0] random_value = 16'd32767; // To hold the random number
-    
-    reg [15:0] random_value = 1'b0; // To hold the random number
-
-    // Random number generation (simple linear feedback shift register)
+    reg count = 1'b0;
+    reg [3:0]lfsr_fixed;
+    reg [3:0] lfsr = 4'b0001; 
     always @(posedge clk) begin
-        // Linear Feedback Shift Register (LFSR) for pseudo-random numbers
-        random_value <= ~random_value;
+       if (turned_on) begin
+           lfsr_fixed <= lfsr;       
+       end else begin
+           lfsr <= {lfsr[2:0], lfsr[3] ^ lfsr[2]};  
+       end
     end
+   // LFSR-based pseudo-random number generation
     always @(posedge clk) begin
+       // Update LFSR to get a new pseudo-random value
     if (success ==2'b00 && turned_on && ai_turn) begin
-//        if (random_value < 16'd21845) begin
-//            success <= (P1_SEL==2'b11)?2'b10:2'b11; // top third
-//            selected <= 1'b1;
-//        end 
-//        else if (random_value < 16'd43690) begin
-//            success <= (P1_SEL==2'b10)?2'b01:2'b10; // mid third
-//            selected <= 1'b1;
-//        end 
-//        else begin
-//            success <= (P1_SEL==2'b01)?2'b11:2'b01; // bot third
-//            selected <= 1'b1;
-//        end
         if (P1_SEL==ROCK) begin //edited output logic
-            success <= (random_value) ? PAPER : SCISSORS;
+            success <= (lfsr_fixed>4'b0111) ? PAPER : SCISSORS;
             selected <= 1'b1;
         end
         else if (P1_SEL==PAPER) begin
-            success <= (random_value) ? SCISSORS : ROCK;
+            success <= (lfsr_fixed>4'b0111) ? SCISSORS : ROCK;
+            selected <= 1'b1;
+        end
+        else if (P1_SEL==SCISSORS) begin
+            success <= (lfsr_fixed>4'b0111) ? ROCK : PAPER;
             selected <= 1'b1;
         end
         else begin
-            success <= (random_value) ? ROCK : PAPER;
+            success <= (lfsr_fixed>4'b0111) ? ROCK : PAPER;
             selected <= 1'b1;
         end
-//        case(P1_SEL)
-//            ROCK: begin //edited output logic
-//                    success <= (random_value>16'd32767) ? PAPER : SCISSORS;
-//                    selected <= 1'b1;
-//            end
-//            PAPER: begin
-//                        success <= (random_value>16'd32767) ? SCISSORS : ROCK;
-//                        selected <= 1'b1;
-//            end
-//            SCISSORS:begin
-//                success <= (random_value>16'd32767) ? ROCK : PAPER;
-//                selected <= 1'b1;
-//            end
-//        endcase
     end 
     else if (~ai_turn || ~turned_on) begin
         success <= 2'b00; // Reset success when either ai_turn or turned_on is off
@@ -411,9 +393,9 @@ module ability_select_screen(
     rps_confirmation_screen player_select(.clk(clk),.bot_has_chosen(ai_turn),.selection(state),.pixel_index(pixel_index),.oled_colour(oled_colour_confirmation));    
     
     initial begin
-            state <= ROCK;
-            ICON_X_COOR <= ROCK_X_COOR;
-        end
+        state <= ROCK;
+        ICON_X_COOR <= ROCK_X_COOR;
+    end
     
 //    always @ (posedge btnL or posedge btnR)begin
 //        if (turned_on && ~timer_up)begin

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.runs/battleground_background_synth_1'
+HD_PWD='C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.runs/battleground_background_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

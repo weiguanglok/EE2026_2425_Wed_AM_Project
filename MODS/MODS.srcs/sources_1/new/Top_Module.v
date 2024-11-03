@@ -23,6 +23,7 @@
 module Top_Module(
     input clk,  
     input btnR, btnL, btnC, btnD, btnU,   // Buttons for navigation and selection
+    input sw14,sw1,
     output [7:0] JC ,
     output [7:0] JX,
     output reg [0:6]seg = 7'b1111111,
@@ -34,11 +35,11 @@ module Top_Module(
     
     //Clock wires & regs for oled_display
     wire clk6p25m;
-        flexi_clk clk6p25m_instantiate(
-            .clk(clk),
-            .m_const(32'd7),
-            .my_clk(clk6p25m)
-        );
+    flexi_clk clk6p25m_instantiate(
+        .clk(clk),
+        .m_const(32'd7),
+        .my_clk(clk6p25m)
+    );
     reg [15:0] oled_colour_R;
     reg [15:0] oled_colour_L;
     wire [12:0]pixel_index_R;
@@ -170,10 +171,10 @@ module Top_Module(
                oled_colour_L <= oled_colour_ai;
                oled_colour_R <= oled_colour_player;
                if ((led[1]&&~winner&&(parry_result==2'b10))||((led[14])&&winner)) begin //changed
-                state <= STATE_END;
+                   state <= STATE_END;
                end
                else begin
-                state  <= STATE_IDLE; //changed
+                   state  <= STATE_IDLE; //changed
                end
            end
            STATE_END: begin
@@ -225,7 +226,21 @@ module Top_Module(
         .lfsr_input({~P1_SEL,P2_SEL}),
         .seg(seg_parry),
         .an(an_parry));    
-    
+    led_resolute(.state(state),
+        .clk(clk),
+        .winner(winner),
+        .parry_result(parry_result),
+        .sw14(sw14),.sw1(sw1),
+        .led(led),
+        .endgame(endgame)
+        );
+    victory_screen_main victory(
+        .clk(clk),
+        .turned_on(state>=STATE_END),
+        .led(led),
+        .seg(seg_end),
+        .an(an_end)
+        );
     
         
         
@@ -265,20 +280,6 @@ module Top_Module(
         .pmoden(JX[7])
     );
 
-    led_resolute(.state(state),
-   .clk(clk),
-    .winner(winner),
-    .parry_result(parry_result),
-    .led(led),
-    .endgame(endgame)
-    );
     
-    victory_screen_main victory(
-        .clk(clk),
-        .turned_on(state>=STATE_END),
-        .led(led),
-        .seg(seg_end),
-        .an(an_end)
-        );
     
 endmodule

@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="homescreen_background_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730528705">
+<GenRun Id="homescreen_background_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730591509">
   <File Type="PA-TCL" Name="homescreen_background.tcl"/>
   <File Type="REPORTS-TCL" Name="homescreen_background_reports.tcl"/>
   <File Type="RDS-RDS" Name="homescreen_background.vds"/>
-  <File Type="RDS-UTIL" Name="homescreen_background_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="homescreen_background_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="homescreen_background.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/homescreen_background">
     <File Path="$PSRCDIR/sources_1/ip/homescreen_background/homescreen_background.xci">

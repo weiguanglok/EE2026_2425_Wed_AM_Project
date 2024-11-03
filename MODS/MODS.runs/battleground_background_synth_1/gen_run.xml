@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="battleground_background_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730517858">
+<GenRun Id="battleground_background_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730591507">
   <File Type="PA-TCL" Name="battleground_background.tcl"/>
   <File Type="REPORTS-TCL" Name="battleground_background_reports.tcl"/>
   <File Type="RDS-RDS" Name="battleground_background.vds"/>
-  <File Type="RDS-UTIL" Name="battleground_background_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="battleground_background_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="battleground_background.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/battleground_background">
     <File Path="$PSRCDIR/sources_1/ip/battleground_background/battleground_background.xci">

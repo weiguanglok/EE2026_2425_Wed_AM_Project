@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Sat Nov  2 11:25:08 2024
+-- Date        : Sat Nov  2 11:25:07 2024
 -- Host        : ASUS_Zenbook_WG running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/stamp/Documents/NUS/Y2S1/EE2026/Project/MODS/MODS.srcs/sources_1/ip/battleground_background/battleground_background_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top battleground_background -prefix
+--               battleground_background_ battleground_background_sim_netlist.vhdl
 -- Design      : battleground_background
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,8 +20,6 @@ entity battleground_background_bindec is
     addra : in STD_LOGIC_VECTOR ( 1 downto 0 );
     ena : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of battleground_background_bindec : entity is "bindec";
 end battleground_background_bindec;
 
 architecture STRUCTURE of battleground_background_bindec is
@@ -51,8 +49,6 @@ entity battleground_background_blk_mem_gen_mux is
     ram_douta : in STD_LOGIC_VECTOR ( 8 downto 0 );
     \DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram\ : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of battleground_background_blk_mem_gen_mux : entity is "blk_mem_gen_mux";
 end battleground_background_blk_mem_gen_mux;
 
 architecture STRUCTURE of battleground_background_blk_mem_gen_mux is
@@ -292,8 +288,6 @@ entity battleground_background_blk_mem_gen_prim_wrapper_init is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of battleground_background_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end battleground_background_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of battleground_background_blk_mem_gen_prim_wrapper_init is
@@ -1050,8 +1044,6 @@ entity battleground_background_blk_mem_gen_prim_width is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of battleground_background_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end battleground_background_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of battleground_background_blk_mem_gen_prim_width is
@@ -1130,8 +1122,6 @@ entity battleground_background_blk_mem_gen_generic_cstr is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of battleground_background_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end battleground_background_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of battleground_background_blk_mem_gen_generic_cstr is
@@ -1256,8 +1246,6 @@ entity battleground_background_blk_mem_gen_top is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of battleground_background_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end battleground_background_blk_mem_gen_top;
 
 architecture STRUCTURE of battleground_background_blk_mem_gen_top is
@@ -1281,8 +1269,6 @@ entity battleground_background_blk_mem_gen_v8_4_1_synth is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of battleground_background_blk_mem_gen_v8_4_1_synth : entity is "blk_mem_gen_v8_4_1_synth";
 end battleground_background_blk_mem_gen_v8_4_1_synth;
 
 architecture STRUCTURE of battleground_background_blk_mem_gen_v8_4_1_synth is
@@ -1511,8 +1497,6 @@ entity battleground_background_blk_mem_gen_v8_4_1 is
   attribute C_WRITE_WIDTH_B of battleground_background_blk_mem_gen_v8_4_1 : entity is 16;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of battleground_background_blk_mem_gen_v8_4_1 : entity is "artix7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of battleground_background_blk_mem_gen_v8_4_1 : entity is "blk_mem_gen_v8_4_1";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of battleground_background_blk_mem_gen_v8_4_1 : entity is "yes";
 end battleground_background_blk_mem_gen_v8_4_1;
