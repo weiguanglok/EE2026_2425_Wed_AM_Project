@@ -95,7 +95,7 @@ module ddr_parry(
     parry_background parry_background_inst (
         .clk(clk_led),
         .pixel_index(pixel_index),
-        .sprite_x(7'd12), 
+        .sprite_x(7'd11), 
         .sprite_y(7'd3),
         .flip(0),
         .oled_colour(parry_bg),
