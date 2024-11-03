@@ -163,3 +163,32 @@ selectCodeEditor("main.v", 143, 156, false, false, false, false, true); // ce (w
 // WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1223 ms. Increasing delay to 3000 ms.
 // [GUI Memory]: 102 MB (+2423kb) [00:23:40]
 // HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 44 MB. Current time: 11/3/24 10:21:27 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 41 MB. Current time: 11/3/24 10:51:27 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 41 MB. Current time: 11/3/24 11:21:27 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 41 MB. Current time: 11/3/24 11:51:27 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 41 MB. Current time: 11/3/24 12:21:27 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 41 MB. Current time: 11/3/24 12:51:28 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 41 MB. Current time: 11/3/24 1:21:28 PM SGT
+// Elapsed time: 12392 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modifier_start.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "abc_modifier.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.v", 1); // k (j, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), modif_start : modifier_start (modifier_start.v)]", 2); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), abc_modif : abc_modifier (abc_modifier.v)]", 3); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), double : double_speed_disp (double_speed_disp.v)]", 8, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), double : double_speed_disp (double_speed_disp.v)]", 8, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), double : double_speed_disp (double_speed_disp.v)]", 8); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), half : half_speed_disp (half_speed_disp.v)]", 9, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), half : half_speed_disp (half_speed_disp.v), clk_200hz : flexi_clock (flexi_clock.v)]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), half : half_speed_disp (half_speed_disp.v)]", 9); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), no_change : no_change_disp (no_change_disp.v)]", 10, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), no_change : no_change_disp (no_change_disp.v), clk_200hz : flexi_clock (flexi_clock.v)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "double_speed_disp.v", 5); // k (j, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), no_change : no_change_disp (no_change_disp.v)]", 10); // B (D, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modifier_effects.v", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modifier_start.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "abc_modifier.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.v", 1); // k (j, ck)
+// Elapsed time: 50 seconds
+closeMainWindow("modifier_main - [C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/modifier_main/modifier_main.xpr] - Vivado 2018.2"); // ck
+// aj (ck): Save Project: addNotify

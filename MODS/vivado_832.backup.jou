@@ -2,17 +2,16 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Nov  3 19:41:27 2024
-# Process ID: 4688
+# Start of session at: Sun Nov  3 13:34:37 2024
+# Process ID: 832
 # Current directory: C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18808 C:\Users\user\OneDrive - National University of Singapore\Documents\GitHub\EE2026_2425_Wed_AM_Team_13_Project\MODS\MODS.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14048 C:\Users\user\OneDrive - National University of Singapore\Documents\GitHub\EE2026_2425_Wed_AM_Team_13_Project\MODS\MODS.xpr
 # Log file: C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/vivado.log
 # Journal file: C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/MODS.xpr}
 update_compile_order -fileset sources_1
-archive_project {C:/Users/user/Downloads/S2_13_LOK WEI_NG ZHAODE- TAY XU_YEO CHEN_PROJECT ARCHIVE.xpr.zip} -temp_dir {C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/.Xil/Vivado-4688-E-laptop} -force -include_local_ip_cache
 open_hw
 connect_hw_server
 open_hw_target

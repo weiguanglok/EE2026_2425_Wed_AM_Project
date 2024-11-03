@@ -59,9 +59,9 @@ module main(
     
     comp_sel ai_sel (.clk(clk),.turned_on(turned_on),.success(AI_SEL));
     debounce debounce_ai (.clk(clk),.button_in(AI_SEL),.button_out(AI_STABLE));
-    
+    // modifier to be implemented
     modifier_effects effects(.clk(clk),.modifier_sel(modifier_sel),.double_damage(double_damage),.half_damage(half_damage));
-    //to test
+    //7 segment display
     double_speed_disp double (.clk(clk),.turned_on(turned_on),.seg(seg_double_speed),.an(an_double_speed));
     half_speed_disp half (.clk(clk),.turned_on(turned_on),.seg(seg_half_speed),.an(an_half_speed));
     no_change_disp no_change(.clk(clk),.turned_on(turned_on),.seg(seg_no_change),.an(an_no_change));

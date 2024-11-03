@@ -2,10 +2,10 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Nov  3 19:41:27 2024
-# Process ID: 4688
+# Start of session at: Sun Nov  3 13:42:21 2024
+# Process ID: 8560
 # Current directory: C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18808 C:\Users\user\OneDrive - National University of Singapore\Documents\GitHub\EE2026_2425_Wed_AM_Team_13_Project\MODS\MODS.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12848 C:\Users\user\OneDrive - National University of Singapore\Documents\GitHub\EE2026_2425_Wed_AM_Team_13_Project\MODS\MODS.xpr
 # Log file: C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/vivado.log
 # Journal file: C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS\vivado.jou
 #-----------------------------------------------------------
@@ -18,43 +18,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 907.668 ; gain = 169.414
 update_compile_order -fileset sources_1
-archive_project {C:/Users/user/Downloads/S2_13_LOK WEI_NG ZHAODE- TAY XU_YEO CHEN_PROJECT ARCHIVE.xpr.zip} -temp_dir {C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/.Xil/Vivado-4688-E-laptop} -force -include_local_ip_cache
-INFO: [Coretcl 2-137] starting archive...
-INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/.Xil/Vivado-4688-E-laptop' for archiving project
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS'
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-INFO: [Coretcl 2-1211] Creating project copy for archival...
-INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
-Current project path is 'C:/Users/user/OneDrive - National University of Singapore/Documents/GitHub/EE2026_2425_Wed_AM_Team_13_Project/MODS/.Xil/Vivado-4688-E-laptop/PrjAr/_X_'.
-INFO: [Coretcl 2-1213] Including run results for 'synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'battleground_background_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'homescreen_background_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'impl_1'
-INFO: [Coretcl 2-133] re-setting run 'battleground_background_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'homescreen_background_impl_1'...
-INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
-INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'battleground_background'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'battleground_background'
-INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'homescreen_background'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'homescreen_background'
-INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
-INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
-INFO: [Coretcl 2-1209] Adding archive summary file to the project...
-INFO: [Coretcl 2-1214] Preparing project files for archive...
-INFO: [Coretcl 2-1210] Compressing project files and data...
-INFO: [Coretcl 2-1215] Project archived (C:/Users/user/Downloads/S2_13_LOK WEI_NG ZHAODE- TAY XU_YEO CHEN_PROJECT ARCHIVE.xpr.zip)
-INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
-archive_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 923.270 ; gain = 10.555
 open_hw
 connect_hw_server
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -89,5 +53,6 @@ Resolution:
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4247A
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Nov  3 21:02:24 2024...
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  3 13:53:57 2024...
