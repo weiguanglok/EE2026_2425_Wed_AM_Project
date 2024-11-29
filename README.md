@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/61c5daec-2c9f-467e-98c3-2ec0de1a3387)# EE2026_2425_Wed_Team_13_AM_Project
+# EE2026_2425_Wed_Team_13_AM_Project
 
 This repository serves as a central hub for all code related to the EE2026 project.
 
@@ -82,12 +82,14 @@ Fig 4.0. - 4.2. Attack Animation – Paper, Rock, Scissors (left to right)
 Fig 5.0. - 5.2. Parry screen - Default, Miss, Parry (left to right)
 
 - The  seven-segment display will be updated with the number of successful parry with a maximum of 9
+
 ![image](https://github.com/user-attachments/assets/4cf239a5-da9d-41fd-9d53-dc9cf687d88e)
 
 Fig 5.3. Current number of successful parries on seven-segment display
 
 - At the end of the stage, the winner of the round is decided. The led will shift towards the loser.
 - **However**, a successful parry keeps the LED indicator unchanged
+
 ![image](https://github.com/user-attachments/assets/cf096a27-8b22-45cb-835b-616de3a8c334)
 
 Fig 5.2. The led movement
@@ -106,5 +108,8 @@ Fig 6.0. Snippets of the outcome of the game.
 ![image](https://github.com/user-attachments/assets/e60271ec-da91-456b-8361-81921cc1e1b1)
 
 Fig 6.1. Snippets of the scrolling text when bot wins.
+
+> To demonstrate the endgame sequence, turning on sw14 will move the LED indicator one step before the player wins. In this setup, the indicator remains unchanged if the bot wins, but if the player wins, the game enters the ending sequence.
+> Otherwise, turn on sw1 to set up the scenario where the player is one step from losing.
 
 
