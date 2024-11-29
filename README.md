@@ -18,7 +18,7 @@ Fig 1.0. Overall hardware configuaration of BAYES 3 Board.
 
 ## How to start?
 
-### Start Screen
+### Start Phase
 - On the start screen, use BtnU and BtnD to move the selector arrow between "Start" and "Guide."
 - Press BtnC to confirm your choice.
 - In the Guide, switch between pages with BtnR and BtnL; exit anytime by pressing BtnC.
@@ -33,10 +33,10 @@ Fig 2.0. Main screen with the selector arrow (blue arrow on the left).
 
 Fig 2.1. Page one of the guide screen
 
-### Idle Screen
+### Idle Phase
 - Both characters display idle animations during the game. Refer to Fig 3.0 left screen.
 
-### Ability Select Screen
+### Ability Select Phase
 - Press BtnU to start a round, opening the selector screen and a 10-second countdown timer.
 - Use BtnR and BtnL to toggle between the different skills.
 - Then, press BtnC to confirm the skill.
@@ -61,3 +61,14 @@ Fig. 3.1. Selector Screen
 
 Fig. 3.2. Simplified Logic for AI selection ability (for scissors)
 
+
+### Animation Phase
+- In the battle phase, each character performs unique attack animations for each of the three options based on the abilities selected.
+- There are also animations for blocking and taking damage.
+
+![image](https://github.com/user-attachments/assets/4f3f286c-dad5-4a7e-8c52-83ca7f7b309b)![image](https://github.com/user-attachments/assets/16721eca-a790-4512-bccc-29a1bda0f41e)![image](https://github.com/user-attachments/assets/13671e3c-7d9f-4561-af34-3759dabbc981)
+
+Fig 4.1. - 4.3. Attack Animation – Paper, Rock, Scissors (left to right)
+
+
+### Parry Phase
