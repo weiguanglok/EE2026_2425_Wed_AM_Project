@@ -9,11 +9,11 @@ Done using Vivaldo 2018.2
 ## What is it?
 - In Bob’s Adventure, Bob faces AI Biche in a timed Rock, Paper, Scissors (RPS) battle. Bob has 10 seconds to pick a move.
 - Winning damages Biche, while losing triggers a parry phase to avoid damage. An LED indicator shifts toward the loser each round.
-- The game ends when it reaches either edge.
+- The game ends when the led reaches either end of the board.
 
 ![image](https://github.com/user-attachments/assets/8fc8567f-d4e3-4686-867e-e395dfd36320)
 
-Fig 1.0. Overall hardware configuaration of BAYES 3 Board. 
+Fig 1.0. Overall hardware configuaration of BASYS 3 Board. 
 
 
 ## How to start?
@@ -74,14 +74,14 @@ Fig 4.0. - 4.2. Attack Animation – Paper, Rock, Scissors (left to right)
 ### Parry Phase
 - If the player **loses** the RPS round, the parry stage begins.
 - To succeed, press BtnU, BtnD, BtnR, or BtnL at the correct time when the red arrows touch the parry zone, achieving at least 8 successful parries.
-- Press the correct direction when the arrow is in the box.The arrow sequence is pseudo random based on the move selected.
+- Press the correct direction when the arrow is in the box. The arrow sequence is pseudo random based on the move selected.
 - If the parry is successful, “PARRY” will be shown. Else “MISS” will be shown.
 
 ![image](https://github.com/user-attachments/assets/2e1a03b2-d6c6-48ef-9a9e-a63c108dd4d5)![image](https://github.com/user-attachments/assets/fbd99207-4900-4f93-934e-fef31d2f6149)![image](https://github.com/user-attachments/assets/c9e57797-cd13-4904-8e27-05db70aeae5b)
 
 Fig 5.0. - 5.2. Parry screen - Default, Miss, Parry (left to right)
 
-- The  seven-segment display will be updated with the number of successful parry with a maximum of 9
+- The seven-segment display will be updated with the number of successful parry with a maximum of 9
 
 ![image](https://github.com/user-attachments/assets/4cf239a5-da9d-41fd-9d53-dc9cf687d88e)
 
@@ -102,14 +102,14 @@ Fig 5.4. The led movement
 
 ![image](https://github.com/user-attachments/assets/b048e54a-d72a-40d5-868e-b037500f99d4)
 
-Fig 6.0. Snippets of the outcome of the game.
+Fig 6.0. Snippets of the scrolling text when player wins.
 
 
 ![image](https://github.com/user-attachments/assets/e60271ec-da91-456b-8361-81921cc1e1b1)
 
 Fig 6.1. Snippets of the scrolling text when bot wins.
 
-> To demonstrate the endgame sequence, turning on sw14 will move the LED indicator one step before the player wins. In this setup, the indicator remains unchanged if the bot wins, but if the player wins, the game enters the ending sequence.
+> To demonstrate the endgame sequence, turn on sw14. This will move the LED indicator one step before the player wins. In this setup, the indicator remains unchanged if the bot wins, but if the player wins, the game enters the ending sequence.
 > Otherwise, turn on sw1 to set up the scenario where the player is one step from losing.
 
 
