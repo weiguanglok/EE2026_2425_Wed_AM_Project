@@ -92,7 +92,7 @@ Fig 5.3. Current number of successful parries on seven-segment display
 
 ![image](https://github.com/user-attachments/assets/cf096a27-8b22-45cb-835b-616de3a8c334)
 
-Fig 5.2. The led movement
+Fig 5.4. The led movement
 
 
 ### Ending Phase
