@@ -106,3 +106,5 @@ Fig 6.0. Snippets of the outcome of the game.
 ![image](https://github.com/user-attachments/assets/e60271ec-da91-456b-8361-81921cc1e1b1)
 
 Fig 6.1. Snippets of the scrolling text when bot wins.
+
+
