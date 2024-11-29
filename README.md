@@ -68,7 +68,41 @@ Fig. 3.2. Simplified Logic for AI selection ability (for scissors)
 
 ![image](https://github.com/user-attachments/assets/4f3f286c-dad5-4a7e-8c52-83ca7f7b309b)![image](https://github.com/user-attachments/assets/16721eca-a790-4512-bccc-29a1bda0f41e)![image](https://github.com/user-attachments/assets/13671e3c-7d9f-4561-af34-3759dabbc981)
 
-Fig 4.1. - 4.3. Attack Animation – Paper, Rock, Scissors (left to right)
+Fig 4.0. - 4.2. Attack Animation – Paper, Rock, Scissors (left to right)
 
 
 ### Parry Phase
+- If the player **loses** the RPS round, the parry stage begins.
+- To succeed, press BtnU, BtnD, BtnR, or BtnL at the correct time when the red arrows touch the parry zone, achieving at least 8 successful parries.
+- Press the correct direction when the arrow is in the box.The arrow sequence is pseudo random based on the move selected.
+- If the parry is successful, “PARRY” will be shown. Else “MISS” will be shown.
+
+![image](https://github.com/user-attachments/assets/2e1a03b2-d6c6-48ef-9a9e-a63c108dd4d5)![image](https://github.com/user-attachments/assets/fbd99207-4900-4f93-934e-fef31d2f6149)![image](https://github.com/user-attachments/assets/c9e57797-cd13-4904-8e27-05db70aeae5b)
+
+Fig 5.0. - 5.2. Parry screen - Default, Miss, Parry (left to right)
+
+- The  seven-segment display will be updated with the number of successful parry with a maximum of 9
+![image](https://github.com/user-attachments/assets/4cf239a5-da9d-41fd-9d53-dc9cf687d88e)
+
+Fig 5.3. Current number of successful parries on seven-segment display
+
+- At the end of the stage, the winner of the round is decided. The led will shift towards the loser.
+- **However**, a successful parry keeps the LED indicator unchanged
+![image](https://github.com/user-attachments/assets/cf096a27-8b22-45cb-835b-616de3a8c334)
+
+Fig 5.2. The led movement
+
+
+### Ending Phase
+- When the LED indicator reaches either end (LED15 or LED0), the game ends.
+- A scrolling indicator indicating the winner will be displayed on the seven-segment display and the OLED display until BtnU is pressed.
+- Pressing BtnU will return to the start screen and one can play again.
+
+![image](https://github.com/user-attachments/assets/b048e54a-d72a-40d5-868e-b037500f99d4)
+
+Fig 6.0. Snippets of the outcome of the game.
+
+
+![image](https://github.com/user-attachments/assets/e60271ec-da91-456b-8361-81921cc1e1b1)
+
+Fig 6.1. Snippets of the scrolling text when bot wins.
