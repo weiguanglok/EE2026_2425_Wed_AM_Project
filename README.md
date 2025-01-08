@@ -1,6 +1,7 @@
 # EE2026_2425_Wed_Team_13_AM_Project
 
-This repository serves as a central hub for all codes related to the EE2026 project.
+This repository serves as a central hub for all code and documentation related to the EE2026 project.
+
 Done using Vivaldo 2018.2
 
 # Bob's Adventure
